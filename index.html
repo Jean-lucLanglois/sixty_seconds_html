@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Minute Sales — Double your closing rate</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    // Tailwind config: Inter font and accent color similar to Resend
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            accent: '#D3BC5F', // emerald-ish green
+            bgdeep: '#0B0F12',
+          },
+          boxShadow: {
+            glow: '0 0 40px 0 rgba(34, 211, 166, 0.15)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #0B0F12;
+      --grid: rgba(255,255,255,0.04);
+      --ring: rgba(204, 214, 26, 0.15);
+    }
+    /* Subtle grid background */
+    .bg-grid {
+      background-image:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: 24px 24px;
+      background-position: -1px -1px;
+    }
+    /* Soft green glows */
+    .glow-layer::before,
+    .glow-layer::after {
+      content: "";
+      position: absolute;
+      inset: -10% -10% auto -10%;
+      height: 60%;
+      background: radial-gradient(600px 200px at 70% -20%, var(--ring), transparent 60%);
+      pointer-events: none;
+    }
+    .glow-layer::after {
+      inset: auto -10% -20% -10%;
+      height: 50%;
+      background: radial-gradient(500px 200px at 15% 110%, rgba(211, 214, 15, 0.12), transparent 65%);
+    }
+    /* Gradient border card */
+    .gradient-border {
+      position: relative;
+      border-radius: 16px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+    }
+    .gradient-border::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(210, 221, 8, 0.4), rgba(255,255,255,0.06));
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+              mask-composite: exclude;
+      pointer-events: none;
+    }
+    /* Code block styling */
+    .code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+  </style>
+  <meta name="description" content="Leads converted to sales in a minute.">
+</head>
+<body class="bg-bgdeep text-white font-inter antialiased selection:bg-accent/20 selection:text-white">
+
+  <!-- Site chrome with subtle blur -->
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-black/40 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a class="mb-4 me-2 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0" href="#">
+            <img src="img/logo/1minutesale-logo-white.png" style="" alt="" loading="lazy">
+          </a>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+        <a class="hover:text-white" href="#features">Features</a>
+        <a class="hover:text-white" href="#pricing">Pricing</a>
+        <a class="hover:text-white" href="#bookcall">Book a Call</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#get-started" class="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40">Get started <span>→</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid"></div>
+    <div class="absolute inset-0 glow-layer"></div>
+    <div class="relative mx-auto max-w-7xl px-6 pt-20 pb-16 md:pt-28 md:pb-24">
+      <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+        <!-- Left: copy -->
+        <div class="flex-1">
+          <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-gray-300">
+            <span class="inline-flex h-1.5 w-1.5 rounded-full bg-accent"></span>
+            New: AI-assisted human sales
+            <span class="text-white/50">— fast setup</span>
+          </div>
+          <h1 class="mt-5 text-4xl md:text-6xl font-semibold tracking-tight">
+            Turn leads into conversations in 60 seconds
+          </h1>
+          <p class="mt-5 max-w-xl text-base md:text-lg text-gray-400">
+            Commission-only sales team that responds instantly to your inbound leads. Double your close rate without new hires.
+          </p>
+          <div class="mt-8 flex items-center gap-3">
+            <a href="#bookcall" class="inline-flex items-center rounded-lg bg-accent px-5 py-3 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40">Get started <span>→</span></a>
+            <a href="#docs" class="inline-flex items-center rounded-lg border border-white/10 px-5 py-3 text-sm font-medium text-white hover:border-white/20">See how it works</a>
+          </div>
+          <p class="mt-3 text-xs text-gray-500">Simple setup. Pay only commissions.</p>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="border-t border-white/10 bg-black/20">
+    <div class="mx-auto max-w-7xl px-6 py-10">
+      <p class="text-center text-xs uppercase tracking-wider text-gray-400">Trusted by results-driven businesses</p>
+      <div class="mt-6 grid grid-cols-2 md:grid-cols-6 gap-6 items-center opacity-75">
+        <div class="text-center text-sm text-gray-400">Commission Only</div>
+        <div class="text-center text-sm text-gray-400">Easy Onboarding</div>
+        <div class="text-center text-sm text-gray-400">No Sales Hires</div>
+        <div class="text-center text-sm text-gray-400">100% Guarantee</div>
+        <div class="text-center text-sm text-gray-400">No Training</div>
+        <div class="text-center text-sm text-gray-400">No setup on your part</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="mx-auto max-w-7xl px-6 py-20">
+    <div class="grid gap-6 md:grid-cols-3">
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div class="mb-3 inline-flex h-8 w-80 items-center justify-center rounded-md bg-accent/20 text-accent">Simple & Efficient</div>
+        <h3 class="text-lg font-semibold">60‑Second Lead Response</h3>
+        <p class="mt-2 text-sm text-gray-400">We contact your leads in 60 seconds. 100% guaranteed.</p>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div class="mb-3 inline-flex h-8 w-80 items-center justify-center rounded-md bg-accent/20 text-accent">Rapid Response Team</div>
+        <h3 class="text-lg font-semibold">On‑Demand Sales Team</h3>
+        <p class="mt-2 text-sm text-gray-400">Our trained sales team delivers results—during and after your business hours.</p>
+      </div>
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div class="mb-3 inline-flex h-8 w-80 items-center justify-center rounded-md bg-accent/20 text-accent">Reliable Deliverability</div>
+        <h3 class="text-lg font-semibold">From Lead to Close</h3>
+        <p class="mt-2 text-sm text-gray-400">From lead to closed sale. We learn your product fast and represent your brand.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="relative border-t border-white/10 bg-black/30"> 
+    <div class="relative mx-auto max-w-7xl px-6 py-16 text-center">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Start closing deals today</h2>
+      <div class="mt-6">
+        <a href="#get-started" class="inline-flex items-center rounded-lg bg-accent px-6 py-3 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40">Book a call to double your close rate</a>
+      </div>
+    </div>
+  </section>
+ 
+
+    
+  <!-- Section: Book a Call -->
+  <div class="relative mx-auto max-w-7xl px-6 py-6 text-center">
+    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Book a free sales consultation</h2>
+    <p class="mt-2 text-sm text-gray-400">Book a call. Stop wasting time and leads. Start closing today.</p>
+  </div>
+  <section id="bookcall" class="mx-auto max-w-7xl px-6 py-2">
+    <div class="block mx-auto max-w-3xl rounded-lg bg-dark p-6 dark">
+      <form novalidate>
+        <div class="grid grid-cols-3 gap-4">
+          <!--First name input-->
+          <div class="relative mb-6" data-twe-input-wrapper-init>
+            <input
+              type="text"
+              required
+              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+              id="exampleInput123"
+              aria-describedby="error-first-name"
+              placeholder="First name" />
+            <label
+              for="exampleInput123"
+              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+              >First name
+            </label>
+            <p id="error-first-name" data-error class="mt-1 hidden text-xs text-red-400"></p>
+          </div>
+
+          <!--Last name input-->
+          <div class="relative mb-6" data-twe-input-wrapper-init>
+            <input
+              type="text"
+              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+              id="exampleInput124"
+              aria-describedby="emailHelp124"
+              placeholder="Last name" />
+            <label
+              for="exampleInput124"
+              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
+              >Last name
+            </label>
+          </div>
+          <!--Email input-->
+          <div class="relative mb-6" data-twe-input-wrapper-init>
+            <input
+              type="email"
+              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+              id="exampleInput125"
+              placeholder="Email address" />
+            <label
+              for="exampleInput125"
+              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
+              >Email address
+            </label>
+          </div>
+
+          <!--Phone (US) input-->
+          <div class="relative mb-6 col-span-2" data-twe-input-wrapper-init>
+            <input
+              type="tel"
+              required
+              inputmode="tel"
+              autocomplete="tel"
+              pattern="^\\+?1?\\s*\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$"
+              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
+              id="exampleInput126"
+              aria-describedby="error-phone"
+              placeholder="Phone (US)" />
+            <label
+              for="exampleInput126"
+              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
+              >Phone (US)
+            </label>
+            <p id="error-phone" data-error class="mt-1 hidden text-xs text-red-400"></p>
+          </div>
+
+          <!--Submit button in 3rd column of 2nd row-->
+          <button
+            type="submit"
+            class="col-start-3 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
+            data-twe-ripple-init
+            data-twe-ripple-color="light">
+            Book Your Free Call 
+          </button>
+          <p class="col-start-3 mt-2 text-xs text-gray-500">No spam. We'll never share your info.</p>
+        </div>
+      </form>
+    </div>
+    <!-- Section: Contact -->
+  </section>
+
+
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.querySelector('#bookcall form');
+      if (!form) return;
+
+      const first = form.querySelector('#exampleInput123');
+      const phone = form.querySelector('#exampleInput126');
+      const phoneRe = /^\+?1?\s*\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
+
+      function getErrorEl(input) {
+        const wrap = input.closest('[data-twe-input-wrapper-init]');
+        return wrap ? wrap.querySelector('[data-error]') : null;
+      }
+
+      function showError(input, message) {
+        const errorEl = getErrorEl(input);
+        if (errorEl) {
+          errorEl.textContent = message;
+          errorEl.classList.remove('hidden');
+        }
+        input.classList.add('ring-1', 'ring-red-500');
+        input.setAttribute('aria-invalid', 'true');
+      }
+
+      function clearError(input) {
+        const errorEl = getErrorEl(input);
+        if (errorEl) {
+          errorEl.textContent = '';
+          errorEl.classList.add('hidden');
+        }
+        input.classList.remove('ring-1', 'ring-red-500');
+        input.removeAttribute('aria-invalid');
+      }
+
+      first.addEventListener('input', () => {
+        if (first.value.trim()) clearError(first);
+      });
+
+      phone.addEventListener('input', () => {
+        if (phoneRe.test(phone.value.trim())) clearError(phone);
+      });
+
+      form.addEventListener('submit', (e) => {
+        let valid = true;
+
+        if (!first.value.trim()) {
+          showError(first, 'First name is required');
+          valid = false;
+        }
+
+        const phoneVal = phone.value.trim();
+        if (!phoneRe.test(phoneVal)) {
+          showError(phone, 'Enter a valid US phone (e.g., 555-123-4567)');
+          valid = false;
+        }
+
+        if (!valid) e.preventDefault();
+      });
+    });
+  </script>
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-6 py-10 text-sm text-gray-400 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+      <div>
+        <div class="flex items-center gap-2"> 
+          <span class="font-medium text-white">1 Minute Sales</span>
+        </div>
+        <p class="mt-2 text-xs">© 2025 1 Minute Sales. All rights reserved.</p>
+      </div>
+      <div class="flex gap-8">
+        <div>
+          <div class="text-white text-xs font-semibold uppercase tracking-wider">Product</div>
+          <ul class="mt-2 space-y-2">
+            <li><a class="hover:text-white" href="#features">Features</a></li>
+            <li><a class="hover:text-white" href="#pricing">Pricing</a></li> 
+          </ul>
+        </div>
+        <div>
+          <div class="text-white text-xs font-semibold uppercase tracking-wider">Company</div>
+          <ul class="mt-2 space-y-2">
+            <li><a class="hover:text-white" href="#about">About</a></li>
+            <li><a class="hover:text-white" href="#careers">Careers</a></li>
+            <li><a class="hover:text-white" href="#bookcall">Book a Call</a></li>
+            <li><a class="hover:text-white" href="https://sales.1minutesales.com">Sales Sign In</a></li> 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
