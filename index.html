@@ -69,7 +69,7 @@
       border-radius: inherit;
       padding: 1px;
       background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(210, 221, 8, 0.4), rgba(255,255,255,0.06));
-      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
       -webkit-mask-composite: xor;
               mask-composite: exclude;
       pointer-events: none;
@@ -82,24 +82,24 @@
     }
   </style>
   <meta name="description" content="Leads converted to sales in a minute.">
+  <link rel="canonical" href="https://www.1minutesales.com/">
 </head>
 <body class="bg-bgdeep text-white font-inter antialiased selection:bg-accent/20 selection:text-white">
 
   <!-- Site chrome with subtle blur -->
-  <header class="sticky top-0 z-40 border-b border-white/10 bg-black/40 backdrop-blur">
+  <header class="top-0 z-40 border-b border-white/10 bg-black/40 backdrop-blur">
     <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <a class="mb-4 me-2 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0" href="#">
-            <img src="img/logo/1minutesale-logo-white.png" style="" alt="" loading="lazy">
+            <img src="img/logo/1minutesale-logo-white.png" alt="1 Minute Sales company logo" loading="lazy">
           </a>
       </div>
       <nav class="hidden md:flex items-center gap-8 text-sm text-gray-300">
         <a class="hover:text-white" href="#features">Features</a>
-        <a class="hover:text-white" href="#pricing">Pricing</a>
-        <a class="hover:text-white" href="#bookcall">Book a Call</a>
+        <a class="hover:text-white" href="#pricing">Pricing</a> 
       </nav>
       <div class="flex items-center gap-3">
-        <a href="#get-started" class="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40">Get started <span>→</span></a>
+        <a href="#bookcall" class="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40">Get started <span>→</span></a>
       </div>
     </div>
   </header>
@@ -118,14 +118,13 @@
             <span class="text-white/50">— fast setup</span>
           </div>
           <h1 class="mt-5 text-4xl md:text-6xl font-semibold tracking-tight">
-            Turn leads into conversations in 60 seconds
+            Convert leads to sales in 60 seconds...
           </h1>
-          <p class="mt-5 max-w-xl text-base md:text-lg text-gray-400">
-            Commission-only sales team that responds instantly to your inbound leads. Double your close rate without new hires.
+          <p class="mt-5 max-w-2xl text-base md:text-lg text-gray-400">
+            Commission-based sales team instantly responds to your inbound leads. <br/>Double your close rate without hires, onboarding or training on your part.
           </p>
           <div class="mt-8 flex items-center gap-3">
             <a href="#bookcall" class="inline-flex items-center rounded-lg bg-accent px-5 py-3 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40">Get started <span>→</span></a>
-            <a href="#docs" class="inline-flex items-center rounded-lg border border-white/10 px-5 py-3 text-sm font-medium text-white hover:border-white/20">See how it works</a>
           </div>
           <p class="mt-3 text-xs text-gray-500">Simple setup. Pay only commissions.</p>
         </div> 
@@ -133,137 +132,223 @@
     </div>
   </section>
 
-  <!-- Pricing -->
-  <section class="border-t border-white/10 bg-black/20">
-    <div class="mx-auto max-w-7xl px-6 py-10">
-      <p class="text-center text-xs uppercase tracking-wider text-gray-400">Trusted by results-driven businesses</p>
-      <div class="mt-6 grid grid-cols-2 md:grid-cols-6 gap-6 items-center opacity-75">
-        <div class="text-center text-sm text-gray-400">Commission Only</div>
-        <div class="text-center text-sm text-gray-400">Easy Onboarding</div>
-        <div class="text-center text-sm text-gray-400">No Sales Hires</div>
-        <div class="text-center text-sm text-gray-400">100% Guarantee</div>
-        <div class="text-center text-sm text-gray-400">No Training</div>
-        <div class="text-center text-sm text-gray-400">No setup on your part</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Features -->
+<!-- Feature Cards Section 1-->
   <section id="features" class="mx-auto max-w-7xl px-6 py-20">
-    <div class="grid gap-6 md:grid-cols-3">
-      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-        <div class="mb-3 inline-flex h-8 w-80 items-center justify-center rounded-md bg-accent/20 text-accent">Simple & Efficient</div>
-        <h3 class="text-lg font-semibold">60‑Second Lead Response</h3>
-        <p class="mt-2 text-sm text-gray-400">We contact your leads in 60 seconds. 100% guaranteed.</p>
+    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight text-center mb-10">Sale Features</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Card 1 -->
+      <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div class="flex flex-row gap-3 items-center mb-2">
+          <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="1.5" stroke="currentColor"></circle>
+            <path clip-rule="evenodd" d="M12 2C12.8219 2 13.6205 2.09914 14.3848 2.28612C14.2426 2.5854 14.1366 2.90514 14.0722 3.23971C13.4069 3.08294 12.7132 3 12 3C8.42719 3 5.34061 5.08189 3.88723 8.09873C3.60187 8.03411 3.30494 8 3.00004 8C2.94326 8 2.88677 8.00118 2.83057 8.00353C4.37288 4.46983 7.89802 2 12 2ZM2.83057 15.9965C4.37287 19.5302 7.89802 22 12 22C17.5229 22 22 17.5228 22 12C22 10.1746 21.5109 8.46346 20.6566 6.99043C20.4069 7.21247 20.1291 7.40369 19.8293 7.55814C20.5745 8.8687 21 10.3846 21 12C21 16.9706 16.9706 21 12 21C8.42719 21 5.34061 18.9181 3.88722 15.9013C3.60187 15.9659 3.30494 16 3.00004 16C2.94327 16 2.88676 15.9988 2.83057 15.9965Z" fill="currentColor" fill-rule="evenodd"></path>
+            <path clip-rule="evenodd" d="M12.0998 16.999C12.0666 16.9997 12.0334 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.4193 7 16.4373 8.71825 16.9002 11.001C16.9334 11.0003 16.9666 11 17 11C17.3181 11 17.6293 11.0297 17.9309 11.0865C17.4909 8.20635 15.0031 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18C12.1378 18 12.2745 17.9954 12.41 17.9862C12.2741 17.6725 12.1694 17.3421 12.0998 16.999Z" fill="currentColor" fill-rule="evenodd"></path>
+            <circle cx="16.5" cy="15" fill="currentColor" r="1.5"></circle>
+            <circle cx="2.5" cy="12" fill="currentColor" r="1.5"></circle>
+            <circle cx="18" cy="4" fill="currentColor" r="1.5"></circle>
+            <path d="M11.5 10.5V2.5M12.5 13.5V21.5" stroke="currentColor"></path>
+          </svg>
+          <h4 class="font-display text-xl text-slate-12 leading-[32px]">60‑Second Lead Response</h4>
+        </div>
+        <p class="text-sm text-gray-400">You are 21 times more likely to qualify and convert your lead with a quick lead response time than if you wait for more than 30 minutes. <span class="cursor-help underline decoration-dotted underline-offset-2 text-slate-12">391% higher</span>  conversions if contacted within <span class="cursor-help underline decoration-dotted underline-offset-2 text-slate-12">1 minute</span>.</p>
       </div>
-      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-        <div class="mb-3 inline-flex h-8 w-80 items-center justify-center rounded-md bg-accent/20 text-accent">Rapid Response Team</div>
-        <h3 class="text-lg font-semibold">On‑Demand Sales Team</h3>
-        <p class="mt-2 text-sm text-gray-400">Our trained sales team delivers results—during and after your business hours.</p>
+      <!-- Card 2 -->
+      <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div class="flex flex-row gap-3 items-center mb-2">
+          <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" d="M5 9.62793C4.46391 10.0012 4.03147 10.5247 3.76923 11.1541L2.11538 15.1233C2.03922 15.3061 2 15.5022 2 15.7002V19.5002C2 21.4332 3.567 23.0002 5.5 23.0002H18.5C20.433 23.0002 22 21.4332 22 19.5002V15.7002C22 15.5022 21.9608 15.3061 21.8846 15.1233L20.2308 11.1541C19.9685 10.5247 19.5361 10.0012 19 9.62793V10.9999H18.9999C19.1227 11.1636 19.2266 11.3441 19.3077 11.5387L20.9615 15.5079C20.9869 15.5688 21 15.6342 21 15.7002V19.5002C21 20.8809 19.8807 22.0002 18.5 22.0002H5.5C4.11929 22.0002 3 20.8809 3 19.5002V15.7002C3 15.6342 3.01307 15.5688 3.03846 15.5079L4.69231 11.5387C4.77339 11.3441 4.87726 11.1636 5.00005 10.9999H5V9.62793Z" fill="currentColor" fill-rule="evenodd"></path>
+            <path d="M15.5 15.5H21.5M2.5 15.5H8.5" stroke="currentColor"></path>
+            <path clip-rule="evenodd" d="M8 15C8 17.2091 9.79086 19 12 19C14.2091 19 16 17.2091 16 15H15C15 16.6569 13.6569 18 12 18C10.3431 18 9 16.6569 9 15H8Z" fill="currentColor" fill-rule="evenodd"></path>
+            <path d="M7.5 3V8" stroke="currentColor"></path>
+            <path d="M16.5 2V8" stroke="currentColor"></path>
+            <path d="M13.5 0V7" stroke="currentColor"></path>
+            <path d="M10.5 1V7" stroke="currentColor"></path>
+            <path d="M5.5 15.5V13.5C5.5 12.9477 5.94772 12.5 6.5 12.5H17.5C18.0523 12.5 18.5 12.9477 18.5 13.5V15.5" stroke="currentColor"></path>
+            <path d="M7.5 12.5V10.5C7.5 9.94772 7.94772 9.5 8.5 9.5H15.5C16.0523 9.5 16.5 9.94772 16.5 10.5V12.5" stroke="currentColor"></path>
+          </svg>
+          <h4 class="font-display text-xl text-slate-12 leading-[32px]">Faster Time to Closing</h4>
+        </div>
+        <p class="text-sm text-gray-400">We don't just book appointments for you to deal at a later date, we close deals by having your contracts executed and financed. working with us enable your business to execute without the need of additional infrastructure and personel.</p>
       </div>
-      <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-        <div class="mb-3 inline-flex h-8 w-80 items-center justify-center rounded-md bg-accent/20 text-accent">Reliable Deliverability</div>
-        <h3 class="text-lg font-semibold">From Lead to Close</h3>
-        <p class="mt-2 text-sm text-gray-400">From lead to closed sale. We learn your product fast and represent your brand.</p>
+      <!-- Card 3 -->
+      <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div class="flex flex-row gap-3 items-center mb-2">
+          <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" d="M1 5.4V15.6V15.6361V15.6361C0.999978 16.0252 0.999958 16.3753 1.02376 16.6666C1.04925 16.9786 1.10694 17.3101 1.27249 17.635C1.51217 18.1054 1.89462 18.4878 2.36502 18.7275C2.68993 18.8931 3.0214 18.9508 3.33337 18.9762C3.62468 19 3.9748 19 4.36387 19H4.36389H4.4H8V18H4.4C3.55992 18 3.13988 18 2.81902 17.8365C2.53677 17.6927 2.3073 17.4632 2.16349 17.181C2 16.8601 2 16.4401 2 15.6V5.4C2 4.55992 2 4.13988 2.16349 3.81902C2.3073 3.53677 2.53677 3.3073 2.81902 3.16349C3.13988 3 3.55992 3 4.4 3H19.6C20.4401 3 20.8601 3 21.181 3.16349C21.4632 3.3073 21.6927 3.53677 21.8365 3.81902C22 4.13988 22 4.55992 22 5.4V15.6C22 16.4401 22 16.8601 21.8365 17.181C21.6927 17.4632 21.4632 17.6927 21.181 17.8365C20.9156 17.9717 20.5825 17.9951 20 17.9992V18.9992C20.2451 18.9976 20.4693 18.9924 20.6666 18.9762C20.9786 18.9508 21.3101 18.8931 21.635 18.7275C22.1054 18.4878 22.4878 18.1054 22.7275 17.635C22.8931 17.3101 22.9508 16.9786 22.9762 16.6666C23 16.3753 23 16.0252 23 15.6361V15.6361V15.6V5.4V5.3639V5.36388C23 4.9748 23 4.62468 22.9762 4.33337C22.9508 4.02141 22.8931 3.68993 22.7275 3.36503C22.4878 2.89462 22.1054 2.51217 21.635 2.27249C21.3101 2.10694 20.9786 2.04925 20.6666 2.02376C20.3753 1.99996 20.0252 1.99998 19.6362 2H19.6361L19.6 2H4.4L4.36391 2H4.36385C3.97479 1.99998 3.62467 1.99996 3.33337 2.02376C3.0214 2.04925 2.68993 2.10694 2.36503 2.27249C1.89462 2.51217 1.51217 2.89462 1.27249 3.36503C1.10694 3.68993 1.04925 4.0214 1.02376 4.33337C0.999958 4.62469 0.999978 4.97482 1 5.3639V5.36391V5.4Z" fill="currentColor" fill-rule="evenodd"></path>
+            <path d="M12.5 17V22.5L14 21.5L15.5 22.5V17" stroke="currentColor"></path>
+            <path d="M15.1356 8.79429L15.3113 8.96423L15.5533 8.93L17.1178 8.70871L17.3908 10.265L17.433 10.5058L17.6489 10.6203L19.0447 11.3609L18.3508 12.7804L18.2435 13L18.3508 13.2196L19.0447 14.6391L17.6489 15.3797L17.433 15.4942L17.3908 15.735L17.1178 17.2913L15.5533 17.07L15.3113 17.0358L15.1356 17.2057L14 18.3043L12.8644 17.2057L12.6887 17.0358L12.4467 17.07L10.8822 17.2913L10.6092 15.735L10.567 15.4942L10.3511 15.3797L8.95529 14.6391L9.6492 13.2196L9.75654 13L9.6492 12.7804L8.95529 11.3609L10.3511 10.6203L10.567 10.5058L10.6092 10.265L10.8822 8.70871L12.4467 8.93L12.6887 8.96423L12.8644 8.79429L14 7.69568L15.1356 8.79429Z" stroke="currentColor"></path>
+            <circle cx="1.5" cy="1.5" fill="currentColor" r="1.5" transform="matrix(1 0 0 -1 12.5 14.5)"></circle>
+            <rect fill="currentColor" height="1" width="6" x="4" y="5"></rect>
+            <rect fill="currentColor" height="1" width="2" x="18" y="5"></rect>
+            <rect fill="currentColor" height="1" width="3" x="4" y="8"></rect>
+            <rect fill="currentColor" height="1" width="2" x="4" y="11"></rect>
+            <rect fill="currentColor" height="1" width="1" x="4" y="14"></rect>
+          </svg>
+          <h4 class="font-display text-xl text-slate-12 leading-[32px]">On‑Demand Sales Team</h4>
+        </div>
+        <p class="text-sm text-gray-400">Throttle your sales team <class="cursor-help underline decoration-dotted underline-offset-2 text-slate-12">On Demand</span>. Receive weekly reports and adjust your sale team and  <span class="cursor-help underline decoration-dotted underline-offset-2 text-slate-12">deliverable hours</span> on the fly to meet your company needs.</p>
       </div>
     </div>
-  </section>
+  </section> 
+  <section class="mx-auto max-w-7xl px-6 py-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- Card 4 -->
+      <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div class="flex flex-row gap-3 items-center mb-2">
+          <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <rect height="17" rx="3.5" stroke="currentColor" width="17" x="1.5" y="5.5"></rect>
+            <path d="M4.5 14V10C4.5 9.72386 4.72386 9.5 5 9.5H15C15.2761 9.5 15.5 9.72386 15.5 10V14C15.5 14.2761 15.2761 14.5 15 14.5H13.5V16C13.5 16.2761 13.2761 16.5 13 16.5H11.5V18C11.5 18.2761 11.2761 18.5 11 18.5H9C8.72386 18.5 8.5 18.2761 8.5 18V16.5H7C6.72386 16.5 6.5 16.2761 6.5 16V14.5H5C4.72386 14.5 4.5 14.2761 4.5 14Z" stroke="currentColor"></path>
+            <path d="M6.5 9.5V12M8.5 9.5V12M11.5 9.5V12M13.5 9.5V12" stroke="currentColor"></path><path clip-rule="evenodd" d="M11.4001 2H16.6001C17.7367 2 18.529 2.00078 19.1459 2.05118C19.751 2.10062 20.0987 2.19279 20.3621 2.32698C20.9265 2.6146 21.3855 3.07354 21.6731 3.63803C21.8073 3.90138 21.8995 4.24907 21.9489 4.85424C21.9993 5.47108 22.0001 6.26339 22.0001 7.4V12.6C22.0001 13.7366 21.9993 14.5289 21.9489 15.1458C21.8995 15.7509 21.8073 16.0986 21.6731 16.362C21.3855 16.9265 20.9265 17.3854 20.3621 17.673C20.2581 17.726 20.1409 17.7724 20 17.8123V18.8407C20.3067 18.7772 20.5721 18.6883 20.8161 18.564C21.5687 18.1805 22.1806 17.5686 22.5641 16.816C23.0001 15.9603 23.0001 14.8402 23.0001 12.6V7.4C23.0001 5.15979 23.0001 4.03969 22.5641 3.18404C22.1806 2.43139 21.5687 1.81947 20.8161 1.43597C19.9604 1 18.8403 1 16.6001 1H11.4001C9.15988 1 8.03978 1 7.18413 1.43597C6.43148 1.81947 5.81956 2.43139 5.43607 3.18404C5.3118 3.42793 5.22295 3.69332 5.15942 4H6.18784C6.22767 3.8591 6.2741 3.74199 6.32707 3.63803C6.61469 3.07354 7.07363 2.6146 7.63812 2.32698C7.90148 2.19279 8.24916 2.10062 8.85433 2.05118C9.47117 2.00078 10.2635 2 11.4001 2Z" fill="currentColor" fill-rule="evenodd">
+            </path>
+          </svg>
+          <h4 class="font-display text-xl text-slate-12 leading-[32px]">60‑Second Lead Response</h4>
+        </div>
+        <p class="text-sm text-gray-400">Be the first to know if your domain is added to a <span class="cursor-help underline decoration-dotted underline-offset-2 text-slate-12">DNSBLs</span> such as those offered by <span class="cursor-help underline decoration-dotted underline-offset-2 text-slate-12">Spamhaus</span> with removal requests generated by Resend.</p>
+      </div>
+      <!-- Card 5 -->
+      <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div class="flex flex-row gap-3 items-center mb-2">
+          <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.5 14L8.14645 14.3536L9 14H8.5ZM11.5 11.5V12H12V11.5H11.5ZM10.5 11.5L10.0025 11.5498L10.0475 12H10.5V11.5ZM6.35694 15.4282L6.78569 15.171L6.35694 15.4282ZM5.6674 14.279L6.09614 14.0217L5.6674 14.279ZM9 14V7.28741H8V14H9ZM13 5.5V6.5H14V5.5H13ZM13 6.5V12H14V6.5H13ZM13.5 7H14.5V6H13.5V7ZM15 7.5V8.5H16V7.5H15ZM15 8.5V12H16V8.5H15ZM15.5 9H16.5V8H15.5V9ZM17 9.5V12.7894H18V9.5H17ZM11.7894 18H11.4517V19H11.7894V18ZM6.95711 13.1642L8.14645 14.3536L8.85355 13.6464L7.66421 12.4571L6.95711 13.1642ZM11 5.5V11.5H12V5.5H11ZM9.57339 7.25881L10.0025 11.5498L10.9975 11.4502L10.5684 7.1593L9.57339 7.25881ZM10.5 12H11.5V11H10.5V12ZM6.78569 15.171L6.09614 14.0217L5.23865 14.5362L5.92819 15.6855L6.78569 15.171ZM6 13.6746V13.5607H5V13.6746H6ZM6 13.5607C6 13.251 6.25102 13 6.56066 13V12C5.69873 12 5 12.6987 5 13.5607H6ZM9.28741 7C9.43506 7 9.55869 7.11189 9.57339 7.25881L10.5684 7.1593C10.5026 6.50118 9.94881 6 9.28741 6V7ZM11.4517 18C10.3018 18 9.18622 17.6087 8.28834 16.8904L7.66365 17.6712C8.73884 18.5314 10.0748 19 11.4517 19V18ZM17 12.7894C17 15.6671 14.6671 18 11.7894 18V19C15.2194 19 18 16.2194 18 12.7894H17ZM16.5 9C16.7761 9 17 9.22386 17 9.5H18C18 8.67157 17.3284 8 16.5 8V9ZM12.5 5C12.7761 5 13 5.22386 13 5.5H14C14 4.67157 13.3284 4 12.5 4V5ZM7.66421 12.4571C7.37153 12.1644 6.97457 12 6.56066 12V13C6.70936 13 6.85196 13.0591 6.95711 13.1642L7.66421 12.4571ZM12.5 4C11.6716 4 11 4.67157 11 5.5H12C12 5.22386 12.2239 5 12.5 5V4ZM8.28834 16.8904C7.68926 16.4111 7.18041 15.8289 6.78569 15.171L5.92819 15.6855C6.38407 16.4453 6.97175 17.1177 7.66365 17.6712L8.28834 16.8904ZM14.5 7C14.7761 7 15 7.22386 15 7.5H16C16 6.67157 15.3284 6 14.5 6V7ZM6.09614 14.0217C6.03323 13.9169 6 13.7969 6 13.6746H5C5 13.9782 5.08249 14.276 5.23865 14.5362L6.09614 14.0217ZM9 7.28741C9 7.12868 9.12868 7 9.28741 7V6C8.57639 6 8 6.57639 8 7.28741H9Z" fill="currentColor">
+            </path>
+            <path d="M12 22.5C13.0425 22.5 14.0494 22.3481 15 22.0652C19.3372 20.7744 22.5 16.7565 22.5 12C22.5 11.8324 22.4961 11.6657 22.4883 11.5C22.4804 11.3323 22.4686 11.1656 22.453 11M12 1.5C10.1898 1.5 8.48662 1.95807 7 2.76462C5.21081 3.73533 3.73533 5.21081 2.76462 7C2.55478 7.38677 2.36853 7.78821 2.20779 8.20237C1.90171 8.99106 1.68816 9.82592 1.58048 10.6936C1.52736 11.1216 1.5 11.5576 1.5 12C1.5 12.1676 1.50393 12.3343 1.5117 12.5C1.51956 12.6677 1.53136 12.8344 1.547 13M15 1.93482C15.7001 2.14316 16.3695 2.42255 17 2.76462M18.6696 3.88999C19.2012 4.32763 19.6889 4.81651 20.1254 5.34908M21.2354 7C21.5774 7.6305 21.8568 8.29995 22.0652 9M9 22.0652C8.29995 21.8568 7.6305 21.5774 7 21.2354M5.34236 20.1199C4.8124 19.6848 4.32579 19.1989 3.88999 18.6696M2.76462 17C2.42255 16.3695 2.14316 15.7001 1.93482 15" stroke="currentColor"></path></svg>
+          <h4 class="font-display text-xl text-slate-12 leading-[32px]">Faster Time to Closing</h4>
+        </div>
+        <p class="text-sm text-gray-400">Send emails from the region closest to your users. Reduce delivery latency with North American, South American, European, and Asian regions.</p>
+      </div>
+      <!-- Card 6 -->
+      <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6">
+        <div class="flex flex-row gap-3 items-center mb-2">
+    <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><rect height="17" rx="3.5" stroke="currentColor" width="21" x="1.5" y="2.5"></rect><path d="M6 22.5H18" stroke="currentColor"></path><circle cx="10" cy="11" r="4.5" stroke="currentColor"></circle><path d="M11.5 11C11.5 12.3334 11.2829 13.5175 10.95 14.3498C10.783 14.7674 10.5966 15.0717 10.4152 15.2635C10.2348 15.4543 10.0944 15.5 10 15.5C9.90564 15.5 9.76516 15.4543 9.58479 15.2635C9.40342 15.0717 9.21704 14.7674 9.05002 14.3498C8.7171 13.5175 8.5 12.3334 8.5 11C8.5 9.66661 8.7171 8.48248 9.05002 7.65016C9.21704 7.23261 9.40342 6.92826 9.58479 6.73648C9.76516 6.54575 9.90564 6.5 10 6.5C10.0944 6.5 10.2348 6.54575 10.4152 6.73648C10.5966 6.92826 10.783 7.23261 10.95 7.65016C11.2829 8.48248 11.5 9.66661 11.5 11Z" stroke="currentColor"></path>
+      <path d="M5.5 11.5H14.5" stroke="currentColor"></path><path d="M18.5 8V12M18.5 13V14" stroke="currentColor"></path>
+    </svg>      
+     <path d="M12 22.5C13.0425 22.5 14.0494 22.3481 15 22.0652C19.3372 20.7744 22.5 16.7565 22.5 12C22.5 11.8324 22.4961 11.6657 22.4883 11.5C22.4804 11.3323 22.4686 11.1656 22.453 11M12 1.5C10.1898 1.5 8.48662 1.95807 7 2.76462C5.21081 3.73533 3.73533 5.21081 2.76462 7C2.55478 7.38677 2.36853 7.78821 2.20779 8.20237C1.90171 8.99106 1.68816 9.82592 1.58048 10.6936C1.52736 11.1216 1.5 11.5576 1.5 12C1.5 12.1676 1.50393 12.3343 1.5117 12.5C1.51956 12.6677 1.53136 12.8344 1.547 13M15 1.93482C15.7001 2.14316 16.3695 2.42255 17 2.76462M18.6696 3.88999C19.2012 4.32763 19.6889 4.81651 20.1254 5.34908M21.2354 7C21.5774 7.6305 21.8568 8.29995 22.0652 9M9 22.0652C8.29995 21.8568 7.6305 21.5774 7 21.2354M5.34236 20.1199C4.8124 19.6848 4.32579 19.1989 3.88999 18.6696M2.76462 17C2.42255 16.3695 2.14316 15.7001 1.93482 15" stroke="currentColor"></path></svg>
+          <h4 class="font-display text-xl text-slate-12 leading-[32px]">On‑Demand Sales Team</h4>
+        </div>
+        <p class="text-sm text-gray-400">Throttle your sales team <class="cursor-help underline decoration-dotted underline-offset-2 text-slate-12">On Demand</span>. Receive weekly reports and adjust your sale team and  <span class="cursor-help underline decoration-dotted underline-offset-2 text-slate-12">on the fly</span> to meet your company needs.</p>
+      </div>
+    </div>
+  </section> 
 
-  <!-- CTA -->
-  <section class="relative border-t border-white/10 bg-black/30"> 
-    <div class="relative mx-auto max-w-7xl px-6 py-16 text-center">
-      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Start closing deals today</h2>
-      <div class="mt-6">
-        <a href="#get-started" class="inline-flex items-center rounded-lg bg-accent px-6 py-3 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40">Book a call to double your close rate</a>
+  <!-- Pricing -->
+  <section id="pricing" class="border-t border-white/10 bg-black/20">
+    <div class="mx-auto max-w-7xl px-6 py-10">  
+      <div class="relative mx-auto max-w-7xl px-6 py-6 text-center">
+        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Pricing Features</h2>
+        <p class="mt-2 text-sm text-gray-400">Custom Pricing Available.</p>
       </div>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 items-center opacity-75">
+        <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="flex flex-row gap-3 items-center mb-2">
+            <h4 class="font-display text-xl text-slate-12 leading-[32px]">Commission Only</h4>
+          </div>
+          <p class="text-sm text-gray-400">
+              Pay only for results—our <span class="cursor-help underline decoration-dotted underline-offset-2 text-slate-12">commission-only model</span> means you never pay upfront fees or retainers. You get a motivated sales team focused on closing deals and driving real revenue for your business.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="flex flex-row gap-3 items-center mb-2">
+            <h4 class="font-display text-xl text-slate-12 leading-[32px]">Simple Onboarding</h4>
+          </div>
+          <p class="text-sm text-gray-400">
+            Get started in minutes with our seamless onboarding process. <span class="cursor-help underline decoration-dotted underline-offset-2 text-slate-12">No complicated setup or training</span> required—just provide your lead details and our expert team takes care of the rest.
+          </p> 
+        </div>  
+        <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="flex flex-row gap-3 items-center mb-2">
+            <h4 class="font-display text-xl text-slate-12 leading-[32px]">No Sales Hires</h4>
+          </div>
+          <p class="text-sm text-gray-400">Eliminate the hassle of <span class="cursor-help underline decoration-dotted underline-offset-2 text-slate-12">recruiting and managing</span> a sales team. Our experienced professionals handle every lead, so you can focus on growing your business without the overhead of new hires.</p>
+        </div> 
+      </div>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6 items-center opacity-75">
+        <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="flex flex-row gap-3 items-center mb-2">
+            <h4 class="font-display text-xl text-slate-12 leading-[32px]">100% Guarantee</h4>
+          </div>
+          <p class="text-sm text-gray-400">We stand by our results. If you’re not satisfied with our performance, you don’t pay. Our <span class="cursor-help underline decoration-dotted underline-offset-2 text-slate-12">risk-free guarantee</span> ensures you only invest in real, measurable outcomes.</p>
+        </div> 
+        <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="flex flex-row gap-3 items-center mb-2">
+            <h4 class="font-display text-xl text-slate-12 leading-[32px]">No Training</h4>
+          </div>
+          <p class="text-sm text-gray-400">Skip the <span class="cursor-help underline decoration-dotted underline-offset-2 text-slate-12">time and expense of onboarding and training</span>. Our sales experts are ready to represent your brand and close deals from day one—no ramp-up required.</p>
+        </div> 
+        <div class="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/5 p-6">
+          <div class="flex flex-row gap-3 items-center mb-2">
+            <h4 class="font-display text-xl text-slate-12 leading-[32px]">No setup on your part</h4>
+          </div>
+          <p class="text-sm text-gray-400">Enjoy a hands-off experience. We handle all the <span class="cursor-help underline decoration-dotted underline-offset-2 text-slate-12">setup and integration</span>, so you can start converting leads immediately—no technical work or configuration needed from your team.</p>
+        </div>
+      </div>
+
+
+   
     </div>
-  </section>
  
 
+  </section>
     
   <!-- Section: Book a Call -->
-  <div class="relative mx-auto max-w-7xl px-6 py-6 text-center">
-    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Book a free sales consultation</h2>
-    <p class="mt-2 text-sm text-gray-400">Book a call. Stop wasting time and leads. Start closing today.</p>
-  </div>
   <section id="bookcall" class="mx-auto max-w-7xl px-6 py-2">
+  <div class="relative mx-auto max-w-7xl px-6 py-6 text-center">
+    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">See how we can improve your conversion</h2>
+    <p class="mt-2 text-sm text-gray-400">Stop wasting leads. Double your closing rates.</p>
+  </div>
     <div class="block mx-auto max-w-3xl rounded-lg bg-dark p-6 dark">
       <form novalidate>
-        <div class="grid grid-cols-3 gap-4">
-          <!--First name input-->
-          <div class="relative mb-6" data-twe-input-wrapper-init>
-            <input
-              type="text"
-              required
-              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
-              id="exampleInput123"
-              aria-describedby="error-first-name"
-              placeholder="First name" />
-            <label
-              for="exampleInput123"
-              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-              >First name
-            </label>
-            <p id="error-first-name" data-error class="mt-1 hidden text-xs text-red-400"></p>
+        <div class="grid grid-cols-1 gap-6">
+          <!--First row: First, Last, Email-->
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+            </div> 
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+            </div>
           </div>
-
-          <!--Last name input-->
-          <div class="relative mb-6" data-twe-input-wrapper-init>
-            <input
-              type="text"
-              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
-              id="exampleInput124"
-              aria-describedby="emailHelp124"
-              placeholder="Last name" />
-            <label
-              for="exampleInput124"
-              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-              >Last name
-            </label>
+          <!--Second row: Phone, Company, Company Size-->
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company (Ex. Google)</label>
+            </div> 
+            <div class="relative z-0 w-full mb-5 group">
+              <select name="floating_company_size" id="floating_company_size" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" required>
+                <option value="" disabled selected>Select company size</option>
+                <option value="1-10">1-10 employees</option>
+                <option value="11-50">11-50 employees</option>
+                <option value="51-200">51-200 employees</option>
+                <option value="201-500">201-500 employees</option>
+                <option value="501-1000">501-1000 employees</option>
+                <option value="1001+">1001+ employees</option>
+              </select>
+              <label for="floating_company_size" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company Size</label>
+            </div>
           </div>
-          <!--Email input-->
-          <div class="relative mb-6" data-twe-input-wrapper-init>
-            <input
-              type="email"
-              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
-              id="exampleInput125"
-              placeholder="Email address" />
-            <label
-              for="exampleInput125"
-              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
-              >Email address
-            </label>
+          <!--Submit button and note-->
+          <div class="flex flex-col items-end">
+            <button
+              type="submit"
+              class="inline-flex items-center rounded-lg bg-accent px-6 py-3 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40"
+              data-twe-ripple-init
+              data-twe-ripple-color="light">
+              send request >>  
+            </button>
+            <p class="mt-2 text-xs text-gray-500 text-right">No spam. We'll never share your info.</p>
           </div>
-
-          <!--Phone (US) input-->
-          <div class="relative mb-6 col-span-2" data-twe-input-wrapper-init>
-            <input
-              type="tel"
-              required
-              inputmode="tel"
-              autocomplete="tel"
-              pattern="^\\+?1?\\s*\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$"
-              class="peer block min-h-[auto] w-full rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[twe-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill [&:not([data-twe-input-placeholder-active])]:placeholder:opacity-0"
-              id="exampleInput126"
-              aria-describedby="error-phone"
-              placeholder="Phone (US)" />
-            <label
-              for="exampleInput126"
-              class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[twe-input-state-active]:-translate-y-[0.9rem] peer-data-[twe-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-neutral-200"
-              >Phone (US)
-            </label>
-            <p id="error-phone" data-error class="mt-1 hidden text-xs text-red-400"></p>
-          </div>
-
-          <!--Submit button in 3rd column of 2nd row-->
-          <button
-            type="submit"
-            class="col-start-3 inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]"
-            data-twe-ripple-init
-            data-twe-ripple-color="light">
-            Book Your Free Call 
-          </button>
-          <p class="col-start-3 mt-2 text-xs text-gray-500">No spam. We'll never share your info.</p>
         </div>
       </form>
     </div>
@@ -342,6 +427,11 @@
           <span class="font-medium text-white">1 Minute Sales</span>
         </div>
         <p class="mt-2 text-xs">© 2025 1 Minute Sales. All rights reserved.</p>
+        <p class="mt-2 text-xs">
+        30 North Gould Street, Suite 5531<br>
+        Sheridan WY, 82801<br>
+        <a href="tel:+14155551234" class="hover:text-white underline">+1 (831) 744-7749</a>
+      </p>
       </div>
       <div class="flex gap-8">
         <div>
@@ -358,6 +448,8 @@
             <li><a class="hover:text-white" href="#careers">Careers</a></li>
             <li><a class="hover:text-white" href="#bookcall">Book a Call</a></li>
             <li><a class="hover:text-white" href="https://sales.1minutesales.com">Sales Sign In</a></li> 
+            <li><a class="hover:text-white" href="privacy.html">Privacy Policy</a></li>
+            <li><a class="hover:text-white" href="terms.html">Terms of Service</a></li>
           </ul>
         </div>
       </div>

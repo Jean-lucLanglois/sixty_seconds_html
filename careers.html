@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Minute Sales — Double your closing rate</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    // Tailwind config: Inter font and accent color similar to Resend
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            accent: '#D3BC5F', // emerald-ish green
+            bgdeep: '#0B0F12',
+          },
+          boxShadow: {
+            glow: '0 0 40px 0 rgba(34, 211, 166, 0.15)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #0B0F12;
+      --grid: rgba(255,255,255,0.04);
+      --ring: rgba(204, 214, 26, 0.15);
+    }
+    /* Subtle grid background */
+    .bg-grid {
+      background-image:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: 24px 24px;
+      background-position: -1px -1px;
+    }
+    /* Soft green glows */
+    .glow-layer::before,
+    .glow-layer::after {
+      content: "";
+      position: absolute;
+      inset: -10% -10% auto -10%;
+      height: 60%;
+      background: radial-gradient(600px 200px at 70% -20%, var(--ring), transparent 60%);
+      pointer-events: none;
+    }
+    .glow-layer::after {
+      inset: auto -10% -20% -10%;
+      height: 50%;
+      background: radial-gradient(500px 200px at 15% 110%, rgba(211, 214, 15, 0.12), transparent 65%);
+    }
+    /* Gradient border card */
+    .gradient-border {
+      position: relative;
+      border-radius: 16px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
+    }
+    .gradient-border::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(210, 221, 8, 0.4), rgba(255,255,255,0.06));
+      mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+              mask-composite: exclude;
+      pointer-events: none;
+    }
+    /* Code block styling */
+    .code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+  </style>
+  <meta name="description" content="Leads converted to sales in a minute.">
+  <link rel="canonical" href="https://www.1minutesales.com/">
+</head>
+<body class="bg-bgdeep text-white font-inter antialiased selection:bg-accent/20 selection:text-white">
+
+  <!-- Site chrome with subtle blur -->
+  <header class="top-0 z-40 border-b border-white/10 bg-black/40 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a class="mb-4 me-2 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0" href="#">
+            <img src="img/logo/1minutesale-logo-white.png" alt="1 Minute Sales company logo" loading="lazy">
+          </a>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+        <a class="hover:text-white" href="index.html/#features">Features</a>
+        <a class="hover:text-white" href="index.html/#pricing">Pricing</a> 
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="index.html/#bookcall" class="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40">Get started <span>→</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid"></div>
+    <div class="absolute inset-0 glow-layer"></div>
+    <div class="relative mx-auto max-w-7xl px-6 pt-20 pb-16 md:pt-28 md:pb-24">
+      <div class="flex flex-col-reverse md:flex-row items-center gap-12">
+        <!-- Left: copy -->
+        <div class="flex-1">
+          <h1 class="mt-5 text-4xl md:text-6xl font-semibold tracking-tight">
+            Explore employment opportunities...
+          </h1>
+          <p class="mt-5 max-w-2xl text-base md:text-lg text-gray-400">
+            Join our commission-based sales team.
+          </p>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  
+    
+  <!-- Section: Join our Team-->
+  <section id="bookcall" class="mx-auto max-w-7xl px-6 py-2">
+  <div class="relative mx-auto max-w-7xl px-6 py-6 text-center">
+    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Join our Team</h2> 
+  </div>
+    <div class="block mx-auto max-w-3xl rounded-lg bg-dark p-6 dark">
+      <form novalidate id="join_our_team">
+        <div class="grid grid-cols-1 gap-6">
+          <!--First row: First, Last, Email-->
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+            </div> 
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+            </div>
+            <div class="relative z-0 w-full mb-5 group">
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+                <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+            </div>
+          </div>
+          <!--Submit button and note-->
+          <div>
+            <button
+              type="submit"
+              class="inline-flex items-center rounded-lg bg-accent px-6 py-3 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40"
+              data-twe-ripple-init
+              data-twe-ripple-color="light">
+              Book Your Free Call 
+            </button>
+            <p class="mt-2 text-xs text-gray-500">No spam. We'll never share your info.</p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- Section: Contact -->
+  </section>
+
+
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.querySelector('#join_our_team form');
+      if (!form) return;
+
+      const first = form.querySelector('#floating_first_name');
+      const last = form.querySelector('#floating_last_name');
+      const phone = form.querySelector('#floating_phone');
+      const phoneRe = /^\+?1?\s*\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
+
+      function getErrorEl(input) {
+        const wrap = input.closest('[data-twe-input-wrapper-init]');
+        return wrap ? wrap.querySelector('[data-error]') : null;
+      }
+
+      function showError(input, message) {
+        const errorEl = getErrorEl(input);
+        if (errorEl) {
+          errorEl.textContent = message;
+          errorEl.classList.remove('hidden');
+        }
+        input.classList.add('ring-1', 'ring-red-500');
+        input.setAttribute('aria-invalid', 'true');
+      }
+
+      function clearError(input) {
+        const errorEl = getErrorEl(input);
+        if (errorEl) {
+          errorEl.textContent = '';
+          errorEl.classList.add('hidden');
+        }
+        input.classList.remove('ring-1', 'ring-red-500');
+        input.removeAttribute('aria-invalid');
+      }
+
+      first.addEventListener('input', () => {
+        if (first.value.trim()) clearError(first);
+      });
+
+      phone.addEventListener('input', () => {
+        if (phoneRe.test(phone.value.trim())) clearError(phone);
+      });
+
+      form.addEventListener('submit', (e) => {
+        let valid = true;
+
+        if (!first.value.trim()) {
+          showError(first, 'First name is required');
+          valid = false;
+        }
+
+        if (!last.value.trim()) {
+          showError(last, 'Last name is required');
+          valid = false;
+        }
+
+        const phoneVal = phone.value.trim();
+        if (!phoneRe.test(phoneVal)) {
+          showError(phone, 'Enter a valid US phone (e.g., 555-123-4567)');
+          valid = false;
+        }
+
+        if (!valid) e.preventDefault();
+      });
+    });
+  </script>
+  <!-- Footer -->
+  <footer class="border-t border-white/10">
+    <div class="mx-auto max-w-7xl px-6 py-10 text-sm text-gray-400 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
+      <div>
+        <div class="flex items-center gap-2"> 
+          <span class="font-medium text-white">1 Minute Sales</span>
+        </div>
+        <p class="mt-2 text-xs">© 2025 1 Minute Sales. All rights reserved.</p>        
+        <p class="mt-2 text-xs">
+        30 North Gould Street, Suite 5531<br>
+        Sheridan WY, 82801<br>
+        <a href="tel:+14155551234" class="hover:text-white underline">+1 (831) 744-7749</a>
+      </p>
+      </div>
+      <div class="flex gap-8">
+        <div>
+          <div class="text-white text-xs font-semibold uppercase tracking-wider">Product</div>
+          <ul class="mt-2 space-y-2">
+            <li><a class="hover:text-white" href="index.html/#features">Features</a></li>
+            <li><a class="hover:text-white" href="index.html/#pricing">Pricing</a></li> 
+          </ul>
+        </div>
+        <div>
+          <div class="text-white text-xs font-semibold uppercase tracking-wider">Company</div>
+          <ul class="mt-2 space-y-2">
+            <li><a class="hover:text-white" href="index.html/#about">About</a></li>
+            <li><a class="hover:text-white" href="index.html/#careers">Careers</a></li>
+            <li><a class="hover:text-white" href="index.html/#bookcall">Book a Call</a></li>
+            <li><a class="hover:text-white" href="https://sales.1minutesales.com">Sales Sign In</a></li> 
+            <li><a class="hover:text-white" href="index.html/#privacy.html">Privacy Policy</a></li>
+            <li><a class="hover:text-white" href="index.html/#terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
