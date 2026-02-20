@@ -565,171 +565,20 @@
     </div>
   </div>
     
-  <!-- Section: Book a Call -->
-  <section id="bookcall" class="mx-auto max-w-7xl px-6 py-2">
-  <div class="relative mx-auto max-w-7xl px-6 py-6 text-center">
-    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">See how we can improve your conversion</h2>
-    <p class="mt-2 text-sm text-gray-400">Stop wasting leads. Double your closing rates.</p>
-  </div>
-    <div class="block mx-auto max-w-3xl rounded-lg bg-dark p-6 dark">
-      <form novalidate>
-        <div class="grid grid-cols-1 gap-6">
-          <!--First row: First, Last, Email-->
-          <div class="grid md:grid-cols-2 gap-6">
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
-            </div>
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
-            </div> 
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
-            </div>
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
-            </div>
-          </div>
-          <!--Second row: Phone, Company, Company Size-->
-          <div class="grid md:grid-cols-2 gap-6">
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company (Ex. Google)</label>
-            </div> 
-            <div class="relative z-0 w-full mb-5 group">
-              <select name="floating_company_size" id="floating_company_size" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" required>
-                <option value="" disabled selected>Select company size</option>
-                <option value="1-10">1-10 employees</option>
-                <option value="11-50">11-50 employees</option>
-                <option value="51-200">51-200 employees</option>
-                <option value="201-500">201-500 employees</option>
-                <option value="501-1000">501-1000 employees</option>
-                <option value="1001+">1001+ employees</option>
-              </select>
-              <label for="floating_company_size" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company Size</label>
-            </div>
-          </div>
-          <!--Submit button and note-->
-          <div class="flex flex-col items-end">
-            <button
-              type="submit"
-              class="inline-flex items-center rounded-lg bg-accent px-6 py-3 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40"
-              data-twe-ripple-init
-              data-twe-ripple-color="light">
-              send request >>  
-            </button>
-            <p class="mt-2 text-xs text-gray-500 text-right">No spam. We'll never share your info.</p>
-          </div>
-        </div>
-      </form>
+  <!-- Section: Registration CTA -->
+  <section id="bookcall" class="mx-auto max-w-7xl px-6 py-16 text-center">
+    <div class="relative mx-auto max-w-3xl">
+      <h2 class="text-2xl md:text-4xl font-semibold tracking-tight">See how we can improve your conversion</h2>
+      <p class="mt-4 text-base text-gray-400">Stop wasting leads. Double your closing rates.</p>
+      <p class="mt-6 text-sm text-gray-500">Tell us about your business and we'll show you the opportunity.</p>
+      <a href="/register.html" class="inline-flex items-center gap-2 mt-6 rounded-lg bg-accent px-8 py-3 text-base font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40 transition">
+        Get Started → 
+      </a>
     </div>
-    <!-- Section: Contact -->
   </section>
 
 
 
-
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const form = document.querySelector('#bookcall form');
-      if (!form) return;
-
-      const first = form.querySelector('#floating_first_name');
-      const phone = form.querySelector('#floating_phone');
-      const phoneRe = /^\+?1?\s*\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
-
-      function getErrorEl(input) {
-        const wrap = input.closest('[data-twe-input-wrapper-init]');
-        return wrap ? wrap.querySelector('[data-error]') : null;
-      }
-
-      function showError(input, message) {
-        const errorEl = getErrorEl(input);
-        if (errorEl) {
-          errorEl.textContent = message;
-          errorEl.classList.remove('hidden');
-        }
-        input.classList.add('ring-1', 'ring-red-500');
-        input.setAttribute('aria-invalid', 'true');
-      }
-
-      function clearError(input) {
-        const errorEl = getErrorEl(input);
-        if (errorEl) {
-          errorEl.textContent = '';
-          errorEl.classList.add('hidden');
-        }
-        input.classList.remove('ring-1', 'ring-red-500');
-        input.removeAttribute('aria-invalid');
-      }
-
-      first.addEventListener('input', () => {
-        if (first.value.trim()) clearError(first);
-      });
-
-      phone.addEventListener('input', () => {
-        if (phoneRe.test(phone.value.trim())) clearError(phone);
-      });
-
-      form.addEventListener('submit', (e) => {
-        let valid = true;
-
-        if (!first.value.trim()) {
-          showError(first, 'First name is required');
-          valid = false;
-        }
-
-        const phoneVal = phone.value.trim();
-        if (!phoneRe.test(phoneVal)) {
-          showError(phone, 'Enter a valid US phone (e.g., 555-123-4567)');
-          valid = false;
-        }
-
-        if (!valid) e.preventDefault();
-      });
-    });
-  </script>
-  <!-- Footer -->
-  <footer class="border-t border-white/10">
-    <div class="mx-auto max-w-7xl px-6 py-10 text-sm text-gray-400 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
-      <div>
-        <div class="flex items-center gap-2"> 
-          <span class="font-medium text-white">1 Minute Sales</span>
-        </div>
-        <p class="mt-2 text-xs">© 2025 1 Minute Sales. All rights reserved.</p>
-        <p class="mt-2 text-xs">
-        30 North Gould Street, Suite 5531<br>
-        Sheridan WY, 82801<br>
-        <a href="tel:+14155551234" class="hover:text-white underline">+1 (831) 744-7749</a>
-      </p>
-      </div>
-      <div class="flex gap-8">
-        <div>
-          <div class="text-white text-xs font-semibold uppercase tracking-wider">Product</div>
-          <ul class="mt-2 space-y-2">
-            <li><a class="hover:text-white" href="#features">Features</a></li>
-            <li><a class="hover:text-white" href="/blog/">Blog</a></li>
-            <li><a class="hover:text-white" href="#pricing">Pricing</a></li> 
-          </ul>
-        </div>
-        <div>
-          <div class="text-white text-xs font-semibold uppercase tracking-wider">Company</div>
-          <ul class="mt-2 space-y-2">
-            <li><a class="hover:text-white" href="careers.html">About</a></li>
-            <li><a class="hover:text-white" href="careers.html">Careers</a></li>
-            <li><a class="hover:text-white" href="#bookcall">Book a Call</a></li>
-            <li><a class="hover:text-white" href="https://sales.1minutesales.com">Sales Sign In</a></li> 
-            <li><a class="hover:text-white" href="privacy_policy.html">Privacy Policy</a></li>
-            <li><a class="hover:text-white" href="terms_of_service.html">Terms of Service</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <script>
     // Pricing Modal Functions

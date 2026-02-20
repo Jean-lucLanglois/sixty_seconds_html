@@ -1,0 +1,91 @@
+{
+  "name": "Registration Form to Email",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "registration",
+        "responseMode": "responseNode",
+        "authentication": "none"
+      },
+      "id": "uuid:webhook-node",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "operation": "notification"
+      },
+      "id": "uuid:send-email-node",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.emailSendGrid",
+      "typeVersion": 1,
+      "position": [500, 300],
+      "credentials": {
+        "sendGridApi": "SendGrid API"
+      }
+    },
+    {
+      "parameters": {
+        "operation": "notification"
+      },
+      "id": "uuid:send-email-internal",
+      "name": "Send Email (Internal Notification)",
+      "type": "n8n-nodes-base.emailSendGrid",
+      "typeVersion": 1,
+      "position": [700, 300],
+      "credentials": {
+        "sendGridApi": "SendGrid API"
+      }
+    },
+    {
+      "parameters": {},
+      "id": "uuid:response-node",
+      "name": "HTTP Response",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [900, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Send Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Email": {
+      "main": [
+        [
+          {
+            "node": "Send Email (Internal Notification)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Email (Internal Notification)": {
+      "main": [
+        [
+          {
+            "node": "HTTP Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {},
+  "staticData": null,
+  "tags": ["registration", "email", "forms"],
+  "pinData": {}
+}
