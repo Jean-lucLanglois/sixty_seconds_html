@@ -361,12 +361,209 @@
         </div>
       </div>
 
+      <!-- Pricing Cards -->
+      <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        <!-- Plan 1: AI Agents Only -->
+        <div class="flex flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/8 to-white/2 p-8 hover:border-accent/50 transition-colors">
+          <h3 class="text-xl font-semibold text-white">AI Agents Only</h3>
+          <div class="mt-4 flex items-baseline gap-1">
+            <span class="text-4xl font-bold text-accent">$199</span>
+            <span class="text-gray-400">/month</span>
+          </div>
+          <p class="mt-2 text-sm text-gray-400">Fully automated lead engagement</p>
+          
+          <ul class="mt-8 space-y-4 flex-1">
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">Real-time lead engagement via SMS, WhatsApp, email, or voice</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">AI-powered lead qualification & nurturing</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">Multi-channel communication</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">24/7 automated responses</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">Lead analytics dashboard</span>
+            </li>
+          </ul>
 
-   
+          <p class="mt-6 text-xs text-gray-500">* Telecom & communication fees not included</p>
+          <p class="mt-1 text-xs text-gray-500">Billed monthly or annually</p>
+          
+          <button onclick="openPricingModal('AI Agents Only', '$199/month')" class="mt-8 w-full inline-flex items-center justify-center gap-2 rounded-lg bg-accent/20 border border-accent/40 px-4 py-3 text-sm font-medium text-accent hover:bg-accent/30 transition-colors">
+            Get Started <span>→</span>
+          </button>
+        </div>
+
+        <!-- Plan 2: AI Enhanced Sales Agent Rep -->
+        <div class="flex flex-col rounded-2xl border-2 border-accent bg-gradient-to-b from-accent/10 to-accent/5 p-8 transform md:scale-105 relative">
+          <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-accent px-4 py-1 rounded-full text-xs font-semibold text-black">
+            Most Popular
+          </div>
+          <h3 class="text-xl font-semibold text-white">AI Enhanced Sales Agent</h3>
+          <div class="mt-4 flex items-baseline gap-1">
+            <span class="text-4xl font-bold text-accent">$499</span>
+            <span class="text-gray-400">/month</span>
+          </div>
+          <p class="mt-2 text-sm text-gray-400">+ Commission on closed deals</p>
+          
+          <ul class="mt-8 space-y-4 flex-1">
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">Real sales professionals handle lead outreach</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">AI-enhanced closing tools & scripts</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">Real-time lead response (60 seconds)</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">Dedicated account manager</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">Performance analytics & optimization</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">Commission structure: 15-25% per deal</span>
+            </li>
+          </ul>
+
+          <p class="mt-6 text-xs text-gray-500">* Telecom & communication fees not included</p>
+          <p class="mt-1 text-xs text-gray-500">Billed monthly or annually</p>
+          
+          <button onclick="openPricingModal('AI Enhanced Sales Agent', '$499/month + Commission')" class="mt-8 w-full inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-4 py-3 text-sm font-medium text-black hover:brightness-110 transition-all">
+            Get Started <span>→</span>
+          </button>
+        </div>
+
+        <!-- Plan 3: Your Sales Team -->
+        <div class="flex flex-col rounded-2xl border border-white/10 bg-gradient-to-b from-white/8 to-white/2 p-8 hover:border-accent/50 transition-colors">
+          <h3 class="text-xl font-semibold text-white">Your Sales Team Platform</h3>
+          <div class="mt-4 flex items-baseline gap-1">
+            <span class="text-3xl font-bold text-accent">Custom</span>
+          </div>
+          <p class="mt-2 text-sm text-gray-400">Empower your team to close more deals</p>
+          
+          <ul class="mt-8 space-y-4 flex-1">
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">White-label platform for your sales team</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">Real-time lead notifications & routing</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">AI-powered sales assistance & insights</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">CRM integration (Salesforce, HubSpot, etc.)</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">Custom workflows & automation</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent mt-1">✓</span>
+              <span class="text-sm text-gray-300">Dedicated implementation & support</span>
+            </li>
+          </ul>
+
+          <p class="mt-6 text-xs text-gray-500">* Telecom & communication fees not included</p>
+          <p class="mt-1 text-xs text-gray-500">Custom billing terms available</p>
+          
+          <button onclick="openPricingModal('Your Sales Team Platform', 'Custom Pricing')" class="mt-8 w-full inline-flex items-center justify-center gap-2 rounded-lg bg-accent/20 border border-accent/40 px-4 py-3 text-sm font-medium text-accent hover:bg-accent/30 transition-colors">
+            Get Quote <span>→</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pricing Note -->
+      <div class="mt-12 text-center">
+        <p class="text-sm text-gray-400">All plans include a 14-day free trial. <span class="text-accent font-medium">No credit card required.</span></p>
+      </div>
     </div>
  
 
   </section>
+
+  <!-- Pricing Modal -->
+  <div id="pricingModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden z-50 flex items-center justify-center p-4">
+    <div class="bg-bgdeep rounded-2xl border border-white/10 p-8 max-w-md w-full">
+      <div class="flex items-center justify-between mb-6">
+        <h3 class="text-2xl font-semibold text-white">Get Started</h3>
+        <button onclick="closePricingModal()" class="text-gray-400 hover:text-white text-2xl leading-none">×</button>
+      </div>
+      
+      <div class="mb-6 p-4 rounded-lg bg-white/5 border border-white/10">
+        <p class="text-sm text-gray-400">Selected Plan:</p>
+        <p class="text-lg font-semibold text-white mt-1" id="modalPlanName">AI Agents Only</p>
+        <p class="text-accent text-sm mt-2" id="modalPlanPrice">$199/month</p>
+      </div>
+
+      <form novalidate class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="relative z-0 w-full group">
+            <input type="text" name="modal_first_name" id="modal_first_name" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-accent peer" placeholder=" " required />
+            <label for="modal_first_name" class="peer-focus:font-medium absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-accent peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+          </div>
+          <div class="relative z-0 w-full group">
+            <input type="text" name="modal_last_name" id="modal_last_name" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-accent peer" placeholder=" " required />
+            <label for="modal_last_name" class="peer-focus:font-medium absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-accent peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+          </div>
+        </div>
+
+        <div class="relative z-0 w-full group">
+          <input type="email" name="modal_email" id="modal_email" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-accent peer" placeholder=" " required />
+          <label for="modal_email" class="peer-focus:font-medium absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-accent peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+        </div>
+
+        <div class="relative z-0 w-full group">
+          <input type="tel" name="modal_phone" id="modal_phone" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-accent peer" placeholder=" " required />
+          <label for="modal_phone" class="peer-focus:font-medium absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-accent peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number</label>
+        </div>
+
+        <div class="relative z-0 w-full group">
+          <input type="text" name="modal_company" id="modal_company" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-accent peer" placeholder=" " required />
+          <label for="modal_company" class="peer-focus:font-medium absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-accent peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company name</label>
+        </div>
+
+        <div class="relative z-0 w-full group pt-2">
+          <select name="modal_billing" id="modal_billing" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-accent peer" required>
+            <option value="" disabled selected class="bg-bgdeep">Select billing frequency</option>
+            <option value="monthly" class="bg-bgdeep">Monthly billing</option>
+            <option value="annual" class="bg-bgdeep">Annual billing (Save 15%)</option>
+          </select>
+          <label for="modal_billing" class="peer-focus:font-medium absolute text-sm text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 peer-focus:text-accent peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Billing frequency</label>
+        </div>
+
+        <div class="flex gap-3 pt-4">
+          <button type="button" onclick="closePricingModal()" class="flex-1 px-4 py-2 rounded-lg border border-gray-600 text-white hover:bg-white/5 transition-colors text-sm font-medium">
+            Cancel
+          </button>
+          <button type="submit" class="flex-1 px-4 py-2 rounded-lg bg-accent text-black hover:brightness-110 transition-all text-sm font-medium">
+            Start Trial
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
     
   <!-- Section: Book a Call -->
   <section id="bookcall" class="mx-auto max-w-7xl px-6 py-2">
@@ -533,6 +730,63 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Pricing Modal Functions
+    function openPricingModal(planName, planPrice) {
+      document.getElementById('modalPlanName').textContent = planName;
+      document.getElementById('modalPlanPrice').textContent = planPrice;
+      document.getElementById('pricingModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closePricingModal() {
+      document.getElementById('pricingModal').classList.add('hidden');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Close modal when clicking outside
+    document.addEventListener('DOMContentLoaded', function() {
+      const modal = document.getElementById('pricingModal');
+      modal.addEventListener('click', function(event) {
+        if (event.target === modal) {
+          closePricingModal();
+        }
+      });
+
+      // Handle form submission
+      const form = modal.querySelector('form');
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = {
+          firstName: document.getElementById('modal_first_name').value,
+          lastName: document.getElementById('modal_last_name').value,
+          email: document.getElementById('modal_email').value,
+          phone: document.getElementById('modal_phone').value,
+          company: document.getElementById('modal_company').value,
+          billingFrequency: document.getElementById('modal_billing').value,
+          plan: document.getElementById('modalPlanName').textContent,
+          price: document.getElementById('modalPlanPrice').textContent
+        };
+
+        console.log('Form submitted:', formData);
+        
+        // TODO: Send to backend service (e.g., email service, CRM, payment processor)
+        // For now, show success message
+        alert('Thank you! We will contact you shortly to set up your trial.');
+        closePricingModal();
+        form.reset();
+      });
+    });
+
+    // Keyboard shortcut to close modal (ESC key)
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        closePricingModal();
+      }
+    });
+  </script>
 
 </body>
 </html>
