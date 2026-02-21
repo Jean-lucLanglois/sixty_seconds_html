@@ -517,7 +517,7 @@
         <p class="text-accent text-sm mt-2" id="modalPlanPrice">$199/month</p>
       </div>
 
-      <form novalidate class="space-y-4">
+      <form class="space-y-4">
         <div class="grid grid-cols-2 gap-4">
           <div class="relative z-0 w-full group">
             <input type="text" name="modal_first_name" id="modal_first_name" class="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 appearance-none focus:outline-none focus:ring-0 focus:border-accent peer" placeholder=" " required />
@@ -607,20 +607,68 @@
       const form = modal.querySelector('form');
       form.addEventListener('submit', function(e) {
         e.preventDefault();
-        
+
+        // Custom validation: phone format and helpful messages
+        const phoneEl = document.getElementById('modal_phone');
+        const emailEl = document.getElementById('modal_email');
+        const firstEl = document.getElementById('modal_first_name');
+        const companyEl = document.getElementById('modal_company');
+
+        // US phone regex (accepts formats like 555-123-4567, (555) 123-4567, +1 555 123 4567)
+        const phoneRe = /^\+?1?\s*\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
+        const phoneVal = phoneEl.value.trim();
+
+        // Clear previous custom messages
+        phoneEl.setCustomValidity('');
+        emailEl.setCustomValidity('');
+        firstEl.setCustomValidity('');
+        companyEl.setCustomValidity('');
+
+        // Phone validation
+        if (!phoneRe.test(phoneVal)) {
+          phoneEl.setCustomValidity('Enter a valid US phone (e.g., 555-123-4567)');
+          phoneEl.reportValidity();
+          return;
+        }
+
+        // Ensure required text fields have custom messages for clarity
+        if (!firstEl.value.trim()) {
+          firstEl.setCustomValidity('Please enter your first name');
+          firstEl.reportValidity();
+          return;
+        }
+        if (!companyEl.value.trim()) {
+          companyEl.setCustomValidity('Please enter your company name');
+          companyEl.reportValidity();
+          return;
+        }
+
+        // Email input will be validated by browser, but provide a clearer message
+        if (!emailEl.checkValidity()) {
+          emailEl.setCustomValidity('Please enter a valid email address');
+          emailEl.reportValidity();
+          return;
+        }
+
+        // Final HTML5 validity check
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
         const formData = {
-          firstName: document.getElementById('modal_first_name').value,
+          firstName: firstEl.value,
           lastName: document.getElementById('modal_last_name').value,
-          email: document.getElementById('modal_email').value,
-          phone: document.getElementById('modal_phone').value,
-          company: document.getElementById('modal_company').value,
+          email: emailEl.value,
+          phone: phoneEl.value,
+          company: companyEl.value,
           billingFrequency: document.getElementById('modal_billing').value,
           plan: document.getElementById('modalPlanName').textContent,
           price: document.getElementById('modalPlanPrice').textContent
         };
 
         console.log('Form submitted:', formData);
-        
+
         // TODO: Send to backend service (e.g., email service, CRM, payment processor)
         // For now, show success message
         alert('Thank you! We will contact you shortly to set up your trial.');
