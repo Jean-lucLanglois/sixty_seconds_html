@@ -1,286 +1,524 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Careers at 1 Minute Sales | Join Our AI Sales Team</title>
-  <meta name="description" content="Join our team at 1 Minute Sales. Explore career opportunities in sales, support, and operations for our AI-powered lead conversion platform.">
-  <meta name="robots" content="index, follow">
-  <!-- Open Graph Tags -->
-  <meta property="og:title" content="Careers at 1 Minute Sales">
-  <meta property="og:description" content="Join our growing team and help businesses convert leads faster with AI.">
-  <meta property="og:url" content="https://www.1minutesales.com/careers.html">
-  <meta property="og:type" content="website">
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts: Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script>
-    // Tailwind config: Inter font and accent color similar to Resend
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            inter: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers at 1 Minute Sales | Join Our AI Sales Team</title>
+    <meta
+      name="description"
+      content="Join our team at 1 Minute Sales. Explore career opportunities in sales, support, and operations for our AI-powered lead conversion platform."
+    />
+    <meta name="robots" content="index, follow" />
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Careers at 1 Minute Sales" />
+    <meta
+      property="og:description"
+      content="Join our growing team and help businesses convert leads faster with AI."
+    />
+    <meta
+      property="og:url"
+      content="https://www.1minutesales.com/careers.html"
+    />
+    <meta property="og:type" content="website" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Tailwind config: Inter font and accent color similar to Resend
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: {
+              accent: "#D3BC5F", // emerald-ish green
+              bgdeep: "#0B0F12",
+            },
+            boxShadow: {
+              glow: "0 0 40px 0 rgba(34, 211, 166, 0.15)",
+            },
           },
-          colors: {
-            accent: '#D3BC5F', // emerald-ish green
-            bgdeep: '#0B0F12',
-          },
-          boxShadow: {
-            glow: '0 0 40px 0 rgba(34, 211, 166, 0.15)'
-          }
-        }
+        },
+      };
+    </script>
+    <style>
+      :root {
+        --bg: #0b0f12;
+        --grid: rgba(255, 255, 255, 0.04);
+        --ring: rgba(204, 214, 26, 0.15);
       }
-    }
-  </script>
-  <style>
-    :root {
-      --bg: #0B0F12;
-      --grid: rgba(255,255,255,0.04);
-      --ring: rgba(204, 214, 26, 0.15);
-    }
-    /* Subtle grid background */
-    .bg-grid {
-      background-image:
-        linear-gradient(var(--grid) 1px, transparent 1px),
-        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-      background-size: 24px 24px;
-      background-position: -1px -1px;
-    }
-    /* Soft green glows */
-    .glow-layer::before,
-    .glow-layer::after {
-      content: "";
-      position: absolute;
-      inset: -10% -10% auto -10%;
-      height: 60%;
-      background: radial-gradient(600px 200px at 70% -20%, var(--ring), transparent 60%);
-      pointer-events: none;
-    }
-    .glow-layer::after {
-      inset: auto -10% -20% -10%;
-      height: 50%;
-      background: radial-gradient(500px 200px at 15% 110%, rgba(211, 214, 15, 0.12), transparent 65%);
-    }
-    /* Gradient border card */
-    .gradient-border {
-      position: relative;
-      border-radius: 16px;
-      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.02));
-    }
-    .gradient-border::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      padding: 1px;
-      background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(210, 221, 8, 0.4), rgba(255,255,255,0.06));
-      mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-      -webkit-mask-composite: xor;
-              mask-composite: exclude;
-      pointer-events: none;
-    }
-    /* Code block styling */
-    .code {
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      font-size: 13px;
-      line-height: 1.6;
-    }
-  </style>
-  <link rel="canonical" href="https://www.1minutesales.com/careers.html">
-</head>
-<body class="bg-bgdeep text-white font-inter antialiased selection:bg-accent/20 selection:text-white">
-
-  <!-- Site chrome with subtle blur -->
-  <header class="top-0 z-40 border-b border-white/10 bg-black/40 backdrop-blur">
-    <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <a class="mb-4 me-2 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0" href="#">
-            <img src="img/logo/1minutesale-logo-white.png" alt="1 Minute Sales company logo" loading="lazy">
+      /* Subtle grid background */
+      .bg-grid {
+        background-image:
+          linear-gradient(var(--grid) 1px, transparent 1px),
+          linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+        background-size: 24px 24px;
+        background-position: -1px -1px;
+      }
+      /* Soft green glows */
+      .glow-layer::before,
+      .glow-layer::after {
+        content: "";
+        position: absolute;
+        inset: -10% -10% auto -10%;
+        height: 60%;
+        background: radial-gradient(
+          600px 200px at 70% -20%,
+          var(--ring),
+          transparent 60%
+        );
+        pointer-events: none;
+      }
+      .glow-layer::after {
+        inset: auto -10% -20% -10%;
+        height: 50%;
+        background: radial-gradient(
+          500px 200px at 15% 110%,
+          rgba(211, 214, 15, 0.12),
+          transparent 65%
+        );
+      }
+      /* Gradient border card */
+      .gradient-border {
+        position: relative;
+        border-radius: 16px;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.08),
+          rgba(255, 255, 255, 0.02)
+        );
+      }
+      .gradient-border::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 1px;
+        background: linear-gradient(
+          120deg,
+          rgba(255, 255, 255, 0.2),
+          rgba(210, 221, 8, 0.4),
+          rgba(255, 255, 255, 0.06)
+        );
+        mask:
+          linear-gradient(#000 0 0) content-box,
+          linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+      }
+      /* Code block styling */
+      .code {
+        font-family:
+          ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+        font-size: 13px;
+        line-height: 1.6;
+      }
+    </style>
+    <link rel="canonical" href="https://www.1minutesales.com/careers.html" />
+  </head>
+  <body
+    class="bg-bgdeep text-white font-inter antialiased selection:bg-accent/20 selection:text-white"
+  >
+    <!-- Site chrome with subtle blur -->
+    <header
+      class="top-0 z-40 border-b border-white/10 bg-black/40 backdrop-blur"
+    >
+      <div
+        class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <a
+            class="mb-4 me-2 mt-3 flex items-center text-neutral-900 hover:text-neutral-900 focus:text-neutral-900 dark:text-neutral-200 dark:hover:text-neutral-400 dark:focus:text-neutral-400 lg:mb-0 lg:mt-0"
+            href="#"
+          >
+            <img
+              src="img/logo/1minutesale-logo-white.png"
+              alt="1 Minute Sales company logo"
+              loading="lazy"
+            />
           </a>
+        </div>
+        <nav class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+          <a class="hover:text-white" href="index.html/#features">Features</a>
+          <a class="hover:text-white" href="index.html/#pricing">Pricing</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a
+            href="index.html/#bookcall"
+            class="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40"
+            >Get started <span>→</span></a
+          >
+        </div>
       </div>
-      <nav class="hidden md:flex items-center gap-8 text-sm text-gray-300">
-        <a class="hover:text-white" href="index.html/#features">Features</a>
-        <a class="hover:text-white" href="index.html/#pricing">Pricing</a> 
-      </nav>
-      <div class="flex items-center gap-3">
-        <a href="index.html/#bookcall" class="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40">Get started <span>→</span></a>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Hero -->
-  <section class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-grid"></div>
-    <div class="absolute inset-0 glow-layer"></div>
-    <div class="relative mx-auto max-w-7xl px-6 pt-20 pb-16 md:pt-28 md:pb-24">
-      <div class="flex flex-col-reverse md:flex-row items-center gap-12">
-        <!-- Left: copy -->
-        <div class="flex-1">
-          <h1 class="mt-5 text-4xl md:text-6xl font-semibold tracking-tight">
-            Explore employment opportunities...
-          </h1>
-          <p class="mt-5 max-w-2xl text-base md:text-lg text-gray-400">
-            Join our commission-based sales team.
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-grid"></div>
+      <div class="absolute inset-0 glow-layer"></div>
+      <div
+        class="relative mx-auto max-w-7xl px-6 pt-20 pb-16 md:pt-28 md:pb-24 text-center"
+      >
+        <h1 class="text-4xl md:text-5xl font-semibold tracking-tight">
+          Sales Careers at 1 Minute Sales
+        </h1>
+        <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-400">
+          Join a commission-driven, high-velocity sales team backed by AI tools
+          that help you close faster. We hire ambitious closers who want
+          uncapped earnings and real support.
+        </p>
+      </div>
+    </section>
+
+    <!-- Why Work With Us -->
+    <section class="mx-auto max-w-7xl px-6 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+          <h2 class="text-2xl font-semibold mb-4">Why work with us</h2>
+          <p class="text-sm text-gray-400 mb-4">
+            We combine human expertise with AI to give our sales team the best
+            chance to close — faster, smarter, and with better compensation.
           </p>
-        </div> 
-      </div>
-    </div>
-  </section>
+          <ul class="space-y-3 text-sm text-gray-300">
+            <li class="flex gap-3">
+              <span class="text-accent font-bold">✓</span> Competitive
+              commission structure with uncapped earnings
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent font-bold">✓</span> AI-assisted scripts
+              and real-time guidance
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent font-bold">✓</span> Flexible scheduling
+              and remote-first roles
+            </li>
+            <li class="flex gap-3">
+              <span class="text-accent font-bold">✓</span> Dedicated operations
+              and sales enablement support
+            </li>
+          </ul>
+        </div>
 
-  
-    
-  <!-- Section: Join our Team-->
-  <section id="bookcall" class="mx-auto max-w-7xl px-6 py-2">
-  <div class="relative mx-auto max-w-7xl px-6 py-6 text-center">
-    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Join our Team</h2> 
-  </div>
-    <div class="block mx-auto max-w-3xl rounded-lg bg-dark p-6 dark">
-      <form novalidate id="join_our_team">
-        <div class="grid grid-cols-1 gap-6">
-          <!--First row: First, Last, Email-->
-          <div class="grid md:grid-cols-2 gap-6">
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-8">
+          <h2 class="text-2xl font-semibold mb-4">Apply Now</h2>
+          <form
+            id="sales-careers-form"
+            class="space-y-4"
+            enctype="multipart/form-data"
+            novalidate
+          >
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                required
+                name="firstName"
+                id="firstName"
+                placeholder="First name"
+                class="rounded-lg bg-white/5 px-3 py-2 text-sm text-white placeholder-gray-500 border border-white/10 focus:outline-none"
+              />
+              <input
+                required
+                name="lastName"
+                id="lastName"
+                placeholder="Last name"
+                class="rounded-lg bg-white/5 px-3 py-2 text-sm text-white placeholder-gray-500 border border-white/10 focus:outline-none"
+              />
             </div>
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
-            </div> 
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                required
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email address"
+                class="rounded-lg bg-white/5 px-3 py-2 text-sm text-white placeholder-gray-500 border border-white/10 focus:outline-none"
+              />
+              <input
+                required
+                type="tel"
+                pattern="^\+?1?\s*\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$"
+                name="phone"
+                id="phone"
+                placeholder="Phone (e.g., 555-123-4567)"
+                class="rounded-lg bg-white/5 px-3 py-2 text-sm text-white placeholder-gray-500 border border-white/10 focus:outline-none"
+              />
             </div>
-            <div class="relative z-0 w-full mb-5 group">
-                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
-                <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number (123-456-7890)</label>
+            <div>
+              <label class="text-sm text-gray-400 mb-2 block">Position</label>
+              <select
+                required
+                name="position"
+                id="position"
+                class="w-full rounded-lg bg-white/5 px-3 py-2 text-sm text-white border border-white/10"
+              >
+                <option value="">Select a role</option>
+                <option>Sales Representative</option>
+                <option>Account Executive</option>
+                <option>Sales Manager</option>
+              </select>
             </div>
-          </div>
-          <!--Submit button and note-->
-          <div>
+            <div>
+              <label class="text-sm text-gray-400 mb-2 block"
+                >Resume (PDF, DOC)</label
+              >
+              <input
+                required
+                type="file"
+                name="resume"
+                id="resume"
+                accept=".pdf,.doc,.docx"
+                class="w-full text-sm text-gray-300"
+              />
+            </div>
+            <div>
+              <label class="text-sm text-gray-400 mb-2 block"
+                >Cover letter</label
+              >
+              <textarea
+                name="cover"
+                id="cover"
+                rows="4"
+                placeholder="Brief cover letter"
+                class="w-full rounded-lg bg-white/5 px-3 py-2 text-sm text-white placeholder-gray-500 border border-white/10"
+              ></textarea>
+            </div>
+            <div class="flex items-center gap-3">
+              <input type="checkbox" id="consent" required class="h-4 w-4" />
+              <label for="consent" class="text-sm text-gray-400"
+                >I consent to having my data used to process this
+                application.</label
+              >
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="inline-flex items-center rounded-lg bg-accent px-6 py-3 text-sm font-medium text-black hover:brightness-110"
+              >
+                Submit Application
+              </button>
+            </div>
+            <p class="text-xs text-gray-500">
+              By applying you agree to our
+              <a href="/privacy_policy.html" class="underline hover:text-white"
+                >privacy policy</a
+              >.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document
+        .getElementById("sales-careers-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const form = e.target;
+          // Basic browser validation already runs; show confirmation
+          alert(
+            "Thanks — your application has been submitted. We will be in touch.",
+          );
+          form.reset();
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 mt-20">
+      <div
+        class="mx-auto max-w-7xl px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8"
+      >
+        <div>
+          <a href="/" class="flex items-center gap-3 mb-4">
+            <img
+              src="img/logo/1minutesale-logo-white.png"
+              alt="1 Minute Sales"
+              class="h-8"
+            />
+          </a>
+          <p class="text-sm text-gray-400 max-w-sm">
+            1 Minute Sales — Instant lead response and AI-assisted sales teams
+            that convert more leads in less time.
+          </p>
+          <p class="mt-4 text-xs text-gray-500">
+            30 North Gould Street, Suite 5531<br />Sheridan, WY 82801
+          </p>
+          <p class="mt-2 text-xs text-gray-500">
+            Phone:
+            <a href="tel:+18317447749" class="hover:text-white"
+              >+1 (831) 744-7749</a
+            ><br />Email:
+            <a href="mailto:hello@1minutesales.com" class="hover:text-white"
+              >hello@1minutesales.com</a
+            >
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold mb-4">Product</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>
+              <a href="/index.html#features" class="hover:text-white"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="/index.html#pricing" class="hover:text-white">Pricing</a>
+            </li>
+            <li>
+              <a href="/index.html#integrations" class="hover:text-white"
+                >Integrations</a
+              >
+            </li>
+            <li>
+              <a href="/register.html" class="hover:text-white">Get Started</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>
+              <a href="/careers.html" class="hover:text-white">Sales Careers</a>
+            </li>
+            <li>
+              <a href="/privacy_policy.html" class="hover:text-white"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="/terms_of_service.html" class="hover:text-white"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a href="/contact.html" class="hover:text-white">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold mb-4">Subscribe</h4>
+          <p class="text-sm text-gray-400 mb-4">
+            Get the latest on sales automation and conversion strategies.
+          </p>
+          <form
+            class="flex gap-2"
+            onsubmit="
+              event.preventDefault();
+              alert('Thanks — subscription saved!');
+              this.reset();
+            "
+          >
+            <input
+              type="email"
+              placeholder="you@email.com"
+              class="flex-1 rounded-lg bg-white/5 px-3 py-2 text-sm text-white placeholder-gray-500 border border-white/10 focus:outline-none focus:border-accent/50"
+              required
+            />
             <button
               type="submit"
-              class="inline-flex items-center rounded-lg bg-accent px-6 py-3 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40"
-              data-twe-ripple-init
-              data-twe-ripple-color="light">
-              Book Your Free Call 
+              class="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-black hover:brightness-110"
+            >
+              Subscribe
             </button>
-            <p class="mt-2 text-xs text-gray-500">No spam. We'll never share your info.</p>
+          </form>
+
+          <div class="mt-6">
+            <h4 class="text-sm font-semibold mb-3 text-gray-200">Follow us</h4>
+            <div class="flex items-center gap-3">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white"
+                aria-label="Twitter"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 5.92c-.63.28-1.3.48-2 .57.72-.43 1.27-1.12 1.53-1.94-.67.4-1.41.69-2.2.85C18.5 4.5 17.64 4 16.66 4c-1.44 0-2.6 1.17-2.6 2.6 0 .2.02.39.06.57C10.28 7.06 7.1 5.13 5.04 2.4c-.22.38-.35.82-.35 1.29 0 .9.46 1.7 1.16 2.17-.53-.02-1.03-.16-1.46-.4v.04c0 1.27.9 2.33 2.1 2.57-.22.06-.45.09-.69.09-.17 0-.33-.02-.49-.05.33 1.01 1.3 1.75 2.45 1.77C6.2 12.1 5 12.6 3.72 12.6c-.25 0-.5-.01-.74-.04 1.02.66 2.24 1.05 3.55 1.05 4.27 0 6.61-3.54 6.61-6.61v-.3c.45-.33.84-.74 1.16-1.2z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.2h.1c.7-1.3 2.4-2.6 5-2.6 5.3 0 6.3 3.5 6.3 8.1V24H19v-7.8c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24H7.5V8z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white"
+                aria-label="Facebook"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.62.77-1.62 1.56v1.87h2.77l-.44 2.9h-2.33v6.99C18.34 21.12 22 16.99 22 12z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white"
+                aria-label="Instagram"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.9a4.1 4.1 0 1 0 0 8.2 4.1 4.1 0 0 0 0-8.2zM18.8 6.2a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-      </form>
-    </div>
-    <!-- Section: Contact -->
-  </section>
-
-
-
-
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const form = document.querySelector('#join_our_team form');
-      if (!form) return;
-
-      const first = form.querySelector('#floating_first_name');
-      const last = form.querySelector('#floating_last_name');
-      const phone = form.querySelector('#floating_phone');
-      const phoneRe = /^\+?1?\s*\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/;
-
-      function getErrorEl(input) {
-        const wrap = input.closest('[data-twe-input-wrapper-init]');
-        return wrap ? wrap.querySelector('[data-error]') : null;
-      }
-
-      function showError(input, message) {
-        const errorEl = getErrorEl(input);
-        if (errorEl) {
-          errorEl.textContent = message;
-          errorEl.classList.remove('hidden');
-        }
-        input.classList.add('ring-1', 'ring-red-500');
-        input.setAttribute('aria-invalid', 'true');
-      }
-
-      function clearError(input) {
-        const errorEl = getErrorEl(input);
-        if (errorEl) {
-          errorEl.textContent = '';
-          errorEl.classList.add('hidden');
-        }
-        input.classList.remove('ring-1', 'ring-red-500');
-        input.removeAttribute('aria-invalid');
-      }
-
-      first.addEventListener('input', () => {
-        if (first.value.trim()) clearError(first);
-      });
-
-      phone.addEventListener('input', () => {
-        if (phoneRe.test(phone.value.trim())) clearError(phone);
-      });
-
-      form.addEventListener('submit', (e) => {
-        let valid = true;
-
-        if (!first.value.trim()) {
-          showError(first, 'First name is required');
-          valid = false;
-        }
-
-        if (!last.value.trim()) {
-          showError(last, 'Last name is required');
-          valid = false;
-        }
-
-        const phoneVal = phone.value.trim();
-        if (!phoneRe.test(phoneVal)) {
-          showError(phone, 'Enter a valid US phone (e.g., 555-123-4567)');
-          valid = false;
-        }
-
-        if (!valid) e.preventDefault();
-      });
-    });
-  </script>
-  <!-- Footer -->
-  <footer class="border-t border-white/10">
-    <div class="mx-auto max-w-7xl px-6 py-10 text-sm text-gray-400 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
-      <div>
-        <div class="flex items-center gap-2"> 
-          <span class="font-medium text-white">1 Minute Sales</span>
-        </div>
-        <p class="mt-2 text-xs">© 2025 1 Minute Sales. All rights reserved.</p>        
-        <p class="mt-2 text-xs">
-        30 North Gould Street, Suite 5531<br>
-        Sheridan WY, 82801<br>
-        <a href="tel:+14155551234" class="hover:text-white underline">+1 (831) 744-7749</a>
-      </p>
       </div>
-      <div class="flex gap-8">
-        <div>
-          <div class="text-white text-xs font-semibold uppercase tracking-wider">Product</div>
-          <ul class="mt-2 space-y-2">
-            <li><a class="hover:text-white" href="index.html/#features">Features</a></li>
-            <li><a class="hover:text-white" href="index.html/#pricing">Pricing</a></li> 
-          </ul>
-        </div>
-        <div>
-          <div class="text-white text-xs font-semibold uppercase tracking-wider">Company</div>
-          <ul class="mt-2 space-y-2">
-            <li><a class="hover:text-white" href="index.html/#about">About</a></li>
-            <li><a class="hover:text-white" href="index.html/#careers">Careers</a></li>
-            <li><a class="hover:text-white" href="index.html/#bookcall">Book a Call</a></li>
-            <li><a class="hover:text-white" href="https://sales.1minutesales.com">Sales Sign In</a></li> 
-            <li><a class="hover:text-white" href="index.html/#privacy.html">Privacy Policy</a></li>
-            <li><a class="hover:text-white" href="index.html/#terms.html">Terms of Service</a></li>
-          </ul>
+
+      <div class="border-t border-white/6 mt-8">
+        <div
+          class="mx-auto max-w-7xl px-6 py-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400"
+        >
+          <div>© 2026 1 Minute Sales. All rights reserved.</div>
+          <div class="mt-3 md:mt-0">
+            Built with care —
+            <a href="/terms_of_service.html" class="hover:text-white">Terms</a>
+            ·
+            <a href="/privacy_policy.html" class="hover:text-white">Privacy</a>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>

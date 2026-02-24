@@ -1,273 +1,599 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>1 Minute Sales Blog | Sales Tips, AI Automation & Lead Conversion Insights</title>
-  <meta name="description" content="Read expert insights on AI sales automation, lead conversion strategies, and sales outsourcing. Learn how to improve your sales team's performance.">
-  <meta name="keywords" content="sales automation, lead conversion, AI sales, sales outsourcing, sales tips, lead response">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.1minutesales.com/blog/">
-  <!-- Open Graph -->
-  <meta property="og:title" content="1 Minute Sales Blog | Sales Automation & Lead Conversion">
-  <meta property="og:description" content="Expert insights on AI sales automation and lead conversion strategies.">
-  <meta property="og:url" content="https://www.1minutesales.com/blog/">
-  <meta property="og:type" content="website">
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts: Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            inter: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      1 Minute Sales Blog | Sales Tips, AI Automation & Lead Conversion Insights
+    </title>
+    <meta
+      name="description"
+      content="Read expert insights on AI sales automation, lead conversion strategies, and sales outsourcing. Learn how to improve your sales team's performance."
+    />
+    <meta
+      name="keywords"
+      content="sales automation, lead conversion, AI sales, sales outsourcing, sales tips, lead response"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.1minutesales.com/blog/" />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="1 Minute Sales Blog | Sales Automation & Lead Conversion"
+    />
+    <meta
+      property="og:description"
+      content="Expert insights on AI sales automation and lead conversion strategies."
+    />
+    <meta property="og:url" content="https://www.1minutesales.com/blog/" />
+    <meta property="og:type" content="website" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+            },
+            colors: {
+              accent: "#D3BC5F",
+              bgdeep: "#0B0F12",
+            },
           },
-          colors: {
-            accent: '#D3BC5F',
-            bgdeep: '#0B0F12',
-          },
-        }
+        },
+      };
+    </script>
+    <style>
+      :root {
+        --bg: #0b0f12;
+        --grid: rgba(255, 255, 255, 0.04);
+        --ring: rgba(204, 214, 26, 0.15);
       }
-    }
-  </script>
-  <style>
-    :root {
-      --bg: #0B0F12;
-      --grid: rgba(255,255,255,0.04);
-      --ring: rgba(204, 214, 26, 0.15);
-    }
-    .bg-grid {
-      background-image:
-        linear-gradient(var(--grid) 1px, transparent 1px),
-        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-      background-size: 24px 24px;
-      background-position: -1px -1px;
-    }
-  </style>
-</head>
-<body class="bg-bgdeep text-white font-inter antialiased">
-
-  <!-- Header -->
-  <header class="top-0 z-40 border-b border-white/10 bg-black/40 backdrop-blur">
-    <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <a href="/">
-          <img src="/img/logo/1minutesale-logo-white.png" alt="1 Minute Sales company logo" loading="lazy" class="h-8">
-        </a>
+      .bg-grid {
+        background-image:
+          linear-gradient(var(--grid) 1px, transparent 1px),
+          linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+        background-size: 24px 24px;
+        background-position: -1px -1px;
+      }
+    </style>
+  </head>
+  <body class="bg-bgdeep text-white font-inter antialiased">
+    <!-- Header -->
+    <header
+      class="top-0 z-40 border-b border-white/10 bg-black/40 backdrop-blur"
+    >
+      <div
+        class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <a href="/">
+            <img
+              src="/img/logo/1minutesale-logo-white.png"
+              alt="1 Minute Sales company logo"
+              loading="lazy"
+              class="h-8"
+            />
+          </a>
+        </div>
+        <nav class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+          <a class="hover:text-white" href="/#features">Features</a>
+          <a class="hover:text-white" href="/#pricing">Pricing</a>
+          <a class="hover:text-white" href="/blog/">Blog</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a
+            href="/#bookcall"
+            class="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-black hover:brightness-110"
+            >Get started <span>→</span></a
+          >
+        </div>
       </div>
-      <nav class="hidden md:flex items-center gap-8 text-sm text-gray-300">
-        <a class="hover:text-white" href="/#features">Features</a>
-        <a class="hover:text-white" href="/#pricing">Pricing</a>
-        <a class="hover:text-white" href="/blog/">Blog</a>
-      </nav>
-      <div class="flex items-center gap-3">
-        <a href="/#bookcall" class="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-black hover:brightness-110">Get started <span>→</span></a>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-grid"></div>
+      <div class="relative mx-auto max-w-7xl px-6 py-20 md:py-28">
+        <div class="text-center">
+          <h1 class="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
+            Sales Automation & AI Insights
+          </h1>
+          <p class="text-lg text-gray-400 max-w-2xl mx-auto">
+            Expert strategies for improving lead conversion, sales team
+            efficiency, and closing deals faster with AI.
+          </p>
+        </div>
       </div>
-    </div>
-  </header>
+    </section>
 
-  <!-- Hero -->
-  <section class="relative overflow-hidden">
-    <div class="absolute inset-0 bg-grid"></div>
-    <div class="relative mx-auto max-w-7xl px-6 py-20 md:py-28">
-      <div class="text-center">
-        <h1 class="text-4xl md:text-5xl font-semibold tracking-tight mb-4">
-          Sales Automation & AI Insights
-        </h1>
-        <p class="text-lg text-gray-400 max-w-2xl mx-auto">
-          Expert strategies for improving lead conversion, sales team efficiency, and closing deals faster with AI.
-        </p>
+    <!-- Blog Posts Grid -->
+    <section class="mx-auto max-w-7xl px-6 py-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Blog Card 1 -->
+        <article
+          class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition"
+        >
+          <div class="flex items-center gap-2 mb-2">
+            <span
+              class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded"
+              >Sales Strategy</span
+            >
+          </div>
+          <h2
+            class="text-xl font-semibold mb-3 group-hover:text-accent transition"
+          >
+            <a href="/blog/posts/391-higher-conversion-rates.html"
+              >391% Higher Conversion Rates: The Science Behind 60-Second Lead
+              Response</a
+            >
+          </h2>
+          <p class="text-gray-400 text-sm mb-4">
+            Discover the research-backed reasons why responding to leads within
+            60 seconds dramatically improves conversion rates and how you can
+            implement this strategy.
+          </p>
+          <div class="flex items-center justify-between text-xs text-gray-500">
+            <span>8 min read</span>
+            <a
+              href="/blog/posts/391-higher-conversion-rates.html"
+              class="text-accent hover:text-white"
+              >Read →</a
+            >
+          </div>
+        </article>
+
+        <!-- Blog Card 2 -->
+        <article
+          class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition"
+        >
+          <div class="flex items-center gap-2 mb-2">
+            <span
+              class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded"
+              >Business</span
+            >
+          </div>
+          <h2
+            class="text-xl font-semibold mb-3 group-hover:text-accent transition"
+          >
+            <a href="/blog/posts/sales-outsourcing-vs-hiring.html"
+              >Sales Team Outsourcing vs. Hiring: Complete Cost Breakdown</a
+            >
+          </h2>
+          <p class="text-gray-400 text-sm mb-4">
+            Compare the true costs of hiring an in-house sales team versus
+            outsourcing. Includes salary, benefits, training, turnover, and
+            hidden expenses.
+          </p>
+          <div class="flex items-center justify-between text-xs text-gray-500">
+            <span>10 min read</span>
+            <a
+              href="/blog/posts/sales-outsourcing-vs-hiring.html"
+              class="text-accent hover:text-white"
+              >Read →</a
+            >
+          </div>
+        </article>
+
+        <!-- Blog Card 3 -->
+        <article
+          class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition"
+        >
+          <div class="flex items-center gap-2 mb-2">
+            <span
+              class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded"
+              >Conversion</span
+            >
+          </div>
+          <h2
+            class="text-xl font-semibold mb-3 group-hover:text-accent transition"
+          >
+            <a href="/blog/posts/why-leads-arent-converting.html"
+              >Why Your Leads Aren't Converting (And How AI Fixes It)</a
+            >
+          </h2>
+          <p class="text-gray-400 text-sm mb-4">
+            Identify the top reasons leads fall through your sales funnel and
+            discover AI-powered solutions to eliminate these obstacles.
+          </p>
+          <div class="flex items-center justify-between text-xs text-gray-500">
+            <span>7 min read</span>
+            <a
+              href="/blog/posts/why-leads-arent-converting.html"
+              class="text-accent hover:text-white"
+              >Read →</a
+            >
+          </div>
+        </article>
+
+        <!-- Blog Card 4 -->
+        <article
+          class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition"
+        >
+          <div class="flex items-center gap-2 mb-2">
+            <span
+              class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded"
+              >Industry Data</span
+            >
+          </div>
+          <h2
+            class="text-xl font-semibold mb-3 group-hover:text-accent transition"
+          >
+            <a href="/blog/posts/lead-response-benchmarks.html"
+              >Top 5 Lead Response Time Benchmarks by Industry</a
+            >
+          </h2>
+          <p class="text-gray-400 text-sm mb-4">
+            See how your industry compares. Benchmark data from SaaS, Insurance,
+            Real Estate, and more to optimize your response strategy.
+          </p>
+          <div class="flex items-center justify-between text-xs text-gray-500">
+            <span>6 min read</span>
+            <a
+              href="/blog/posts/lead-response-benchmarks.html"
+              class="text-accent hover:text-white"
+              >Read →</a
+            >
+          </div>
+        </article>
+
+        <!-- Blog Card 5 -->
+        <article
+          class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition"
+        >
+          <div class="flex items-center gap-2 mb-2">
+            <span
+              class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded"
+              >Business Model</span
+            >
+          </div>
+          <h2
+            class="text-xl font-semibold mb-3 group-hover:text-accent transition"
+          >
+            <a href="/blog/posts/commission-only-sales.html"
+              >Commission-Only Sales: Benefits & Risks Explained</a
+            >
+          </h2>
+          <p class="text-gray-400 text-sm mb-4">
+            Understand the commission-based sales model. Pros, cons, when it
+            makes sense, and how to negotiate terms for maximum ROI.
+          </p>
+          <div class="flex items-center justify-between text-xs text-gray-500">
+            <span>8 min read</span>
+            <a
+              href="/blog/posts/commission-only-sales.html"
+              class="text-accent hover:text-white"
+              >Read →</a
+            >
+          </div>
+        </article>
+
+        <!-- Blog Card 6 -->
+        <article
+          class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition"
+        >
+          <div class="flex items-center gap-2 mb-2">
+            <span
+              class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded"
+              >AI & Automation</span
+            >
+          </div>
+          <h2
+            class="text-xl font-semibold mb-3 group-hover:text-accent transition"
+          >
+            <a href="/blog/posts/ai-in-sales-process.html"
+              >How to Integrate AI into Your Sales Process Without Losing the
+              Human Touch</a
+            >
+          </h2>
+          <p class="text-gray-400 text-sm mb-4">
+            Best practices for blending AI automation with human expertise.
+            Learn how hybrid sales teams outperform pure automation or manual
+            approaches.
+          </p>
+          <div class="flex items-center justify-between text-xs text-gray-500">
+            <span>9 min read</span>
+            <a
+              href="/blog/posts/ai-in-sales-process.html"
+              class="text-accent hover:text-white"
+              >Read →</a
+            >
+          </div>
+        </article>
+
+        <!-- Blog Card 7 -->
+        <article
+          class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition"
+        >
+          <div class="flex items-center gap-2 mb-2">
+            <span
+              class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded"
+              >Revenue Impact</span
+            >
+          </div>
+          <h2
+            class="text-xl font-semibold mb-3 group-hover:text-accent transition"
+          >
+            <a href="/blog/posts/cost-of-slow-response.html"
+              >The Hidden Cost of Slow Lead Response: What You're Losing Every
+              Day</a
+            >
+          </h2>
+          <p class="text-gray-400 text-sm mb-4">
+            Calculate exactly how much revenue you're leaving on the table with
+            delayed lead follow-up. Real numbers that will surprise you.
+          </p>
+          <div class="flex items-center justify-between text-xs text-gray-500">
+            <span>7 min read</span>
+            <a
+              href="/blog/posts/cost-of-slow-response.html"
+              class="text-accent hover:text-white"
+              >Read →</a
+            >
+          </div>
+        </article>
+
+        <!-- Blog Card 8 -->
+        <article
+          class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition"
+        >
+          <div class="flex items-center gap-2 mb-2">
+            <span
+              class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded"
+              >Comparison</span
+            >
+          </div>
+          <h2
+            class="text-xl font-semibold mb-3 group-hover:text-accent transition"
+          >
+            <a href="/blog/posts/chatbots-vs-sdr-vs-ai.html"
+              >Chatbots vs SDRs vs AI Sales Teams: Which Solution is Right for
+              You?</a
+            >
+          </h2>
+          <p class="text-gray-400 text-sm mb-4">
+            In-depth comparison of three popular lead response approaches. Pros,
+            cons, costs, and use cases for each solution.
+          </p>
+          <div class="flex items-center justify-between text-xs text-gray-500">
+            <span>10 min read</span>
+            <a
+              href="/blog/posts/chatbots-vs-sdr-vs-ai.html"
+              class="text-accent hover:text-white"
+              >Read →</a
+            >
+          </div>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Blog Posts Grid -->
-  <section class="mx-auto max-w-7xl px-6 py-20">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- Blog Card 1 -->
-      <article class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition">
-        <div class="flex items-center gap-2 mb-2">
-          <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded">Sales Strategy</span>
-        </div>
-        <h2 class="text-xl font-semibold mb-3 group-hover:text-accent transition">
-          <a href="/blog/posts/391-higher-conversion-rates.html">391% Higher Conversion Rates: The Science Behind 60-Second Lead Response</a>
+    <!-- Newsletter Signup -->
+    <section class="mx-auto max-w-7xl px-6 py-16 border-t border-white/10">
+      <div
+        class="rounded-2xl border border-white/10 bg-white/5 p-8 text-center"
+      >
+        <h2 class="text-2xl md:text-3xl font-semibold mb-4">
+          Stay Updated on Sales Trends
         </h2>
-        <p class="text-gray-400 text-sm mb-4">
-          Discover the research-backed reasons why responding to leads within 60 seconds dramatically improves conversion rates and how you can implement this strategy.
+        <p class="text-gray-400 mb-6 max-w-xl mx-auto">
+          Get the latest insights on AI sales automation and lead conversion
+          strategies delivered to your inbox.
         </p>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>8 min read</span>
-          <a href="/blog/posts/391-higher-conversion-rates.html" class="text-accent hover:text-white">Read →</a>
-        </div>
-      </article>
-
-      <!-- Blog Card 2 -->
-      <article class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition">
-        <div class="flex items-center gap-2 mb-2">
-          <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded">Business</span>
-        </div>
-        <h2 class="text-xl font-semibold mb-3 group-hover:text-accent transition">
-          <a href="/blog/posts/sales-outsourcing-vs-hiring.html">Sales Team Outsourcing vs. Hiring: Complete Cost Breakdown</a>
-        </h2>
-        <p class="text-gray-400 text-sm mb-4">
-          Compare the true costs of hiring an in-house sales team versus outsourcing. Includes salary, benefits, training, turnover, and hidden expenses.
-        </p>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>10 min read</span>
-          <a href="/blog/posts/sales-outsourcing-vs-hiring.html" class="text-accent hover:text-white">Read →</a>
-        </div>
-      </article>
-
-      <!-- Blog Card 3 -->
-      <article class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition">
-        <div class="flex items-center gap-2 mb-2">
-          <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded">Conversion</span>
-        </div>
-        <h2 class="text-xl font-semibold mb-3 group-hover:text-accent transition">
-          <a href="/blog/posts/why-leads-arent-converting.html">Why Your Leads Aren't Converting (And How AI Fixes It)</a>
-        </h2>
-        <p class="text-gray-400 text-sm mb-4">
-          Identify the top reasons leads fall through your sales funnel and discover AI-powered solutions to eliminate these obstacles.
-        </p>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>7 min read</span>
-          <a href="/blog/posts/why-leads-arent-converting.html" class="text-accent hover:text-white">Read →</a>
-        </div>
-      </article>
-
-      <!-- Blog Card 4 -->
-      <article class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition">
-        <div class="flex items-center gap-2 mb-2">
-          <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded">Industry Data</span>
-        </div>
-        <h2 class="text-xl font-semibold mb-3 group-hover:text-accent transition">
-          <a href="/blog/posts/lead-response-benchmarks.html">Top 5 Lead Response Time Benchmarks by Industry</a>
-        </h2>
-        <p class="text-gray-400 text-sm mb-4">
-          See how your industry compares. Benchmark data from SaaS, Insurance, Real Estate, and more to optimize your response strategy.
-        </p>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>6 min read</span>
-          <a href="/blog/posts/lead-response-benchmarks.html" class="text-accent hover:text-white">Read →</a>
-        </div>
-      </article>
-
-      <!-- Blog Card 5 -->
-      <article class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition">
-        <div class="flex items-center gap-2 mb-2">
-          <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded">Business Model</span>
-        </div>
-        <h2 class="text-xl font-semibold mb-3 group-hover:text-accent transition">
-          <a href="/blog/posts/commission-only-sales.html">Commission-Only Sales: Benefits & Risks Explained</a>
-        </h2>
-        <p class="text-gray-400 text-sm mb-4">
-          Understand the commission-based sales model. Pros, cons, when it makes sense, and how to negotiate terms for maximum ROI.
-        </p>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>8 min read</span>
-          <a href="/blog/posts/commission-only-sales.html" class="text-accent hover:text-white">Read →</a>
-        </div>
-      </article>
-
-      <!-- Blog Card 6 -->
-      <article class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition">
-        <div class="flex items-center gap-2 mb-2">
-          <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded">AI & Automation</span>
-        </div>
-        <h2 class="text-xl font-semibold mb-3 group-hover:text-accent transition">
-          <a href="/blog/posts/ai-in-sales-process.html">How to Integrate AI into Your Sales Process Without Losing the Human Touch</a>
-        </h2>
-        <p class="text-gray-400 text-sm mb-4">
-          Best practices for blending AI automation with human expertise. Learn how hybrid sales teams outperform pure automation or manual approaches.
-        </p>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>9 min read</span>
-          <a href="/blog/posts/ai-in-sales-process.html" class="text-accent hover:text-white">Read →</a>
-        </div>
-      </article>
-
-      <!-- Blog Card 7 -->
-      <article class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition">
-        <div class="flex items-center gap-2 mb-2">
-          <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded">Revenue Impact</span>
-        </div>
-        <h2 class="text-xl font-semibold mb-3 group-hover:text-accent transition">
-          <a href="/blog/posts/cost-of-slow-response.html">The Hidden Cost of Slow Lead Response: What You're Losing Every Day</a>
-        </h2>
-        <p class="text-gray-400 text-sm mb-4">
-          Calculate exactly how much revenue you're leaving on the table with delayed lead follow-up. Real numbers that will surprise you.
-        </p>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>7 min read</span>
-          <a href="/blog/posts/cost-of-slow-response.html" class="text-accent hover:text-white">Read →</a>
-        </div>
-      </article>
-
-      <!-- Blog Card 8 -->
-      <article class="group rounded-2xl border border-white/10 bg-white/5 p-6 hover:border-accent/50 transition">
-        <div class="flex items-center gap-2 mb-2">
-          <span class="inline-block px-2 py-1 bg-accent/20 text-accent text-xs font-semibold rounded">Comparison</span>
-        </div>
-        <h2 class="text-xl font-semibold mb-3 group-hover:text-accent transition">
-          <a href="/blog/posts/chatbots-vs-sdr-vs-ai.html">Chatbots vs SDRs vs AI Sales Teams: Which Solution is Right for You?</a>
-        </h2>
-        <p class="text-gray-400 text-sm mb-4">
-          In-depth comparison of three popular lead response approaches. Pros, cons, costs, and use cases for each solution.
-        </p>
-        <div class="flex items-center justify-between text-xs text-gray-500">
-          <span>10 min read</span>
-          <a href="/blog/posts/chatbots-vs-sdr-vs-ai.html" class="text-accent hover:text-white">Read →</a>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- Newsletter Signup -->
-  <section class="mx-auto max-w-7xl px-6 py-16 border-t border-white/10">
-    <div class="rounded-2xl border border-white/10 bg-white/5 p-8 text-center">
-      <h2 class="text-2xl md:text-3xl font-semibold mb-4">Stay Updated on Sales Trends</h2>
-      <p class="text-gray-400 mb-6 max-w-xl mx-auto">Get the latest insights on AI sales automation and lead conversion strategies delivered to your inbox.</p>
-      <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-        <input type="email" placeholder="your@email.com" class="flex-1 rounded-lg bg-white/10 px-4 py-2 text-sm text-white placeholder-gray-500 border border-white/20 focus:outline-none focus:border-accent/50" required>
-        <button type="submit" class="rounded-lg bg-accent px-6 py-2 text-sm font-medium text-black hover:brightness-110">Subscribe</button>
-      </form>
-      <p class="text-xs text-gray-500 mt-3">No spam. Unsubscribe anytime.</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="border-t border-white/10 mt-20">
-    <div class="mx-auto max-w-7xl px-6 py-10 text-sm text-gray-400 flex flex-col md:flex-row items-center md:items-start justify-between gap-6">
-      <div>
-        <div class="flex items-center gap-2">
-          <span class="font-medium text-white">1 Minute Sales</span>
-        </div>
-        <p class="mt-2 text-xs">© 2025 1 Minute Sales. All rights reserved.</p>
+        <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          <input
+            type="email"
+            placeholder="your@email.com"
+            class="flex-1 rounded-lg bg-white/10 px-4 py-2 text-sm text-white placeholder-gray-500 border border-white/20 focus:outline-none focus:border-accent/50"
+            required
+          />
+          <button
+            type="submit"
+            class="rounded-lg bg-accent px-6 py-2 text-sm font-medium text-black hover:brightness-110"
+          >
+            Subscribe
+          </button>
+        </form>
+        <p class="text-xs text-gray-500 mt-3">No spam. Unsubscribe anytime.</p>
       </div>
-      <div class="flex gap-8">
+    </section>
+
+    <!-- Site Footer -->
+    <footer class="border-t border-white/10 mt-20">
+      <div
+        class="mx-auto max-w-7xl px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8"
+      >
         <div>
-          <div class="text-white text-xs font-semibold uppercase tracking-wider">Product</div>
-          <ul class="mt-2 space-y-2">
-            <li><a class="hover:text-white" href="/#features">Features</a></li>
-            <li><a class="hover:text-white" href="/#pricing">Pricing</a></li>
-            <li><a class="hover:text-white" href="/blog/">Blog</a></li>
+          <a href="/" class="flex items-center gap-3 mb-4">
+            <img
+              src="/img/logo/1minutesale-logo-white.png"
+              alt="1 Minute Sales"
+              class="h-8"
+            />
+          </a>
+          <p class="text-sm text-gray-400 max-w-sm">
+            1 Minute Sales — Instant lead response and AI-assisted sales teams
+            that convert more leads in less time.
+          </p>
+          <p class="mt-4 text-xs text-gray-500">
+            30 North Gould Street, Suite 5531<br />Sheridan, WY 82801
+          </p>
+          <p class="mt-2 text-xs text-gray-500">
+            Phone:
+            <a href="tel:+18317447749" class="hover:text-white"
+              >+1 (831) 744-7749</a
+            ><br />Email:
+            <a href="mailto:hello@1minutesales.com" class="hover:text-white"
+              >hello@1minutesales.com</a
+            >
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-sm font-semibold mb-4">Product</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>
+              <a href="/index.html#features" class="hover:text-white"
+                >Features</a
+              >
+            </li>
+            <li>
+              <a href="/index.html#pricing" class="hover:text-white">Pricing</a>
+            </li>
+            <li>
+              <a href="/index.html#integrations" class="hover:text-white"
+                >Integrations</a
+              >
+            </li>
+            <li>
+              <a href="/register.html" class="hover:text-white">Get Started</a>
+            </li>
           </ul>
         </div>
+
         <div>
-          <div class="text-white text-xs font-semibold uppercase tracking-wider">Company</div>
-          <ul class="mt-2 space-y-2">
-            <li><a class="hover:text-white" href="/#bookcall">Book a Call</a></li>
-            <li><a class="hover:text-white" href="/privacy_policy.html">Privacy Policy</a></li>
-            <li><a class="hover:text-white" href="/terms_of_service.html">Terms of Service</a></li>
+          <h4 class="text-sm font-semibold mb-4">Company</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li>
+              <a href="/careers.html" class="hover:text-white">Sales Careers</a>
+            </li>
+            <li>
+              <a href="/privacy_policy.html" class="hover:text-white"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="/terms_of_service.html" class="hover:text-white"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a href="/contact.html" class="hover:text-white">Contact</a>
+            </li>
           </ul>
         </div>
-      </div>
-    </div>
-  </footer>
 
-</body>
+        <div>
+          <h4 class="text-sm font-semibold mb-4">Subscribe</h4>
+          <p class="text-sm text-gray-400 mb-4">
+            Get the latest on sales automation and conversion strategies.
+          </p>
+          <form
+            class="flex gap-2"
+            onsubmit="
+              event.preventDefault();
+              alert('Thanks — subscription saved!');
+              this.reset();
+            "
+          >
+            <input
+              type="email"
+              placeholder="you@email.com"
+              class="flex-1 rounded-lg bg-white/5 px-3 py-2 text-sm text-white placeholder-gray-500 border border-white/10 focus:outline-none focus:border-accent/50"
+              required
+            />
+            <button
+              type="submit"
+              class="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-black hover:brightness-110"
+            >
+              Subscribe
+            </button>
+          </form>
+
+          <div class="mt-6">
+            <h4 class="text-sm font-semibold mb-3 text-gray-200">Follow us</h4>
+            <div class="flex items-center gap-3">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white"
+                aria-label="Twitter"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 5.92c-.63.28-1.3.48-2 .57.72-.43 1.27-1.12 1.53-1.94-.67.4-1.41.69-2.2.85C18.5 4.5 17.64 4 16.66 4c-1.44 0-2.6 1.17-2.6 2.6 0 .2.02.39.06.57C10.28 7.06 7.1 5.13 5.04 2.4c-.22.38-.35.82-.35 1.29 0 .9.46 1.7 1.16 2.17-.53-.02-1.03-.16-1.46-.4v.04c0 1.27.9 2.33 2.1 2.57-.22.06-.45.09-.69.09-.17 0-.33-.02-.49-.05.33 1.01 1.3 1.75 2.45 1.77C6.2 12.1 5 12.6 3.72 12.6c-.25 0-.5-.01-.74-.04 1.02.66 2.24 1.05 3.55 1.05 4.27 0 6.61-3.54 6.61-6.61v-.3c.45-.33.84-.74 1.16-1.2z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white"
+                aria-label="LinkedIn"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.2h.1c.7-1.3 2.4-2.6 5-2.6 5.3 0 6.3 3.5 6.3 8.1V24H19v-7.8c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24H7.5V8z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white"
+                aria-label="Facebook"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.62.77-1.62 1.56v1.87h2.77l-.44 2.9h-2.33v6.99C18.34 21.12 22 16.99 22 12z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white"
+                aria-label="Instagram"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.9a4.1 4.1 0 1 0 0 8.2 4.1 4.1 0 0 0 0-8.2zM18.8 6.2a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-white/6 mt-8">
+        <div
+          class="mx-auto max-w-7xl px-6 py-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400"
+        >
+          <div>© 2026 1 Minute Sales. All rights reserved.</div>
+          <div class="mt-3 md:mt-0">
+            Built with care —
+            <a href="/terms_of_service.html" class="hover:text-white">Terms</a>
+            ·
+            <a href="/privacy_policy.html" class="hover:text-white">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
