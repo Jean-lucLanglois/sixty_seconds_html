@@ -1,256 +1,220 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Terms of Service | 1 Minute Sales</title>
-    <meta
-      name="description"
-      content="Read the terms of service for 1 Minute Sales. Learn about our policies, usage agreements, and limitations of liability."
-    />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://www.1minutesales.com/terms_of_service.html"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body
-    class="bg-bgdeep text-white font-inter antialiased selection:bg-accent/20 selection:text-white"
-  >
-    <div class="mx-auto max-w-3xl px-6 py-12">
-      <h1 class="text-3xl font-semibold mb-6">Terms of Service</h1>
-      <p class="mb-4">Effective Date: September 11, 2025</p>
-      <h2 class="text-xl font-semibold mt-8 mb-2">1. Acceptance of Terms</h2>
-      <p class="mb-4">
-        By accessing and using 1 Minute Sales ("Service"), you agree to be bound
-        by these Terms of Service ("Agreement"). This Agreement applies to all
-        users, including but not limited to business entities, sales teams,
-        managers, and individual contributors. If you do not agree to all terms
-        outlined herein, you may not use or continue using our services. Your
-        continued access to and use of the Service constitutes your acceptance
-        of these terms.
-      </p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Service | 1 Minute Sales</title>
+  <meta name="description" content="Read the terms of service for 1 Minute Sales. Learn about our policies, usage agreements, and limitations of liability.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.1minutesales.com/terms_of_service.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            accent: '#D3BC5F',
+            bgdeep: '#0B0F12',
+          },
+          boxShadow: {
+            glow: '0 0 40px 0 rgba(34, 211, 166, 0.15)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #0B0F12;
+      --grid: rgba(255,255,255,0.04);
+      --ring: rgba(204, 214, 26, 0.15);
+    }
+    .bg-grid {
+      background-image:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: 24px 24px;
+      background-position: -1px -1px;
+    }
+    .glow-layer::before,
+    .glow-layer::after {
+      content: "";
+      position: absolute;
+      inset: -10% -10% auto -10%;
+      height: 60%;
+      background: radial-gradient(600px 200px at 70% -20%, var(--ring), transparent 60%);
+      pointer-events: none;
+    }
+    .glow-layer::after {
+      inset: auto -10% -20% -10%;
+      height: 50%;
+      background: radial-gradient(500px 200px at 15% 110%, rgba(211, 214, 15, 0.12), transparent 65%);
+    }
+  </style>
+</head>
+<body class="bg-bgdeep text-white font-inter antialiased selection:bg-accent/20 selection:text-white">
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        2. Account Responsibility & Authorization
-      </h2>
-      <p class="mb-4">
-        If you are acting on behalf of a business or organization, you represent
-        and warrant that you have the authority to bind that entity to this
-        Agreement. You are responsible for maintaining the confidentiality of
-        account credentials and for all activities that occur under your
-        account. For organizations with multiple team members, administrative
-        users must ensure compliance with these terms for all users accessing
-        the Service.
-      </p>
+  <!-- Header -->
+  <header class="top-0 z-40 border-b border-white/10 bg-black/40 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a class="flex items-center" href="/">
+          <img src="img/logo/1minutesale-logo-white.png" alt="1 Minute Sales company logo" loading="lazy">
+        </a>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+        <a class="hover:text-white" href="/#features">Features</a>
+        <a class="hover:text-white" href="/#integrations">Integrations</a>
+        <a class="hover:text-white" href="/blog/">Blog</a>
+        <a class="hover:text-white" href="/#pricing">Pricing</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="/#bookcall" class="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40">Get started <span>&rarr;</span></a>
+      </div>
+    </div>
+  </header>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">3. Use of Service</h2>
-      <ul class="list-disc ml-6 mb-4">
-        <li>
-          You must provide accurate, current, and complete information when
-          registering and using our services.
-        </li>
-        <li>
-          You agree not to misuse, reverse-engineer, or attempt to disrupt our
-          services or infrastructure.
-        </li>
-        <li>
-          Prohibited conduct includes: automated scraping, unauthorized access,
-          sharing credentials across unauthorized users, or using the Service
-          for illegal purposes.
-        </li>
-        <li>
-          You may not upload, distribute, or store any content that violates
-          applicable laws or the intellectual property rights of third parties.
-        </li>
-        <li>
-          Acceptable use extends to legitimate business development, lead
-          qualification, sales engagement, and team collaboration activities.
-        </li>
+  <!-- Content -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid"></div>
+    <div class="absolute inset-0 glow-layer"></div>
+    <div class="relative mx-auto max-w-3xl px-6 py-20">
+
+      <h1 class="text-3xl md:text-4xl font-semibold tracking-tight mb-6">Terms of Service</h1>
+      <p class="mb-4 text-gray-400">Effective Date: September 11, 2025</p>
+
+      <h2 class="text-xl font-semibold mt-10 mb-3">1. Acceptance of Terms</h2>
+      <p class="mb-4 text-gray-300">By accessing and using 1 Minute Sales ("Service"), you agree to be bound by these Terms of Service ("Agreement"). This Agreement applies to all users, including but not limited to business entities, sales teams, managers, and individual contributors. If you do not agree to all terms outlined herein, you may not use or continue using our services. Your continued access to and use of the Service constitutes your acceptance of these terms.</p>
+
+      <h2 class="text-xl font-semibold mt-10 mb-3">2. Account Responsibility &amp; Authorization</h2>
+      <p class="mb-4 text-gray-300">If you are acting on behalf of a business or organization, you represent and warrant that you have the authority to bind that entity to this Agreement. You are responsible for maintaining the confidentiality of account credentials and for all activities that occur under your account. For organizations with multiple team members, administrative users must ensure compliance with these terms for all users accessing the Service.</p>
+
+      <h2 class="text-xl font-semibold mt-10 mb-3">3. Use of Service</h2>
+      <ul class="list-disc ml-6 mb-4 text-gray-300 space-y-2">
+        <li>You must provide accurate, current, and complete information when registering and using our services.</li>
+        <li>You agree not to misuse, reverse-engineer, or attempt to disrupt our services or infrastructure.</li>
+        <li>Prohibited conduct includes: automated scraping, unauthorized access, sharing credentials across unauthorized users, or using the Service for illegal purposes.</li>
+        <li>You may not upload, distribute, or store any content that violates applicable laws or the intellectual property rights of third parties.</li>
+        <li>Acceptable use extends to legitimate business development, lead qualification, sales engagement, and team collaboration activities.</li>
       </ul>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        4. Data Protection & Privacy
-      </h2>
-      <p class="mb-4">
-        We are committed to protecting your data in accordance with applicable
-        privacy laws. Contact and engagement data processed through our Service
-        is maintained with industry-standard security measures. For mid-size
-        teams managing multiple CRM accounts and contact lists, we provide
-        role-based access controls to ensure data governance. Please refer to
-        our Privacy Policy for comprehensive details on data collection, use,
-        and retention practices. Organizations are responsible for obtaining
-        appropriate consent from contacts before uploading their information to
-        the Service.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">4. Data Protection &amp; Privacy</h2>
+      <p class="mb-4 text-gray-300">We are committed to protecting your data in accordance with applicable privacy laws. Contact and engagement data processed through our Service is maintained with industry-standard security measures. For mid-size teams managing multiple CRM accounts and contact lists, we provide role-based access controls to ensure data governance. Please refer to our <a href="/privacy_policy.html" class="underline text-accent hover:brightness-110">Privacy Policy</a> for comprehensive details on data collection, use, and retention practices. Organizations are responsible for obtaining appropriate consent from contacts before uploading their information to the Service.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">5. Intellectual Property</h2>
-      <p class="mb-4">
-        All content, materials, software, and services provided by 1 Minute
-        Sales, including but not limited to AI-generated scripts, proposal
-        templates, reporting tools, and platform infrastructure, are the
-        exclusive property of 1 Minute Sales or its licensors. You may use these
-        materials solely as permitted by this Agreement and applicable laws. You
-        may not reproduce, distribute, transmit, or create derivative works
-        without explicit written permission. Your use of our Service grants you
-        a limited, non-exclusive license to access and use the platform for
-        authorized business purposes only.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">5. Intellectual Property</h2>
+      <p class="mb-4 text-gray-300">All content, materials, software, and services provided by 1 Minute Sales, including but not limited to AI-generated scripts, proposal templates, reporting tools, and platform infrastructure, are the exclusive property of 1 Minute Sales or its licensors. You may use these materials solely as permitted by this Agreement and applicable laws. You may not reproduce, distribute, transmit, or create derivative works without explicit written permission. Your use of our Service grants you a limited, non-exclusive license to access and use the platform for authorized business purposes only.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">6. User-Generated Content</h2>
-      <p class="mb-4">
-        Any data, communications, or content you input into the Service remains
-        your property. However, by using our Service, you grant us a
-        non-exclusive license to process and analyze such content to improve our
-        offerings, including AI model training (unless opted out). You warrant
-        that you own or have permission to use any customer data, contact
-        information, or business content uploaded to the platform.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">6. User-Generated Content</h2>
+      <p class="mb-4 text-gray-300">Any data, communications, or content you input into the Service remains your property. However, by using our Service, you grant us a non-exclusive license to process and analyze such content to improve our offerings, including AI model training (unless opted out). You warrant that you own or have permission to use any customer data, contact information, or business content uploaded to the platform.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        7. Third-Party Integrations
-      </h2>
-      <p class="mb-4">
-        1 Minute Sales integrates with third-party platforms including HubSpot,
-        Pipedrive, and Zoho. Your use of these integrations is subject to the
-        terms of service of those respective providers. We are not responsible
-        for third-party service availability, changes to their APIs, or
-        discontinuation of their services. Any data shared with third-party
-        platforms is governed by their privacy policies and terms of service.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">7. Third-Party Integrations</h2>
+      <p class="mb-4 text-gray-300">1 Minute Sales integrates with third-party platforms including HubSpot, Pipedrive, and Zoho. Your use of these integrations is subject to the terms of service of those respective providers. We are not responsible for third-party service availability, changes to their APIs, or discontinuation of their services. Any data shared with third-party platforms is governed by their privacy policies and terms of service.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        8. Service Availability & Support
-      </h2>
-      <p class="mb-4">
-        While we strive for high availability, we do not guarantee uninterrupted
-        access to the Service. We regularly perform maintenance and updates that
-        may temporarily impact availability. For organizations on PRO and TEAM
-        plans, we offer dedicated support and account management to address
-        integration questions, onboarding assistance, and feature utilization.
-        Standard response times apply based on your service tier.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">8. Service Availability &amp; Support</h2>
+      <p class="mb-4 text-gray-300">While we strive for high availability, we do not guarantee uninterrupted access to the Service. We regularly perform maintenance and updates that may temporarily impact availability. For organizations on PRO and TEAM plans, we offer dedicated support and account management to address integration questions, onboarding assistance, and feature utilization. Standard response times apply based on your service tier.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        9. Limitation of Liability
-      </h2>
-      <p class="mb-4">
-        TO THE FULLEST EXTENT PERMITTED BY LAW, 1 MINUTE SALES SHALL NOT BE
-        LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE
-        DAMAGES ARISING OUT OF OR RELATED TO YOUR USE OF THE SERVICE, INCLUDING
-        BUT NOT LIMITED TO LOSS OF REVENUE, PROFITS, DATA, OR BUSINESS
-        OPPORTUNITY, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH
-        DAMAGES. OUR TOTAL LIABILITY UNDER THIS AGREEMENT SHALL NOT EXCEED THE
-        AMOUNT YOU PAID FOR THE SERVICE IN THE TWELVE (12) MONTHS PRECEDING THE
-        CLAIM.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">9. Limitation of Liability</h2>
+      <p class="mb-4 text-gray-300 uppercase text-sm leading-relaxed">To the fullest extent permitted by law, 1 Minute Sales shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Service, including but not limited to loss of revenue, profits, data, or business opportunity, even if we have been advised of the possibility of such damages. Our total liability under this Agreement shall not exceed the amount you paid for the Service in the twelve (12) months preceding the claim.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">10. Warranty Disclaimer</h2>
-      <p class="mb-4">
-        THE SERVICE IS PROVIDED ON AN "AS-IS" AND "AS-AVAILABLE" BASIS. WE MAKE
-        NO WARRANTIES, EXPRESS OR IMPLIED, REGARDING THE SERVICE'S ACCURACY,
-        COMPLETENESS, OR SUITABILITY FOR A PARTICULAR PURPOSE. WE DO NOT WARRANT
-        THAT THE SERVICE WILL MEET YOUR REQUIREMENTS, BE ERROR-FREE,
-        UNINTERRUPTED, OR SECURE.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">10. Warranty Disclaimer</h2>
+      <p class="mb-4 text-gray-300 uppercase text-sm leading-relaxed">The Service is provided on an "as-is" and "as-available" basis. We make no warranties, express or implied, regarding the Service's accuracy, completeness, or suitability for a particular purpose. We do not warrant that the Service will meet your requirements, be error-free, uninterrupted, or secure.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">11. Indemnification</h2>
-      <p class="mb-4">
-        You agree to indemnify and hold harmless 1 Minute Sales, its officers,
-        employees, and agents from any claims, losses, or damages arising from
-        your use of the Service, your violation of this Agreement, or your
-        violation of applicable laws. This includes any claims by third parties
-        regarding content you upload or actions you take on the platform.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">11. Indemnification</h2>
+      <p class="mb-4 text-gray-300">You agree to indemnify and hold harmless 1 Minute Sales, its officers, employees, and agents from any claims, losses, or damages arising from your use of the Service, your violation of this Agreement, or your violation of applicable laws. This includes any claims by third parties regarding content you upload or actions you take on the platform.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        12. Payment Terms & Subscription Renewals
-      </h2>
-      <p class="mb-4">
-        Pricing and billing terms are as stated in your service agreement or on
-        our pricing page. Subscriptions renew automatically unless canceled at
-        least 7 days before the renewal date. Organizations may customize
-        billing cycles and account allocations through the administrative
-        console. For multi-user or enterprise arrangements, please contact our
-        sales team for custom pricing and terms.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">12. Payment Terms &amp; Subscription Renewals</h2>
+      <p class="mb-4 text-gray-300">Pricing and billing terms are as stated in your service agreement or on our pricing page. Subscriptions renew automatically unless canceled at least 7 days before the renewal date. Organizations may customize billing cycles and account allocations through the administrative console. For multi-user or enterprise arrangements, please contact our sales team for custom pricing and terms.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">13. Termination</h2>
-      <p class="mb-4">
-        Either party may terminate this Agreement at any time. Upon termination,
-        your access to the Service will cease immediately. You remain
-        responsible for any outstanding fees through the end of your paid term.
-        We may terminate or suspend your account if you violate this Agreement
-        or engage in prohibited conduct. Upon request, we will provide
-        reasonable notice before suspension, except in cases of severe
-        violations or security concerns.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">13. Termination</h2>
+      <p class="mb-4 text-gray-300">Either party may terminate this Agreement at any time. Upon termination, your access to the Service will cease immediately. You remain responsible for any outstanding fees through the end of your paid term. We may terminate or suspend your account if you violate this Agreement or engage in prohibited conduct. Upon request, we will provide reasonable notice before suspension, except in cases of severe violations or security concerns.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        14. Compliance & Regulatory Requirements
-      </h2>
-      <p class="mb-4">
-        You are responsible for ensuring your use of the Service complies with
-        all applicable federal, state, and local laws, as well as
-        industry-specific regulations (including but not limited to GDPR, CCPA,
-        and TCPA). For organizations in regulated industries, additional
-        compliance measures may be required. We encourage mid-size enterprises
-        to review applicable regulations with legal counsel.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">14. Compliance &amp; Regulatory Requirements</h2>
+      <p class="mb-4 text-gray-300">You are responsible for ensuring your use of the Service complies with all applicable federal, state, and local laws, as well as industry-specific regulations (including but not limited to GDPR, CCPA, and TCPA). For organizations in regulated industries, additional compliance measures may be required. We encourage mid-size enterprises to review applicable regulations with legal counsel.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        15. Changes to Terms & Service
-      </h2>
-      <p class="mb-4">
-        We may update these terms at any time. Material changes will be
-        communicated via email or platform notification. Continued use of the
-        Service following notification of changes constitutes your acceptance of
-        the updated terms. For long-term contracts or custom agreements, changes
-        may be subject to amendment procedures outlined in your agreement.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">15. Changes to Terms &amp; Service</h2>
+      <p class="mb-4 text-gray-300">We may update these terms at any time. Material changes will be communicated via email or platform notification. Continued use of the Service following notification of changes constitutes your acceptance of the updated terms. For long-term contracts or custom agreements, changes may be subject to amendment procedures outlined in your agreement.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        16. Data Retention & Backup
-      </h2>
-      <p class="mb-4">
-        We maintain regular backups of platform data. However, you are
-        responsible for maintaining independent backups of any critical business
-        data. Upon account termination, data may be retained for a limited
-        period as required by law, after which it will be securely deleted.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">16. Data Retention &amp; Backup</h2>
+      <p class="mb-4 text-gray-300">We maintain regular backups of platform data. However, you are responsible for maintaining independent backups of any critical business data. Upon account termination, data may be retained for a limited period as required by law, after which it will be securely deleted.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">17. Dispute Resolution</h2>
-      <p class="mb-4">
-        Any disputes arising from this Agreement shall first be addressed
-        through good-faith negotiation. If negotiation fails, disputes shall be
-        resolved through binding arbitration or court proceedings as permitted
-        by applicable law. Both parties agree to attempt mediation before
-        pursuing litigation.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">17. Dispute Resolution</h2>
+      <p class="mb-4 text-gray-300">Any disputes arising from this Agreement shall first be addressed through good-faith negotiation. If negotiation fails, disputes shall be resolved through binding arbitration or court proceedings as permitted by applicable law. Both parties agree to attempt mediation before pursuing litigation.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">18. Entire Agreement</h2>
-      <p class="mb-4">
-        This Agreement, along with any executed service agreements, privacy
-        policies, and supplementary terms, constitutes the entire agreement
-        between you and 1 Minute Sales regarding the Service. Any prior
-        negotiations, understandings, or agreements are superseded by this
-        document.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">18. Entire Agreement</h2>
+      <p class="mb-4 text-gray-300">This Agreement, along with any executed service agreements, privacy policies, and supplementary terms, constitutes the entire agreement between you and 1 Minute Sales regarding the Service. Any prior negotiations, understandings, or agreements are superseded by this document.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">19. Contact & Support</h2>
-      <p class="mb-4">
-        For questions about these terms, billing inquiries, or to discuss custom
-        arrangements for mid-size organizations, contact us at
-        <a href="mailto:info@1minutesales.com" class="underline text-accent"
-          >info@1minutesales.com</a
-        >. Our team is available to address enterprise-level requirements and
-        integration questions for growing sales organizations.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">19. Contact &amp; Support</h2>
+      <p class="mb-4 text-gray-300">For questions about these terms, billing inquiries, or to discuss custom arrangements for mid-size organizations, contact us at <a href="mailto:info@1minutesales.com" class="underline text-accent hover:brightness-110">info@1minutesales.com</a>. Our team is available to address enterprise-level requirements and integration questions for growing sales organizations.</p>
+
     </div>
-  </body>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 mt-20">
+    <div class="mx-auto max-w-7xl px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <a href="/" class="flex items-center gap-3 mb-4">
+          <img src="img/logo/1minutesale-logo-white.png" alt="1 Minute Sales" class="h-8">
+        </a>
+        <p class="text-sm text-gray-400 max-w-sm">1 Minute Sales — Instant lead response and AI-assisted sales teams that convert more leads in less time.</p>
+        <p class="mt-4 text-xs text-gray-500">30 North Gould Street, Suite 5531<br>Sheridan, WY 82801</p>
+        <p class="mt-2 text-xs text-gray-500">Phone: <a href="tel:+18317447749" class="hover:text-white">+1 (831) 744-7749</a><br>Email: <a href="mailto:hello@1minutesales.com" class="hover:text-white">hello@1minutesales.com</a></p>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold mb-4">Product</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="/#features" class="hover:text-white">Features</a></li>
+          <li><a href="/#pricing" class="hover:text-white">Pricing</a></li>
+          <li><a href="/#integrations" class="hover:text-white">Integrations</a></li>
+          <li><a href="/register.html" class="hover:text-white">Get Started</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold mb-4">Company</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="/careers.html" class="hover:text-white">Sales Careers</a></li>
+          <li><a href="/privacy_policy.html" class="hover:text-white">Privacy Policy</a></li>
+          <li><a href="/terms_of_service.html" class="hover:text-white">Terms of Service</a></li>
+          <li><a href="/contact.html" class="hover:text-white">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold mb-4">Subscribe</h4>
+        <p class="text-sm text-gray-400 mb-4">Get the latest on sales automation and conversion strategies.</p>
+        <form class="flex gap-2" onsubmit="event.preventDefault(); alert('Thanks — subscription saved!'); this.reset();">
+          <input type="email" placeholder="you@email.com" class="flex-1 rounded-lg bg-white/5 px-3 py-2 text-sm text-white placeholder-gray-500 border border-white/10 focus:outline-none focus:border-accent/50" required>
+          <button type="submit" class="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-black hover:brightness-110">Subscribe</button>
+        </form>
+        <div class="mt-6">
+          <h4 class="text-sm font-semibold mb-3 text-gray-200">Follow us</h4>
+          <div class="flex items-center gap-3">
+            <a href="#" class="text-gray-400 hover:text-white" aria-label="Twitter">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 5.92c-.63.28-1.3.48-2 .57.72-.43 1.27-1.12 1.53-1.94-.67.4-1.41.69-2.2.85C18.5 4.5 17.64 4 16.66 4c-1.44 0-2.6 1.17-2.6 2.6 0 .2.02.39.06.57C10.28 7.06 7.1 5.13 5.04 2.4c-.22.38-.35.82-.35 1.29 0 .9.46 1.7 1.16 2.17-.53-.02-1.03-.16-1.46-.4v.04c0 1.27.9 2.33 2.1 2.57-.22.06-.45.09-.69.09-.17 0-.33-.02-.49-.05.33 1.01 1.3 1.75 2.45 1.77C6.2 12.1 5 12.6 3.72 12.6c-.25 0-.5-.01-.74-.04 1.02.66 2.24 1.05 3.55 1.05 4.27 0 6.61-3.54 6.61-6.61v-.3c.45-.33.84-.74 1.16-1.2z"/></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white" aria-label="LinkedIn">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.2h.1c.7-1.3 2.4-2.6 5-2.6 5.3 0 6.3 3.5 6.3 8.1V24H19v-7.8c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24H7.5V8z"/></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white" aria-label="Facebook">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.62.77-1.62 1.56v1.87h2.77l-.44 2.9h-2.33v6.99C18.34 21.12 22 16.99 22 12z"/></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white" aria-label="Instagram">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.9a4.1 4.1 0 1 0 0 8.2 4.1 4.1 0 0 0 0-8.2zM18.8 6.2a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/6 mt-8">
+      <div class="mx-auto max-w-7xl px-6 py-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
+        <div>&copy; 2026 1 Minute Sales. All rights reserved.</div>
+        <div class="mt-3 md:mt-0">Built with care — <a href="/terms_of_service.html" class="hover:text-white">Terms</a> · <a href="/privacy_policy.html" class="hover:text-white">Privacy</a></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>

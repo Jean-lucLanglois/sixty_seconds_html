@@ -1,369 +1,284 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy | 1 Minute Sales</title>
-    <meta
-      name="description"
-      content="Learn how 1 Minute Sales collects, uses, and protects your personal information. Read our privacy policy."
-    />
-    <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://www.1minutesales.com/privacy_policy.html"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body
-    class="bg-bgdeep text-white font-inter antialiased selection:bg-accent/20 selection:text-white"
-  >
-    <div class="mx-auto max-w-3xl px-6 py-12">
-      <h1 class="text-3xl font-semibold mb-6">Privacy Policy</h1>
-      <p class="mb-4">Effective Date: September 11, 2025</p>
-      <p class="mb-4">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | 1 Minute Sales</title>
+  <meta name="description" content="Learn how 1 Minute Sales collects, uses, and protects your personal information. Read our privacy policy.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.1minutesales.com/privacy_policy.html">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            accent: '#D3BC5F',
+            bgdeep: '#0B0F12',
+          },
+          boxShadow: {
+            glow: '0 0 40px 0 rgba(34, 211, 166, 0.15)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --bg: #0B0F12;
+      --grid: rgba(255,255,255,0.04);
+      --ring: rgba(204, 214, 26, 0.15);
+    }
+    .bg-grid {
+      background-image:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: 24px 24px;
+      background-position: -1px -1px;
+    }
+    .glow-layer::before,
+    .glow-layer::after {
+      content: "";
+      position: absolute;
+      inset: -10% -10% auto -10%;
+      height: 60%;
+      background: radial-gradient(600px 200px at 70% -20%, var(--ring), transparent 60%);
+      pointer-events: none;
+    }
+    .glow-layer::after {
+      inset: auto -10% -20% -10%;
+      height: 50%;
+      background: radial-gradient(500px 200px at 15% 110%, rgba(211, 214, 15, 0.12), transparent 65%);
+    }
+  </style>
+</head>
+<body class="bg-bgdeep text-white font-inter antialiased selection:bg-accent/20 selection:text-white">
+
+  <!-- Header -->
+  <header class="top-0 z-40 border-b border-white/10 bg-black/40 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <a class="flex items-center" href="/">
+          <img src="img/logo/1minutesale-logo-white.png" alt="1 Minute Sales company logo" loading="lazy">
+        </a>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+        <a class="hover:text-white" href="/#features">Features</a>
+        <a class="hover:text-white" href="/#integrations">Integrations</a>
+        <a class="hover:text-white" href="/blog/">Blog</a>
+        <a class="hover:text-white" href="/#pricing">Pricing</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="/#bookcall" class="inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-2 text-sm font-medium text-black hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-accent/40">Get started <span>&rarr;</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid"></div>
+    <div class="absolute inset-0 glow-layer"></div>
+    <div class="relative mx-auto max-w-3xl px-6 py-20">
+
+      <h1 class="text-3xl md:text-4xl font-semibold tracking-tight mb-6">Privacy Policy</h1>
+      <p class="mb-4 text-gray-400">Effective Date: September 11, 2025</p>
+      <p class="mb-4 text-gray-300">
         Your privacy is important to us. This Privacy Policy explains how 1
         Minute Sales collects, uses, discloses, and protects your information.
         This policy applies to all users of our platform, including individual
         contributors, sales managers, and organizational administrators.
       </p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">1. Information We Collect</h2>
-      <p class="mb-2"><strong>Account Information:</strong></p>
-      <ul class="list-disc ml-6 mb-4">
+      <h2 class="text-xl font-semibold mt-10 mb-3">1. Information We Collect</h2>
+      <p class="mb-2 text-gray-300"><strong class="text-white">Account Information:</strong></p>
+      <ul class="list-disc ml-6 mb-4 text-gray-300 space-y-1">
         <li>Name, email address, phone number, company name, and job title.</li>
         <li>Account preferences, user roles, and team structure.</li>
         <li>Billing and payment information for subscription management.</li>
       </ul>
-      <p class="mb-2"><strong>Business & Contact Data:</strong></p>
-      <ul class="list-disc ml-6 mb-4">
-        <li>
-          Customer and prospect information uploaded or imported by you or your
-          organization.
-        </li>
-        <li>
-          Call logs, email communications, and engagement history (when
-          integrated with your CRM).
-        </li>
-        <li>
-          Lead scoring data, conversation transcripts, and performance metrics.
-        </li>
+      <p class="mb-2 text-gray-300"><strong class="text-white">Business &amp; Contact Data:</strong></p>
+      <ul class="list-disc ml-6 mb-4 text-gray-300 space-y-1">
+        <li>Customer and prospect information uploaded or imported by you or your organization.</li>
+        <li>Call logs, email communications, and engagement history (when integrated with your CRM).</li>
+        <li>Lead scoring data, conversation transcripts, and performance metrics.</li>
       </ul>
-      <p class="mb-2"><strong>Usage & Analytics Data:</strong></p>
-      <ul class="list-disc ml-6 mb-4">
-        <li>
-          Pages visited, features used, time spent in the platform, and
-          interaction patterns.
-        </li>
-        <li>
-          Device information (browser type, operating system, IP address).
-        </li>
-        <li>
-          Performance data and system logs for debugging and optimization.
-        </li>
+      <p class="mb-2 text-gray-300"><strong class="text-white">Usage &amp; Analytics Data:</strong></p>
+      <ul class="list-disc ml-6 mb-4 text-gray-300 space-y-1">
+        <li>Pages visited, features used, time spent in the platform, and interaction patterns.</li>
+        <li>Device information (browser type, operating system, IP address).</li>
+        <li>Performance data and system logs for debugging and optimization.</li>
       </ul>
-      <p class="mb-2"><strong>Communications:</strong></p>
-      <ul class="list-disc ml-6 mb-4">
+      <p class="mb-2 text-gray-300"><strong class="text-white">Communications:</strong></p>
+      <ul class="list-disc ml-6 mb-4 text-gray-300 space-y-1">
         <li>Support tickets, feedback, and messages sent to our team.</li>
-        <li>
-          Email communications regarding account updates, features, and service
-          announcements.
-        </li>
+        <li>Email communications regarding account updates, features, and service announcements.</li>
       </ul>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">2. How We Use Information</h2>
-      <ul class="list-disc ml-6 mb-4">
-        <li>
-          <strong>Service Delivery:</strong> To provide, maintain, and improve
-          our platform, including AI-powered features, call recording, and
-          reporting capabilities.
-        </li>
-        <li>
-          <strong>Account Management:</strong> To manage subscriptions, process
-          payments, handle access requests, and support multi-user team
-          environments.
-        </li>
-        <li>
-          <strong>Communication:</strong> To send service updates, feature
-          announcements, billing notices, and responses to your inquiries.
-        </li>
-        <li>
-          <strong>Analytics & Optimization:</strong> To analyze usage patterns,
-          improve user experience, identify bugs, and optimize platform
-          performance.
-        </li>
-        <li>
-          <strong>AI Model Training:</strong> To improve our AI-powered sales
-          scripts, response recommendations, and scheduling features (unless you
-          opt out).
-        </li>
-        <li>
-          <strong>Legal Compliance:</strong> To comply with laws, regulations
-          (including GDPR, CCPA, TCPA), respond to legal requests, and prevent
-          fraud or misuse.
-        </li>
-        <li>
-          <strong>Security & Fraud Prevention:</strong> To detect, prevent, and
-          investigate unauthorized access, security threats, or policy
-          violations.
-        </li>
+      <h2 class="text-xl font-semibold mt-10 mb-3">2. How We Use Information</h2>
+      <ul class="list-disc ml-6 mb-4 text-gray-300 space-y-2">
+        <li><strong class="text-white">Service Delivery:</strong> To provide, maintain, and improve our platform, including AI-powered features, call recording, and reporting capabilities.</li>
+        <li><strong class="text-white">Account Management:</strong> To manage subscriptions, process payments, handle access requests, and support multi-user team environments.</li>
+        <li><strong class="text-white">Communication:</strong> To send service updates, feature announcements, billing notices, and responses to your inquiries.</li>
+        <li><strong class="text-white">Analytics &amp; Optimization:</strong> To analyze usage patterns, improve user experience, identify bugs, and optimize platform performance.</li>
+        <li><strong class="text-white">AI Model Training:</strong> To improve our AI-powered sales scripts, response recommendations, and scheduling features (unless you opt out).</li>
+        <li><strong class="text-white">Legal Compliance:</strong> To comply with laws, regulations (including GDPR, CCPA, TCPA), respond to legal requests, and prevent fraud or misuse.</li>
+        <li><strong class="text-white">Security &amp; Fraud Prevention:</strong> To detect, prevent, and investigate unauthorized access, security threats, or policy violations.</li>
       </ul>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        3. Information Sharing & Disclosure
-      </h2>
-      <p class="mb-4">
-        <strong>Third-Party Service Providers:</strong> We share information
-        with vendors who assist in operating the platform, including hosting
-        providers, payment processors, and analytics services. These partners
-        are bound by confidentiality agreements.
-      </p>
-      <p class="mb-4">
-        <strong>CRM Integrations:</strong> When you authorize integrations with
-        HubSpot, Pipedrive, or Zoho, we share relevant data according to the
-        scope of permissions you grant. This data is governed by the third
-        party's privacy policy.
-      </p>
-      <p class="mb-4">
-        <strong>Legal Requirements:</strong> We may disclose information if
-        required by law, government request, or court order. We will attempt to
-        notify you of such disclosures when permitted.
-      </p>
-      <p class="mb-4">
-        <strong>Business Transfers:</strong> In the event of a merger,
-        acquisition, or sale of assets, your information may be transferred as
-        part of that transaction. We will notify you of any change in ownership
-        or control.
-      </p>
-      <p class="mb-4">
-        <strong>No Sale of Data:</strong> We do not sell or rent your personal
-        information to third parties for their marketing purposes.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">3. Information Sharing &amp; Disclosure</h2>
+      <p class="mb-4 text-gray-300"><strong class="text-white">Third-Party Service Providers:</strong> We share information with vendors who assist in operating the platform, including hosting providers, payment processors, and analytics services. These partners are bound by confidentiality agreements.</p>
+      <p class="mb-4 text-gray-300"><strong class="text-white">CRM Integrations:</strong> When you authorize integrations with HubSpot, Pipedrive, or Zoho, we share relevant data according to the scope of permissions you grant. This data is governed by the third party's privacy policy.</p>
+      <p class="mb-4 text-gray-300"><strong class="text-white">Legal Requirements:</strong> We may disclose information if required by law, government request, or court order. We will attempt to notify you of such disclosures when permitted.</p>
+      <p class="mb-4 text-gray-300"><strong class="text-white">Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction. We will notify you of any change in ownership or control.</p>
+      <p class="mb-4 text-gray-300"><strong class="text-white">No Sale of Data:</strong> We do not sell or rent your personal information to third parties for their marketing purposes.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        4. Data Security & Protection
-      </h2>
-      <p class="mb-4">
-        We implement industry-standard security measures to protect your data,
-        including:
-      </p>
-      <ul class="list-disc ml-6 mb-4">
+      <h2 class="text-xl font-semibold mt-10 mb-3">4. Data Security &amp; Protection</h2>
+      <p class="mb-4 text-gray-300">We implement industry-standard security measures to protect your data, including:</p>
+      <ul class="list-disc ml-6 mb-4 text-gray-300 space-y-1">
         <li>Encryption of data in transit (HTTPS) and at rest.</li>
         <li>Role-based access controls for multi-user teams.</li>
         <li>Regular security audits and penetration testing.</li>
-        <li>
-          Secure credential management and two-factor authentication support.
-        </li>
+        <li>Secure credential management and two-factor authentication support.</li>
         <li>Regular backups and disaster recovery procedures.</li>
       </ul>
-      <p class="mb-4">
-        While we implement robust security measures, no system is completely
-        secure. We cannot guarantee absolute security of your information.
-      </p>
+      <p class="mb-4 text-gray-300">While we implement robust security measures, no system is completely secure. We cannot guarantee absolute security of your information.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        5. Your Data Rights & Choices
-      </h2>
-      <p class="mb-4">
-        <strong>Access & Portability:</strong> You have the right to request a
-        copy of your personal information in a portable format.
-      </p>
-      <p class="mb-4">
-        <strong>Correction & Deletion:</strong> You may update or request
-        deletion of your personal information. For business data within your
-        account, you maintain control and can delete or export it at any time.
-      </p>
-      <p class="mb-4">
-        <strong>Opt-Out of Marketing:</strong> You can opt out of promotional
-        emails and marketing communications through the unsubscribe link in our
-        emails or by contacting us.
-      </p>
-      <p class="mb-4">
-        <strong>AI Training Opt-Out:</strong> You may opt out of having your
-        data used for AI model improvement by contacting our support team.
-      </p>
-      <p class="mb-4">
-        <strong>Cookie & Tracking:</strong> Most browsers allow you to refuse
-        cookies or alert you when cookies are being sent.
-      </p>
-      <p class="mb-4">
-        <strong>GDPR & CCPA Rights:</strong> If you are a resident of the EU or
-        California, you have additional rights under GDPR and CCPA, including
-        the right to know, delete, and object to processing. Contact us to
-        exercise these rights.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">5. Your Data Rights &amp; Choices</h2>
+      <p class="mb-4 text-gray-300"><strong class="text-white">Access &amp; Portability:</strong> You have the right to request a copy of your personal information in a portable format.</p>
+      <p class="mb-4 text-gray-300"><strong class="text-white">Correction &amp; Deletion:</strong> You may update or request deletion of your personal information. For business data within your account, you maintain control and can delete or export it at any time.</p>
+      <p class="mb-4 text-gray-300"><strong class="text-white">Opt-Out of Marketing:</strong> You can opt out of promotional emails and marketing communications through the unsubscribe link in our emails or by contacting us.</p>
+      <p class="mb-4 text-gray-300"><strong class="text-white">AI Training Opt-Out:</strong> You may opt out of having your data used for AI model improvement by contacting our support team.</p>
+      <p class="mb-4 text-gray-300"><strong class="text-white">Cookie &amp; Tracking:</strong> Most browsers allow you to refuse cookies or alert you when cookies are being sent.</p>
+      <p class="mb-4 text-gray-300"><strong class="text-white">GDPR &amp; CCPA Rights:</strong> If you are a resident of the EU or California, you have additional rights under GDPR and CCPA, including the right to know, delete, and object to processing. Contact us to exercise these rights.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">6. Data Retention</h2>
-      <p class="mb-4">
-        We retain your information as long as your account is active or as
-        needed to provide services. After account termination, we retain data
-        for:
-      </p>
-      <ul class="list-disc ml-6 mb-4">
-        <li>
-          Financial records: typically 7 years for tax and compliance purposes.
-        </li>
-        <li>
-          Usage analytics: aggregated and anonymized data retained indefinitely.
-        </li>
-        <li>
-          Personal information: deleted or anonymized within 90 days of account
-          closure, unless legal obligations require longer retention.
-        </li>
+      <h2 class="text-xl font-semibold mt-10 mb-3">6. Data Retention</h2>
+      <p class="mb-4 text-gray-300">We retain your information as long as your account is active or as needed to provide services. After account termination, we retain data for:</p>
+      <ul class="list-disc ml-6 mb-4 text-gray-300 space-y-1">
+        <li>Financial records: typically 7 years for tax and compliance purposes.</li>
+        <li>Usage analytics: aggregated and anonymized data retained indefinitely.</li>
+        <li>Personal information: deleted or anonymized within 90 days of account closure, unless legal obligations require longer retention.</li>
       </ul>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        7. Third-Party Links & Services
-      </h2>
-      <p class="mb-4">
-        Our platform may contain links to third-party websites and services. We
-        are not responsible for their privacy practices. We encourage you to
-        review their privacy policies before providing personal information.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">7. Third-Party Links &amp; Services</h2>
+      <p class="mb-4 text-gray-300">Our platform may contain links to third-party websites and services. We are not responsible for their privacy practices. We encourage you to review their privacy policies before providing personal information.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">8. Children's Privacy</h2>
-      <p class="mb-4">
-        Our Service is not intended for individuals under 18 years of age. We do
-        not knowingly collect information from children. If we discover a child
-        has provided information, we will delete it promptly.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">8. Children's Privacy</h2>
+      <p class="mb-4 text-gray-300">Our Service is not intended for individuals under 18 years of age. We do not knowingly collect information from children. If we discover a child has provided information, we will delete it promptly.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        9. International Data Transfers
-      </h2>
-      <p class="mb-4">
-        If you are located outside the United States, your information may be
-        transferred to, stored in, and processed in the United States or other
-        countries. By using our Service, you consent to such transfers. We
-        implement appropriate safeguards, including Standard Contractual Clauses
-        for GDPR compliance.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">9. International Data Transfers</h2>
+      <p class="mb-4 text-gray-300">If you are located outside the United States, your information may be transferred to, stored in, and processed in the United States or other countries. By using our Service, you consent to such transfers. We implement appropriate safeguards, including Standard Contractual Clauses for GDPR compliance.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        10. Cookies & Tracking Technologies
-      </h2>
-      <p class="mb-4">
-        We use cookies and similar tracking technologies to enhance your
-        experience, remember your preferences, and analyze usage patterns. These
-        include:
-      </p>
-      <ul class="list-disc ml-6 mb-4">
-        <li>
-          <strong>Session Cookies:</strong> Essential for platform functionality
-          and security.
-        </li>
-        <li>
-          <strong>Persistent Cookies:</strong> Remember your login status and
-          preferences.
-        </li>
-        <li>
-          <strong>Analytics Cookies:</strong> Help us understand how users
-          interact with our platform.
-        </li>
+      <h2 class="text-xl font-semibold mt-10 mb-3">10. Cookies &amp; Tracking Technologies</h2>
+      <p class="mb-4 text-gray-300">We use cookies and similar tracking technologies to enhance your experience, remember your preferences, and analyze usage patterns. These include:</p>
+      <ul class="list-disc ml-6 mb-4 text-gray-300 space-y-1">
+        <li><strong class="text-white">Session Cookies:</strong> Essential for platform functionality and security.</li>
+        <li><strong class="text-white">Persistent Cookies:</strong> Remember your login status and preferences.</li>
+        <li><strong class="text-white">Analytics Cookies:</strong> Help us understand how users interact with our platform.</li>
       </ul>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        11. Changes to This Policy
-      </h2>
-      <p class="mb-4">
-        We may update this Privacy Policy periodically to reflect changes in our
-        practices or applicable laws. We will notify you of material changes via
-        email or platform notification. Your continued use of the Service
-        constitutes acceptance of updated terms.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">11. Changes to This Policy</h2>
+      <p class="mb-4 text-gray-300">We may update this Privacy Policy periodically to reflect changes in our practices or applicable laws. We will notify you of material changes via email or platform notification. Your continued use of the Service constitutes acceptance of updated terms.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        12. California Privacy Rights (CCPA)
-      </h2>
-      <p class="mb-4">
-        If you are a California resident, you have the right to:
-      </p>
-      <ul class="list-disc ml-6 mb-4">
+      <h2 class="text-xl font-semibold mt-10 mb-3">12. California Privacy Rights (CCPA)</h2>
+      <p class="mb-4 text-gray-300">If you are a California resident, you have the right to:</p>
+      <ul class="list-disc ml-6 mb-4 text-gray-300 space-y-1">
         <li>Know what personal information is collected, used, and shared.</li>
         <li>Delete personal information collected from you.</li>
         <li>Opt-out of the sale or sharing of personal information.</li>
         <li>Non-discrimination for exercising your privacy rights.</li>
       </ul>
-      <p class="mb-4">
-        To submit a CCPA request, contact us at
-        <a href="mailto:privacy@1minutesales.com" class="underline text-accent"
-          >privacy@1minutesales.com</a
-        >.
-      </p>
+      <p class="mb-4 text-gray-300">To submit a CCPA request, contact us at <a href="mailto:privacy@1minutesales.com" class="underline text-accent hover:brightness-110">privacy@1minutesales.com</a>.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        13. GDPR Compliance (EU Residents)
-      </h2>
-      <p class="mb-4">
-        For users subject to GDPR, we process your data based on:
-      </p>
-      <ul class="list-disc ml-6 mb-4">
-        <li>
-          <strong>Contract Performance:</strong> Processing necessary to provide
-          our services.
-        </li>
-        <li>
-          <strong>Legal Obligation:</strong> Compliance with applicable laws and
-          regulations.
-        </li>
-        <li>
-          <strong>Legitimate Interest:</strong> Improving security, analytics,
-          and platform optimization.
-        </li>
-        <li>
-          <strong>Consent:</strong> For marketing communications and optional
-          data usage.
-        </li>
+      <h2 class="text-xl font-semibold mt-10 mb-3">13. GDPR Compliance (EU Residents)</h2>
+      <p class="mb-4 text-gray-300">For users subject to GDPR, we process your data based on:</p>
+      <ul class="list-disc ml-6 mb-4 text-gray-300 space-y-2">
+        <li><strong class="text-white">Contract Performance:</strong> Processing necessary to provide our services.</li>
+        <li><strong class="text-white">Legal Obligation:</strong> Compliance with applicable laws and regulations.</li>
+        <li><strong class="text-white">Legitimate Interest:</strong> Improving security, analytics, and platform optimization.</li>
+        <li><strong class="text-white">Consent:</strong> For marketing communications and optional data usage.</li>
       </ul>
-      <p class="mb-4">
-        You have the right to lodge a complaint with your local data protection
-        authority. Our Data Protection Officer can be reached at
-        <a href="mailto:privacy@1minutesales.com" class="underline text-accent"
-          >privacy@1minutesales.com</a
-        >.
-      </p>
+      <p class="mb-4 text-gray-300">You have the right to lodge a complaint with your local data protection authority. Our Data Protection Officer can be reached at <a href="mailto:privacy@1minutesales.com" class="underline text-accent hover:brightness-110">privacy@1minutesales.com</a>.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">14. TCPA Compliance</h2>
-      <p class="mb-4">
-        We comply with the Telephone Consumer Protection Act (TCPA) by ensuring
-        that contact lists are verified, consent is obtained where required, and
-        do-not-call registries are respected. Users are responsible for ensuring
-        compliance with TCPA regulations when using our calling and messaging
-        features.
-      </p>
+      <h2 class="text-xl font-semibold mt-10 mb-3">14. TCPA Compliance</h2>
+      <p class="mb-4 text-gray-300">We comply with the Telephone Consumer Protection Act (TCPA) by ensuring that contact lists are verified, consent is obtained where required, and do-not-call registries are respected. Users are responsible for ensuring compliance with TCPA regulations when using our calling and messaging features.</p>
 
-      <h2 class="text-xl font-semibold mt-8 mb-2">
-        15. Contact & Data Protection Officer
-      </h2>
-      <p class="mb-4">
-        For privacy-related questions, concerns, or to exercise your rights,
-        contact:
-      </p>
-      <ul class="list-disc ml-6 mb-4">
-        <li>
-          <strong>Email:</strong>
-          <a
-            href="mailto:privacy@1minutesales.com"
-            class="underline text-accent"
-            >privacy@1minutesales.com</a
-          >
-        </li>
-        <li>
-          <strong>General Support:</strong>
-          <a href="mailto:info@1minutesales.com" class="underline text-accent"
-            >info@1minutesales.com</a
-          >
-        </li>
+      <h2 class="text-xl font-semibold mt-10 mb-3">15. Contact &amp; Data Protection Officer</h2>
+      <p class="mb-4 text-gray-300">For privacy-related questions, concerns, or to exercise your rights, contact:</p>
+      <ul class="list-disc ml-6 mb-4 text-gray-300 space-y-1">
+        <li><strong class="text-white">Email:</strong> <a href="mailto:privacy@1minutesales.com" class="underline text-accent hover:brightness-110">privacy@1minutesales.com</a></li>
+        <li><strong class="text-white">General Support:</strong> <a href="mailto:info@1minutesales.com" class="underline text-accent hover:brightness-110">info@1minutesales.com</a></li>
       </ul>
-      <p class="mb-4">
-        We typically respond to data requests within 30 days. For comprehensive
-        information about our privacy practices or custom data processing
-        agreements, please contact our team.
-      </p>
+      <p class="mb-4 text-gray-300">We typically respond to data requests within 30 days. For comprehensive information about our privacy practices or custom data processing agreements, please contact our team.</p>
+
     </div>
-  </body>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 mt-20">
+    <div class="mx-auto max-w-7xl px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <a href="/" class="flex items-center gap-3 mb-4">
+          <img src="img/logo/1minutesale-logo-white.png" alt="1 Minute Sales" class="h-8">
+        </a>
+        <p class="text-sm text-gray-400 max-w-sm">1 Minute Sales — Instant lead response and AI-assisted sales teams that convert more leads in less time.</p>
+        <p class="mt-4 text-xs text-gray-500">30 North Gould Street, Suite 5531<br>Sheridan, WY 82801</p>
+        <p class="mt-2 text-xs text-gray-500">Phone: <a href="tel:+18317447749" class="hover:text-white">+1 (831) 744-7749</a><br>Email: <a href="mailto:hello@1minutesales.com" class="hover:text-white">hello@1minutesales.com</a></p>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold mb-4">Product</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="/#features" class="hover:text-white">Features</a></li>
+          <li><a href="/#pricing" class="hover:text-white">Pricing</a></li>
+          <li><a href="/#integrations" class="hover:text-white">Integrations</a></li>
+          <li><a href="/register.html" class="hover:text-white">Get Started</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold mb-4">Company</h4>
+        <ul class="space-y-2 text-sm text-gray-400">
+          <li><a href="/careers.html" class="hover:text-white">Sales Careers</a></li>
+          <li><a href="/privacy_policy.html" class="hover:text-white">Privacy Policy</a></li>
+          <li><a href="/terms_of_service.html" class="hover:text-white">Terms of Service</a></li>
+          <li><a href="/contact.html" class="hover:text-white">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-sm font-semibold mb-4">Subscribe</h4>
+        <p class="text-sm text-gray-400 mb-4">Get the latest on sales automation and conversion strategies.</p>
+        <form class="flex gap-2" onsubmit="event.preventDefault(); alert('Thanks — subscription saved!'); this.reset();">
+          <input type="email" placeholder="you@email.com" class="flex-1 rounded-lg bg-white/5 px-3 py-2 text-sm text-white placeholder-gray-500 border border-white/10 focus:outline-none focus:border-accent/50" required>
+          <button type="submit" class="rounded-lg bg-accent px-4 py-2 text-sm font-medium text-black hover:brightness-110">Subscribe</button>
+        </form>
+        <div class="mt-6">
+          <h4 class="text-sm font-semibold mb-3 text-gray-200">Follow us</h4>
+          <div class="flex items-center gap-3">
+            <a href="#" class="text-gray-400 hover:text-white" aria-label="Twitter">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 5.92c-.63.28-1.3.48-2 .57.72-.43 1.27-1.12 1.53-1.94-.67.4-1.41.69-2.2.85C18.5 4.5 17.64 4 16.66 4c-1.44 0-2.6 1.17-2.6 2.6 0 .2.02.39.06.57C10.28 7.06 7.1 5.13 5.04 2.4c-.22.38-.35.82-.35 1.29 0 .9.46 1.7 1.16 2.17-.53-.02-1.03-.16-1.46-.4v.04c0 1.27.9 2.33 2.1 2.57-.22.06-.45.09-.69.09-.17 0-.33-.02-.49-.05.33 1.01 1.3 1.75 2.45 1.77C6.2 12.1 5 12.6 3.72 12.6c-.25 0-.5-.01-.74-.04 1.02.66 2.24 1.05 3.55 1.05 4.27 0 6.61-3.54 6.61-6.61v-.3c.45-.33.84-.74 1.16-1.2z"/></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white" aria-label="LinkedIn">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0V8zm7.5 0h4.7v2.2h.1c.7-1.3 2.4-2.6 5-2.6 5.3 0 6.3 3.5 6.3 8.1V24H19v-7.8c0-1.9 0-4.3-2.6-4.3-2.6 0-3 2-3 4.1V24H7.5V8z"/></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white" aria-label="Facebook">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.9h2.54V9.41c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.23.2 2.23.2v2.45h-1.25c-1.23 0-1.62.77-1.62 1.56v1.87h2.77l-.44 2.9h-2.33v6.99C18.34 21.12 22 16.99 22 12z"/></svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white" aria-label="Instagram">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 5.9a4.1 4.1 0 1 0 0 8.2 4.1 4.1 0 0 0 0-8.2zM18.8 6.2a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/6 mt-8">
+      <div class="mx-auto max-w-7xl px-6 py-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-400">
+        <div>&copy; 2026 1 Minute Sales. All rights reserved.</div>
+        <div class="mt-3 md:mt-0">Built with care — <a href="/terms_of_service.html" class="hover:text-white">Terms</a> · <a href="/privacy_policy.html" class="hover:text-white">Privacy</a></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>
