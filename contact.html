@@ -114,6 +114,22 @@
           </div>
         </div>
 
+        <div class="rounded-xl border border-white/10 bg-white/5 px-4 py-4">
+          <div class="flex items-start gap-3">
+            <input type="checkbox" id="sms_consent" name="sms_consent" value="yes"
+                   class="mt-1 h-4 w-4 rounded border-white/20 bg-white/5 text-accent focus:ring-2 focus:ring-accent/40">
+            <label for="sms_consent" class="text-sm text-gray-300">
+              I agree to receive conversational text messages from 1 Minute Sales about my inquiry.
+            </label>
+          </div>
+          <p class="mt-3 text-xs text-gray-400">
+            Message frequency varies. Message and data rates may apply. Reply STOP to unsubscribe or HELP for help.
+            Consent is not a condition of purchase. See our
+            <a href="/privacy_policy.html" class="underline text-accent hover:brightness-110">Privacy Policy</a> and
+            <a href="/terms_of_service.html" class="underline text-accent hover:brightness-110">Terms of Service</a>.
+          </p>
+        </div>
+
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div>
             <label for="city" class="block text-sm font-medium text-gray-300 mb-1.5">City</label>
@@ -237,20 +253,32 @@
       const btn = document.getElementById('submit-btn');
       const status = document.getElementById('form-status');
       const form = this;
+      const smsConsent = form.sms_consent.checked;
+      const phoneValue = form.phone.value.trim();
 
       btn.disabled = true;
       btn.innerHTML = 'Sending&hellip;';
       status.className = 'hidden';
+
+      if (smsConsent && !phoneValue) {
+        status.textContent = 'Please add a phone number to receive text updates.';
+        status.className = 'rounded-lg px-4 py-3 text-sm bg-yellow-500/10 border border-yellow-500/20 text-yellow-400';
+        btn.disabled = false;
+        btn.innerHTML = 'Send Message <span>&rarr;</span>';
+        return;
+      }
 
       const payload = {
         client_id: CLIENT_ID,
         api_token: API_TOKEN,
         name: form.name.value.trim(),
         email: form.email.value.trim(),
-        phone: form.phone.value.trim() || undefined,
+        phone: phoneValue || undefined,
         business_name: form.business_name.value.trim() || undefined,
         city: form.city.value.trim() || undefined,
-        state: form.state.value.trim() || undefined
+        state: form.state.value.trim() || undefined,
+        description: form.message.value.trim() || undefined,
+        sms_consent: smsConsent ? 'yes' : undefined
       };
 
       // Remove undefined keys
