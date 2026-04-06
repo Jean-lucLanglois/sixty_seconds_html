@@ -9,6 +9,7 @@
   <link rel="canonical" href="https://www.1minutesales.com/contact.html">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
   <script>
     tailwind.config = {
       theme: {
@@ -27,34 +28,6 @@
       }
     }
   </script>
-  <style>
-    :root {
-      --bg: #0B0F12;
-      --grid: rgba(255,255,255,0.04);
-      --ring: rgba(204, 214, 26, 0.15);
-    }
-    .bg-grid {
-      background-image:
-        linear-gradient(var(--grid) 1px, transparent 1px),
-        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-      background-size: 24px 24px;
-      background-position: -1px -1px;
-    }
-    .glow-layer::before,
-    .glow-layer::after {
-      content: "";
-      position: absolute;
-      inset: -10% -10% auto -10%;
-      height: 60%;
-      background: radial-gradient(600px 200px at 70% -20%, var(--ring), transparent 60%);
-      pointer-events: none;
-    }
-    .glow-layer::after {
-      inset: auto -10% -20% -10%;
-      height: 50%;
-      background: radial-gradient(500px 200px at 15% 110%, rgba(211, 214, 15, 0.12), transparent 65%);
-    }
-  </style>
 </head>
 <body class="bg-bgdeep text-white font-inter antialiased selection:bg-accent/20 selection:text-white">
 
