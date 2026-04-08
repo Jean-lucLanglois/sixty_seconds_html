@@ -46,7 +46,7 @@ Then visit `http://localhost:8080`.
 0.06    CNAME
 0.07    New Phone#
 0.08    New Pricing
-0.09    
+0.09    llms.txt
 0.10    
 0.11    
 0.12    
