@@ -49,9 +49,33 @@ Then visit `http://localhost:8080`.
 0.09    llms.txt
 0.10    who we help
 0.11    updated sitemap.xml
-0.12    
-0.13    
-0.14    
-0.15    
-0.16    
-0.17        
+0.12    updated target audience
+0.13    Added /landing
+0.14    created /landing/builders-remodelers.html
+0.15    created /landing/cosmetic-med-spa.html
+0.16    created /landing/personal-injury.html
+0.17    updated sitemap.xml
+0.18    updated llms.txt
+0.19
+0.20
+0.21
+0.22
+0.23
+0.24
+0.25
+0.26
+0.27
+0.28
+0.29
+0.30
+0.31
+0.32
+0.33
+0.34
+0.35
+0.36
+0.37
+0.38
+0.39
+0.40
+0.41
