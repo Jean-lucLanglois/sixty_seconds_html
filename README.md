@@ -56,8 +56,8 @@ Then visit `http://localhost:8080`.
 0.16    created /landing/personal-injury.html
 0.17    updated sitemap.xml
 0.18    updated llms.txt
-0.19
-0.20
+0.19    updated landing
+0.20    updated sitemap
 0.21
 0.22
 0.23
