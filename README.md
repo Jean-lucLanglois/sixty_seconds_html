@@ -58,7 +58,7 @@ Then visit `http://localhost:8080`.
 0.18    updated llms.txt
 0.19    updated landing
 0.20    updated sitemap
-0.21
+0.21    Updated duplicated
 0.22
 0.23
 0.24
