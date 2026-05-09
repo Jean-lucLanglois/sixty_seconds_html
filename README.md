@@ -59,7 +59,7 @@ Then visit `http://localhost:8080`.
 0.19    updated landing
 0.20    updated sitemap
 0.21    Updated duplicated
-0.22
+0.22    Update contact submit 
 0.23
 0.24
 0.25

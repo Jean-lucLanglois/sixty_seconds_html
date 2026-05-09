@@ -198,9 +198,7 @@
   </footer>
 
   <script>
-    const WEBHOOK_URL = 'https://n8n-sixtysecondsale.ngrok-free.dev/webhook/leads';
-    const CLIENT_ID = 24;
-    const API_TOKEN = '30e1798b0f6df953cd71b89f56acef5c98782d7a6e18a075e2dce21897650606';
+    const WEBHOOK_URL = 'https://shark-app-amo5i.ondigitalocean.app/'; 
 
     document.getElementById('contact-form').addEventListener('submit', async function(e) {
       e.preventDefault();
@@ -223,9 +221,7 @@
         return;
       }
 
-      const payload = {
-        client_id: CLIENT_ID,
-        api_token: API_TOKEN,
+      const payload = { 
         name: form.name.value.trim(),
         email: form.email.value.trim(),
         phone: phoneValue || undefined,
