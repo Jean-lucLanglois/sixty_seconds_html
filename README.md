@@ -61,7 +61,7 @@ Then visit `http://localhost:8080`.
 0.21    Updated duplicated
 0.22    Update contact submit 
 0.23    Added 5 blog pages
-0.24
+0.24    Updated SEO
 0.25
 0.26
 0.27

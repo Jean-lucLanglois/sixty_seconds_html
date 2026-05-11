@@ -19,6 +19,10 @@
   <meta name="twitter:title" content="1 Minute Sales — Convert High-Value Inbound Leads Faster">
   <meta name="twitter:description" content="AI-assisted lead intake and follow-up for firms and clinics where every inbound lead matters.">
   <meta name="twitter:image" content="https://www.1minutesales.com/img/logo/1minutesale-logo-white.png">
+  <!-- Performance: preconnect to third-party origins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Google Fonts: Inter -->
@@ -104,6 +108,52 @@
         }
       }
     ]
+  }
+  </script>
+  <!-- Schema: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "1 Minute Sales",
+    "url": "https://www.1minutesales.com",
+    "logo": "https://www.1minutesales.com/img/logo/1minutesale-logo-white.png",
+    "description": "AI-assisted lead intake and follow-up for high-value inbound sales teams that need faster response, more consistent qualification, and better conversion on valuable inquiries.",
+    "telephone": "+1-878-879-7253",
+    "email": "hello@1minutesales.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "30 North Gould Street, Suite 5531",
+      "addressLocality": "Sheridan",
+      "addressRegion": "WY",
+      "postalCode": "82801",
+      "addressCountry": "US"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-878-879-7253",
+      "contactType": "sales",
+      "email": "hello@1minutesales.com",
+      "areaServed": "US",
+      "availableLanguage": "English"
+    }
+  }
+  </script>
+  <!-- Schema: WebSite (enables sitelinks search box) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "1 Minute Sales",
+    "url": "https://www.1minutesales.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.1minutesales.com/blog/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
   }
   </script>
 </head>
