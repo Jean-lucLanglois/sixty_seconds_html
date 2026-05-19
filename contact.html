@@ -202,7 +202,7 @@
   </footer>
 
   <script>
-    const WEBHOOK_URL = 'https://shark-app-amo5i.ondigitalocean.app/'; 
+    const WEBHOOK_URL = 'https://submit.1minutesales.com/leads/submit';
 
     document.getElementById('contact-form').addEventListener('submit', async function(e) {
       e.preventDefault();
@@ -232,7 +232,7 @@
         business_name: form.business_name.value.trim() || undefined,
         city: form.city.value.trim() || undefined,
         state: form.state.value.trim() || undefined,
-        description: form.message.value.trim() || undefined,
+        message: form.message.value.trim() || undefined,
         sms_consent: smsConsent ? 'yes' : undefined
       };
 
@@ -251,9 +251,11 @@
           status.className = 'rounded-lg px-4 py-3 text-sm bg-green-500/10 border border-green-500/20 text-green-400';
           form.reset();
         } else {
-          throw new Error('Server returned ' + res.status);
+          const body = await res.text().catch(() => '');
+          throw new Error(`Server ${res.status}: ${body.slice(0, 200)}`);
         }
       } catch (err) {
+        console.error('contact form submit failed:', err);
         status.textContent = 'Something went wrong. Please try again or email us at hello@1minutesales.com.';
         status.className = 'rounded-lg px-4 py-3 text-sm bg-red-500/10 border border-red-500/20 text-red-400';
       } finally {
