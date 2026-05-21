@@ -64,7 +64,7 @@ Then visit `http://localhost:8080`.
 0.24    Updated SEO
 0.25    updated submit url
 0.26    updated to full sales
-0.27
+0.27    removed email address.
 0.28
 0.29
 0.30
