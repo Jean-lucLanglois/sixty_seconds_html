@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
   <title>Cosmetic Clinics & Med Spas | 1 Minute Sales</title>
   <meta name="description" content="Turn more cosmetic consultation inquiries into booked, qualified procedures with AI-assisted lead intake and follow-up for plastic surgeons, cosmetic clinics, and med spas.">
   <meta name="robots" content="index, follow">
@@ -11,23 +14,54 @@
   <meta property="og:description" content="Respond faster to consultation inquiries, qualify high-intent leads, and book more procedures before prospects choose another provider.">
   <meta property="og:url" content="https://www.1minutesales.com/landing/cosmetic-med-spa.html">
   <meta property="og:type" content="website">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta property="og:image" content="https://www.1minutesales.com/img/og/cosmetic-med-spa.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="1 Minute Sales — outsourced sales force for high-ticket inbound businesses">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.1minutesales.com/img/og/cosmetic-med-spa.webp">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            inter: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-          },
-          colors: {
-            accent: '#D3BC5F',
-            bgdeep: '#0B0F12',
-          },
-        }
-      }
+  <link rel="stylesheet" href="/dist/styles.css">
+  <!-- Schema: FAQPage (vertical-specific) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "How do you handle HIPAA when talking to potential patients?", "acceptedAnswer": { "@type": "Answer", "text": "Intake conversations are scheduling and qualification — confirming procedure interest, contact preference, and consult availability. We do not transmit, store, or discuss protected medical history; that conversation is reserved for your clinical staff during the consult itself. All data handoffs into your scheduling tool follow your existing data-flow practices." } },
+      { "@type": "Question", "name": "Do you handle pricing questions on the call?", "acceptedAnswer": { "@type": "Answer", "text": "We give procedure price ranges — the same starting-from numbers your front desk would share — to get the patient comfortable enough to book the consult. Final pricing is always reserved for the provider after evaluation. If your practice has set starting-from prices per procedure, we use yours; if not, we follow standard ranges for your market." } },
+      { "@type": "Question", "name": "We use Symplast / PatientNow / Nextech / Mindbody. Do you integrate?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — booked consults land on your existing calendar with the patient contact, procedure of interest, and source noted. We integrate with most aesthetic-practice EHR/PM systems via their inbound APIs or calendar feeds. If you use a system not yet on our list, we typically support it within 1-2 weeks of starting." } },
+      { "@type": "Question", "name": "What about after-hours and weekend inquiries?", "acceptedAnswer": { "@type": "Answer", "text": "We respond 24/7. Most clinics see 40%+ of their inbound arriving outside business hours — Instagram-driven inquiries especially skew evenings and weekends. Those leads sit in a Monday morning queue at most practices; by then the patient has already booked with whoever called back Saturday afternoon." } },
+      { "@type": "Question", "name": "What does this typically cost relative to a part-time coordinator?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly comparable to a part-time intake coordinator's monthly cost, but with 60-second response, 24/7 coverage, and consistent qualification on every inquiry — no sick days, no training ramp, no shift gaps. Most practices recoup the investment in the first 2-3 incremental procedures." } }
+    ]
+  }
+  </script>
+  <!-- Schema: Service (vertical-specific) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Outsourced Sales for Cosmetic Clinics and Med Spas",
+    "description": "Done-for-you consultation intake, lead qualification, and appointment booking for plastic surgery practices, cosmetic clinics, and med spas. We respond to consultation inquiries within 60 seconds and book qualified procedures before prospects choose another provider.",
+    "url": "https://www.1minutesales.com/landing/cosmetic-med-spa.html",
+    "serviceType": "Outsourced Sales for Cosmetic Clinics and Medical Spas",
+    "areaServed": "US",
+    "provider": {
+      "@type": "Organization",
+      "@id": "https://www.1minutesales.com/#org"
+    },
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Plastic surgeons, cosmetic clinics, medical spas"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.1minutesales.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Cosmetic Clinics and Med Spas", "item": "https://www.1minutesales.com/landing/cosmetic-med-spa.html" }
+      ]
     }
+  }
   </script>
 </head>
 <body class="bg-bgdeep text-white font-inter antialiased selection:bg-accent/20 selection:text-white">
@@ -151,6 +185,76 @@
             <p class="mt-3 text-lg text-white">AI sales automation for everyone.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Vertical-specific deep-dive: realities of cosmetic intake -->
+    <section class="mx-auto max-w-3xl px-6 pb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Why cosmetic patients pick the clinic that calls first</h2>
+      <p class="mt-4 text-gray-300 leading-relaxed">
+        Aesthetic patients shop differently than emergency or service-business customers. A few patterns play out across virtually every clinic we work with — and intake processes that ignore them quietly cap consult volume below what the same ad spend could produce.
+      </p>
+
+      <div class="mt-8 grid gap-5">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent">Procedure price bands shape buyer behavior</p>
+          <p class="mt-2 text-sm text-gray-300 leading-relaxed">
+            A $400 Botox lead and a $15,000 mommy makeover lead are not the same inquiry. Patients submitting for high-ticket procedures (rhinoplasty $8K–$15K, breast augmentation $7K–$12K, body contouring $6K–$10K, dental implants $4K–$6K per implant) typically request 3–4 consults from different providers before committing. The provider who calls back the same day — ideally the same hour — is the one who books the consult and almost always closes the procedure. Slower clinics get to deliver a discount pitch to someone whose deposit already cleared elsewhere.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent">Patients buy the consult, not the procedure</p>
+          <p class="mt-2 text-sm text-gray-300 leading-relaxed">
+            Every successful cosmetic clinic closes from the consult room, not from the inquiry form. The intake conversation has one job: book a consult on the calendar before the patient moves on. That means answering the only three questions they actually have on the call (price range, downtime, who performs it), addressing anxiety, and getting a date locked in. Front-desk staff handle this well when they have time and capacity — but inquiries that arrive during procedures, between rooms, or after hours pile up unanswered, and patients book elsewhere.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent">Before-and-after expectations are non-negotiable</p>
+          <p class="mt-2 text-sm text-gray-300 leading-relaxed">
+            Aesthetic patients want to see your work before they commit. They will visit Instagram, RealSelf, your website gallery, and Google reviews in the 24 hours after they fill out a form. Sending the right gallery link or pre-consult packet during follow-up — keyed to the procedure they actually asked about — turns "I'm shopping around" into "I'm booked Thursday." Generic auto-replies that send everyone the same brochure get ignored.
+          </p>
+        </div>
+      </div>
+
+      <h2 id="medspa-faq" class="mt-14 text-2xl md:text-3xl font-semibold tracking-tight">Common questions from cosmetic clinics</h2>
+      <div class="mt-6 space-y-3">
+        <details class="group rounded-xl border border-white/10 bg-white/5 p-5 open:border-accent/40 open:bg-accent/5">
+          <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-white">
+            How do you handle HIPAA when talking to potential patients?
+            <span class="ml-4 shrink-0 text-accent transition group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed text-gray-300">Intake conversations are scheduling and qualification — confirming procedure interest, contact preference, and consult availability. We do not transmit, store, or discuss protected medical history; that conversation is reserved for your clinical staff during the consult itself. All data handoffs into your scheduling tool follow your existing data-flow practices.</p>
+        </details>
+        <details class="group rounded-xl border border-white/10 bg-white/5 p-5 open:border-accent/40 open:bg-accent/5">
+          <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-white">
+            Do you handle pricing questions on the call?
+            <span class="ml-4 shrink-0 text-accent transition group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed text-gray-300">We give procedure price ranges — the same starting-from numbers your front desk would share — to get the patient comfortable enough to book the consult. Final pricing is always reserved for the provider after evaluation. If your practice has set "from" prices per procedure, we use yours; if not, we follow standard ranges for your market.</p>
+        </details>
+        <details class="group rounded-xl border border-white/10 bg-white/5 p-5 open:border-accent/40 open:bg-accent/5">
+          <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-white">
+            We use Symplast / PatientNow / Nextech / Mindbody. Do you integrate?
+            <span class="ml-4 shrink-0 text-accent transition group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed text-gray-300">Yes — booked consults land on your existing calendar with the patient contact, procedure of interest, and source noted. We integrate with most aesthetic-practice EHR/PM systems via their inbound APIs or calendar feeds. If you use a system not yet on our list, we typically support it within 1–2 weeks of starting.</p>
+        </details>
+        <details class="group rounded-xl border border-white/10 bg-white/5 p-5 open:border-accent/40 open:bg-accent/5">
+          <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-white">
+            What about after-hours and weekend inquiries?
+            <span class="ml-4 shrink-0 text-accent transition group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed text-gray-300">We respond 24/7. Most clinics see 40%+ of their inbound arriving outside business hours — Instagram-driven inquiries especially skew evenings and weekends. Those leads sit in a Monday morning queue at most practices; by then the patient has already booked with whoever called back Saturday afternoon.</p>
+        </details>
+        <details class="group rounded-xl border border-white/10 bg-white/5 p-5 open:border-accent/40 open:bg-accent/5">
+          <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-white">
+            What does this typically cost relative to a part-time coordinator?
+            <span class="ml-4 shrink-0 text-accent transition group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed text-gray-300">Roughly comparable to a part-time intake coordinator's monthly cost, but with 60-second response, 24/7 coverage, and consistent qualification on every inquiry — no sick days, no training ramp, no shift gaps. Most practices recoup the investment in the first 2–3 incremental procedures.</p>
+        </details>
       </div>
     </section>
 

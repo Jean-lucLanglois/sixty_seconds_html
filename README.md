@@ -65,9 +65,9 @@ Then visit `http://localhost:8080`.
 0.25    updated submit url
 0.26    updated to full sales
 0.27    removed email address.
-0.28
-0.29
-0.30
+0.28    SEO
+0.29    Added Banana images
+0.30    Added favicon
 0.31
 0.32
 0.33

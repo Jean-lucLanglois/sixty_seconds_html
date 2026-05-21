@@ -1,6 +1,12 @@
 User-agent: *
 Allow: /
 Disallow: /img/
+# Allow favicons + blog hero images (used in BlogPosting/OG schema).
+Allow: /img/favicon.ico
+Allow: /img/favicon-16x16.png
+Allow: /img/favicon-32x32.png
+Allow: /img/blog-heroes/
+Allow: /img/og/
 
 Sitemap: https://www.1minutesales.com/sitemap.xml
 
@@ -10,4 +16,23 @@ Allow: /
 
 # Bing
 User-agent: Bingbot
+Allow: /
+
+# AI Search Crawlers — explicitly permitted for search visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
 Allow: /

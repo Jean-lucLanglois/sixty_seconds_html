@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
   <title>Schedule a Strategy Call | 1 Minute Sales</title>
   <meta name="description" content="Schedule a strategy call with 1 Minute Sales to review your inbound lead flow, response speed, and conversion opportunities.">
   <meta name="robots" content="index, follow">
@@ -11,27 +14,45 @@
   <meta property="og:description" content="Review your lead flow, follow-up gaps, and conversion opportunities with 1 Minute Sales.">
   <meta property="og:url" content="https://www.1minutesales.com/schedule-strategy-call.html">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.1minutesales.com/img/og/home.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="1 Minute Sales — outsourced sales force for high-ticket inbound businesses">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.1minutesales.com/img/og/home.webp">
   <!-- Performance: preconnect to third-party origins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.tailwindcss.com">
-  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            inter: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-          },
-          colors: {
-            accent: '#D3BC5F',
-            bgdeep: '#0B0F12',
-          },
-        }
-      }
+  <link rel="stylesheet" href="/dist/styles.css">
+  <!-- Schema: Service for free strategy call -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Sales Strategy Call — 1 Minute Sales",
+    "description": "Schedule a 30-minute strategy call with 1 Minute Sales. We review your inbound lead flow, response timing, qualification gaps, and show where faster intake improves conversion.",
+    "url": "https://www.1minutesales.com/schedule-strategy-call.html",
+    "provider": {
+      "@type": "Organization",
+      "@id": "https://www.1minutesales.com/#org"
+    },
+    "serviceType": "Sales Consultation",
+    "areaServed": "US",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free 30-minute strategy call"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.1minutesales.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Schedule a Strategy Call", "item": "https://www.1minutesales.com/schedule-strategy-call.html" }
+      ]
     }
+  }
   </script>
 </head>
 <body class="bg-bgdeep text-white font-inter antialiased selection:bg-accent/20 selection:text-white">

@@ -54,3 +54,8 @@ debug.log
 
 # Claude
 claude.md
+
+# Tailwind / Node — the CSS is built by GitHub Actions on deploy.
+/node_modules
+/dist
+

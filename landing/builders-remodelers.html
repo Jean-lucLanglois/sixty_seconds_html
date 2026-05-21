@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
   <title>Builders & Remodelers | 1 Minute Sales</title>
   <meta name="description" content="Stop losing high-value projects because nobody followed up fast enough. AI-assisted lead intake and follow-up for custom builders, remodelers, and premium contractors.">
   <meta name="robots" content="index, follow">
@@ -11,23 +14,54 @@
   <meta property="og:description" content="Respond faster to project inquiries, qualify opportunities sooner, and stop letting large jobs go cold.">
   <meta property="og:url" content="https://www.1minutesales.com/landing/builders-remodelers.html">
   <meta property="og:type" content="website">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta property="og:image" content="https://www.1minutesales.com/img/og/builders-remodelers.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="1 Minute Sales — outsourced sales force for high-ticket inbound businesses">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.1minutesales.com/img/og/builders-remodelers.webp">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            inter: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-          },
-          colors: {
-            accent: '#D3BC5F',
-            bgdeep: '#0B0F12',
-          },
-        }
-      }
+  <link rel="stylesheet" href="/dist/styles.css">
+  <!-- Schema: FAQPage (vertical-specific) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Can your team qualify against our minimum project value or scope?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Most builders set a project-value floor and disqualify outside their geographic zone or scope. We screen against your filter before booking any site visit, so the calendar that lands on your phone is qualified projects only — not curiosity callers or sub-$10K handyman work." } },
+      { "@type": "Question", "name": "Will the team understand construction terminology?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We train the intake script on your specific scope — whether that's custom homes, additions, kitchen/bath remodels, exterior renovation, or restoration. The team uses your terminology (rough-in, scope of work, permit timeline, finish allowances) so homeowners feel they are talking to someone who knows the trade, not a generic call center." } },
+      { "@type": "Question", "name": "We use BuilderTrend / CoConstruct / JobNimbus / Houzz Pro. Do you integrate?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — qualified inquiries flow into your existing project management or CRM with contact info, project type, scope notes, and site-visit timing. You estimate from inside the system you already use; nothing changes about how the rest of the job runs." } },
+      { "@type": "Question", "name": "What if a lead asks for a ballpark price during the intake call?", "acceptedAnswer": { "@type": "Answer", "text": "We give the same starting-from project-value ranges your office staff would share to set expectations — enough to qualify the prospect's seriousness without committing you to a number. Real estimates remain a job for you and the homeowner during the site visit, where you can actually see scope, site conditions, and existing structure." } },
+      { "@type": "Question", "name": "How does this scale during the spring peak?", "acceptedAnswer": { "@type": "Answer", "text": "Built for it. The whole point is that your intake quality stays flat through volume spikes — your crews can stay on job sites without lead-form anxiety because every inquiry still gets a 60-second response and a same-day site-visit booking regardless of how busy your office is." } }
+    ]
+  }
+  </script>
+  <!-- Schema: Service (vertical-specific) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Outsourced Sales for Custom Builders and Remodelers",
+    "description": "Done-for-you lead intake, qualification, and deal closing for custom builders, remodelers, and premium contractors. We respond to project inquiries within 60 seconds, qualify project fit, and close signed contracts on high-value jobs.",
+    "url": "https://www.1minutesales.com/landing/builders-remodelers.html",
+    "serviceType": "Outsourced Sales for Home Builders and Remodelers",
+    "areaServed": "US",
+    "provider": {
+      "@type": "Organization",
+      "@id": "https://www.1minutesales.com/#org"
+    },
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Custom home builders, remodelers, premium residential contractors"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.1minutesales.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Builders and Remodelers", "item": "https://www.1minutesales.com/landing/builders-remodelers.html" }
+      ]
     }
+  }
   </script>
 </head>
 <body class="bg-bgdeep text-white font-inter antialiased selection:bg-accent/20 selection:text-white">
@@ -151,6 +185,76 @@
             <p class="mt-3 text-lg text-white">Generic AI sales automation for local businesses.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Vertical-specific deep-dive: realities of builder/remodeler intake -->
+    <section class="mx-auto max-w-3xl px-6 pb-12">
+      <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Why builders lose six-figure jobs at the inbound stage</h2>
+      <p class="mt-4 text-gray-300 leading-relaxed">
+        Custom builders and remodelers run on a fundamentally different inbound rhythm than retail or e-commerce. Your job estimating cycle is long, your project values are high, and the homeowner is on the phone with three competitors the same week. Intake processes that work for low-ticket trades fall apart at the project-value thresholds where you actually make money.
+      </p>
+
+      <div class="mt-8 grid gap-5">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent">The 3-to-5-bid rule</p>
+          <p class="mt-2 text-sm text-gray-300 leading-relaxed">
+            Homeowners researching a renovation, addition, or custom build contact 3 to 5 builders before signing a contract. They are running an informal bake-off — and the first builder to respond, qualify the project, and lock in a site visit captures roughly 40–50% of the deals they get in front of. Builder #4 or #5 in the rotation, even if technically more qualified, almost always loses to incumbency: the homeowner has already started building rapport with whoever showed up first. Most builders never know they were in the running on the jobs they never heard back about — those calls just go cold.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent">Project-value thresholds change the economics</p>
+          <p class="mt-2 text-sm text-gray-300 leading-relaxed">
+            A $35K kitchen remodel, a $120K addition, and a $750K custom build are the same inbound funnel from the homeowner's perspective. From yours, they have radically different margins. Most builders cannot afford to triage in real time during the workday — the lead form fills up while crews are on site, the owner doesn't see it until 7 PM, and by then the prospect has had three site-visit appointments scheduled with competitors. Even capturing one extra job at $100K+ per quarter typically pays for a full year of better intake by a wide margin.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
+          <p class="text-xs font-semibold uppercase tracking-wider text-accent">Seasonal demand peaks compound the problem</p>
+          <p class="mt-2 text-sm text-gray-300 leading-relaxed">
+            Roofing, exterior renovation, and exterior addition inbound spikes between March and June, then again after a major storm event. Med-spa-style "even response across the year" assumptions break — your busiest inquiry weeks are also your busiest job-site weeks, and the same people who would normally answer the phone are tied up. Conversely, the slow weeks of January and August are when competitors who do answer their phone steal the homeowners who were still researching for a spring project. A consistent 60-second response across the whole year removes the seasonal capacity drag entirely.
+          </p>
+        </div>
+      </div>
+
+      <h2 id="builder-faq" class="mt-14 text-2xl md:text-3xl font-semibold tracking-tight">Common questions from builders</h2>
+      <div class="mt-6 space-y-3">
+        <details class="group rounded-xl border border-white/10 bg-white/5 p-5 open:border-accent/40 open:bg-accent/5">
+          <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-white">
+            Can your team qualify against our minimum project value or scope?
+            <span class="ml-4 shrink-0 text-accent transition group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed text-gray-300">Yes. Most builders set a project-value floor (e.g., "$50K minimum remodel, $500K minimum new build") and disqualify outside their geographic zone or scope. We screen against your filter before booking any site visit, so the calendar that lands on your phone is qualified projects only — not curiosity callers or sub-$10K handyman work.</p>
+        </details>
+        <details class="group rounded-xl border border-white/10 bg-white/5 p-5 open:border-accent/40 open:bg-accent/5">
+          <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-white">
+            Will the team understand construction terminology?
+            <span class="ml-4 shrink-0 text-accent transition group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed text-gray-300">Yes. We train the intake script on your specific scope — whether that's custom homes, additions, kitchen/bath remodels, exterior renovation, or restoration. The team uses your terminology (rough-in, scope of work, permit timeline, finish allowances) so homeowners feel they are talking to someone who knows the trade, not a generic call center.</p>
+        </details>
+        <details class="group rounded-xl border border-white/10 bg-white/5 p-5 open:border-accent/40 open:bg-accent/5">
+          <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-white">
+            We use BuilderTrend / CoConstruct / JobNimbus / Houzz Pro. Do you integrate?
+            <span class="ml-4 shrink-0 text-accent transition group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed text-gray-300">Yes — qualified inquiries flow into your existing project management or CRM with contact info, project type, scope notes, and site-visit timing. You estimate from inside the system you already use; nothing changes about how the rest of the job runs.</p>
+        </details>
+        <details class="group rounded-xl border border-white/10 bg-white/5 p-5 open:border-accent/40 open:bg-accent/5">
+          <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-white">
+            What if a lead asks for a ballpark price during the intake call?
+            <span class="ml-4 shrink-0 text-accent transition group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed text-gray-300">We give the same "starting from" project-value ranges your office staff would share to set expectations — enough to qualify the prospect's seriousness without committing you to a number. Real estimates remain a job for you and the homeowner during the site visit, where you can actually see scope, site conditions, and existing structure.</p>
+        </details>
+        <details class="group rounded-xl border border-white/10 bg-white/5 p-5 open:border-accent/40 open:bg-accent/5">
+          <summary class="flex cursor-pointer items-center justify-between text-base font-semibold text-white">
+            How does this scale during the spring peak?
+            <span class="ml-4 shrink-0 text-accent transition group-open:rotate-45 text-2xl leading-none">+</span>
+          </summary>
+          <p class="mt-3 text-sm leading-relaxed text-gray-300">Built for it. The whole point is that your intake quality stays flat through volume spikes — your crews can stay on job sites without lead-form anxiety because every inquiry still gets a 60-second response and a same-day site-visit booking regardless of how busy your office is.</p>
+        </details>
       </div>
     </section>
 
