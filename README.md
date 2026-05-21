@@ -63,7 +63,7 @@ Then visit `http://localhost:8080`.
 0.23    Added 5 blog pages
 0.24    Updated SEO
 0.25    updated submit url
-0.26
+0.26    updated to full sales
 0.27
 0.28
 0.29

@@ -202,6 +202,24 @@
   </footer>
 
   <script>
+    // Capture UTM/gclid/fbclid from URL into sessionStorage on every page load.
+    // Last-touch attribution: any URL with at least one tag overwrites prior state.
+    (function () {
+      const KEYS = ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','gclid','fbclid'];
+      const url = new URLSearchParams(window.location.search);
+      const incoming = {};
+      let hasAny = false;
+      for (const k of KEYS) {
+        const v = url.get(k);
+        if (v) { incoming[k] = v; hasAny = true; }
+      }
+      if (hasAny) sessionStorage.setItem('__lead_attribution', JSON.stringify(incoming));
+      window.__getLeadAttribution = function () {
+        try { return JSON.parse(sessionStorage.getItem('__lead_attribution') || '{}'); }
+        catch { return {}; }
+      };
+    })();
+
     const WEBHOOK_URL = 'https://submit.1minutesales.com/leads/submit';
 
     document.getElementById('contact-form').addEventListener('submit', async function(e) {
@@ -225,7 +243,7 @@
         return;
       }
 
-      const payload = { 
+      const payload = {
         name: form.name.value.trim(),
         email: form.email.value.trim(),
         phone: phoneValue || undefined,
@@ -233,7 +251,8 @@
         city: form.city.value.trim() || undefined,
         state: form.state.value.trim() || undefined,
         message: form.message.value.trim() || undefined,
-        sms_consent: smsConsent ? 'yes' : undefined
+        sms_consent: smsConsent ? 'yes' : undefined,
+        ...window.__getLeadAttribution()
       };
 
       // Remove undefined keys
