@@ -69,13 +69,13 @@ Then visit `http://localhost:8080`.
 0.29    Added Banana images
 0.30    Added favicon
 0.31    updated blog width
-0.32
-0.33
-0.34
-0.35
-0.36
-0.37
-0.38
-0.39
-0.40
-0.41
+0.32    updated blog thumbnails
+0.33    
+0.34    
+0.35    
+0.36    
+0.37    
+0.38    
+0.39    
+0.40    
+0.41    
