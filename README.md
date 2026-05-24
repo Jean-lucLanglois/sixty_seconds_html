@@ -68,7 +68,7 @@ Then visit `http://localhost:8080`.
 0.28    SEO
 0.29    Added Banana images
 0.30    Added favicon
-0.31
+0.31    updated blog width
 0.32
 0.33
 0.34
