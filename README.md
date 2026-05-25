@@ -70,7 +70,7 @@ Then visit `http://localhost:8080`.
 0.30    Added favicon
 0.31    dropdown state field
 0.32    resized state field
-0.33    
+0.33    added images to index
 0.34    
 0.35    
 0.36    
