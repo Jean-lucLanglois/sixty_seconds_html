@@ -97,14 +97,14 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div>
-            <label for="phone" class="block text-sm font-medium text-gray-300 mb-1.5">Phone</label>
+            <label for="phone" class="block text-sm font-medium text-gray-300 mb-1.5">Phone <span class="text-accent">*</span></label>
             <div class="flex">
               <select id="phone-country" name="phone_country" aria-label="Country code"
                       class="rounded-l-lg border border-r-0 border-white/10 bg-white/5 px-4 py-2.5 pr-9 text-sm text-white focus:outline-none focus:border-accent/50 transition bg-no-repeat bg-[right_0.75rem_center] bg-[length:1em] cursor-pointer appearance-none"
                       style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;%239ca3af&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z&quot; clip-rule=&quot;evenodd&quot;/></svg>');">
                 <option value="+1" selected class="bg-bgdeep text-white">US +1</option>
               </select>
-              <input type="tel" id="phone" name="phone" inputmode="tel" autocomplete="tel-national" placeholder="(555) 123-4567"
+              <input type="tel" id="phone" name="phone" inputmode="tel" autocomplete="tel-national" placeholder="(555) 123-4567" required
                      class="w-full rounded-r-lg bg-white/5 px-4 py-2.5 text-sm text-white placeholder-gray-500 border border-white/10 focus:outline-none focus:border-accent/50 transition">
             </div>
             <p class="mt-2 text-xs text-gray-500">United States only.</p>
@@ -310,8 +310,8 @@
       btn.innerHTML = 'Sending&hellip;';
       status.className = 'hidden';
 
-      if (smsConsent && !phoneDigits) {
-        status.textContent = 'Please add a phone number to receive text updates.';
+      if (!form.name.value.trim() || !form.email.value.trim() || !phoneDigits) {
+        status.textContent = 'Please add your name, email, and phone number before submitting.';
         status.className = 'rounded-lg px-4 py-3 text-sm bg-yellow-500/10 border border-yellow-500/20 text-yellow-400';
         btn.disabled = false;
         btn.innerHTML = 'Request Booking <span>&rarr;</span>';

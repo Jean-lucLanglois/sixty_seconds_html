@@ -76,7 +76,7 @@ Then visit `http://localhost:8080`.
 0.36    Updated phone input
 0.37    Added booking page
 0.38    change links to booking page
-0.39    
+0.39    Added form requirements
 0.40
 0.41
 0.42
