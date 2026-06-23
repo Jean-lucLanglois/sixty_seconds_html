@@ -80,7 +80,7 @@ Then visit `http://localhost:8080`.
 0.40    Updated graphics
 0.41    rm Hand off images
 0.42    updated linkedin
-0.43
+0.43    update contact form for email validation
 0.44
 0.45
 0.46

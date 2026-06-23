@@ -85,7 +85,9 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div>
             <label for="name" class="block text-sm font-medium text-gray-300 mb-1.5">Full Name <span class="text-accent">*</span></label>
-            <input type="text" id="name" name="name" required
+            <input type="text" id="name" name="name" required minlength="2" maxlength="80"
+                   pattern="^[A-Za-z]+(?:[ '-][A-Za-z]+)*$"
+                   title="Enter a valid name using letters only. Spaces, apostrophes, and hyphens are allowed."
                    class="w-full rounded-lg bg-white/5 px-4 py-2.5 text-sm text-white placeholder-gray-500 border border-white/10 focus:outline-none focus:border-accent/50 transition">
           </div>
           <div>
@@ -105,6 +107,8 @@
                 <option value="+1" selected class="bg-bgdeep text-white">US +1</option>
               </select>
               <input type="tel" id="phone" name="phone" inputmode="tel" autocomplete="tel-national" placeholder="(555) 123-4567" required
+                     pattern="^(?:\+?1[\s.-]?)?(?:\(?\d{3}\)?[\s.-]?)\d{3}[\s.-]?\d{4}$"
+                     title="Enter a valid 10-digit US phone number."
                      class="w-full rounded-r-lg bg-white/5 px-4 py-2.5 text-sm text-white placeholder-gray-500 border border-white/10 focus:outline-none focus:border-accent/50 transition">
             </div>
             <p class="mt-2 text-xs text-gray-500">United States only.</p>
@@ -292,16 +296,22 @@
       const btn = document.getElementById('submit-btn');
       const status = document.getElementById('form-status');
       const form = this;
+      const nameValue = form.name.value.trim();
+      const emailValue = form.email.value.trim();
       const smsConsent = form.sms_consent.checked;
       const phoneValue = form.phone.value.trim();
       const phoneDigits = phoneValue.replace(/\D/g, '');
       const normalizedPhone = phoneDigits ? `+1${phoneDigits.replace(/^1/, '')}` : '';
+      const normalizedPhoneDigits = normalizedPhone.replace(/\D/g, '');
+      const nameIsValid = /^[A-Za-z]+(?:[ '-][A-Za-z]+)*$/.test(nameValue);
+      const emailIsValid = form.email.checkValidity();
+      const phoneIsValid = normalizedPhoneDigits.length === 11 && normalizedPhoneDigits.startsWith('1');
 
       btn.disabled = true;
       btn.innerHTML = 'Sending&hellip;';
       status.className = 'hidden';
 
-      if (!form.name.value.trim() || !form.email.value.trim() || !phoneDigits) {
+      if (!nameValue || !emailValue || !phoneValue) {
         status.textContent = 'Please add your name, email, and phone number before submitting.';
         status.className = 'rounded-lg px-4 py-3 text-sm bg-yellow-500/10 border border-yellow-500/20 text-yellow-400';
         btn.disabled = false;
@@ -309,9 +319,36 @@
         return;
       }
 
+      if (!nameIsValid) {
+        status.textContent = 'Please enter a valid full name using letters only. Spaces, apostrophes, and hyphens are allowed.';
+        status.className = 'rounded-lg px-4 py-3 text-sm bg-yellow-500/10 border border-yellow-500/20 text-yellow-400';
+        form.name.focus();
+        btn.disabled = false;
+        btn.innerHTML = 'Request Booking <span>&rarr;</span>';
+        return;
+      }
+
+      if (!emailIsValid) {
+        status.textContent = 'Please enter a valid email address.';
+        status.className = 'rounded-lg px-4 py-3 text-sm bg-yellow-500/10 border border-yellow-500/20 text-yellow-400';
+        form.email.focus();
+        btn.disabled = false;
+        btn.innerHTML = 'Request Booking <span>&rarr;</span>';
+        return;
+      }
+
+      if (!phoneIsValid) {
+        status.textContent = 'Please enter a valid 10-digit US phone number.';
+        status.className = 'rounded-lg px-4 py-3 text-sm bg-yellow-500/10 border border-yellow-500/20 text-yellow-400';
+        form.phone.focus();
+        btn.disabled = false;
+        btn.innerHTML = 'Request Booking <span>&rarr;</span>';
+        return;
+      }
+
       const payload = {
-        name: form.name.value.trim(),
-        email: form.email.value.trim(),
+        name: nameValue,
+        email: emailValue,
         phone: normalizedPhone || undefined,
         business_name: form.business_name.value.trim() || undefined,
         city: form.city.value.trim() || undefined,
