@@ -99,25 +99,41 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <div>
-            <label for="phone" class="block text-sm font-medium text-gray-300 mb-1.5">Phone <span class="text-accent">*</span></label>
+            <label for="office_phone" class="block text-sm font-medium text-gray-300 mb-1.5">Office Phone <span class="text-accent">*</span></label>
             <div class="flex">
-              <select id="phone-country" name="phone_country" aria-label="Country code"
+              <select id="office-phone-country" name="office_phone_country" aria-label="Office phone country code"
                       class="rounded-l-lg border border-r-0 border-white/10 bg-white/5 px-4 py-2.5 pr-9 text-sm text-white focus:outline-none focus:border-accent/50 transition bg-no-repeat bg-[right_0.75rem_center] bg-[length:1em] cursor-pointer appearance-none"
                       style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;%239ca3af&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z&quot; clip-rule=&quot;evenodd&quot;/></svg>');">
                 <option value="+1" selected class="bg-bgdeep text-white">US +1</option>
               </select>
-              <input type="tel" id="phone" name="phone" inputmode="tel" autocomplete="tel-national" placeholder="(555) 123-4567" required
+              <input type="tel" id="office_phone" name="office_phone" inputmode="tel" autocomplete="tel-national" placeholder="(555) 123-4567" required
                      pattern="^(?:\+?1[\s.-]?)?(?:\(?\d{3}\)?[\s.-]?)\d{3}[\s.-]?\d{4}$"
-                     title="Enter a valid 10-digit US phone number."
+                     title="Enter a valid 10-digit US office phone number."
                      class="w-full rounded-r-lg bg-white/5 px-4 py-2.5 text-sm text-white placeholder-gray-500 border border-white/10 focus:outline-none focus:border-accent/50 transition">
             </div>
             <p class="mt-2 text-xs text-gray-500">United States only.</p>
           </div>
           <div>
-            <label for="business_name" class="block text-sm font-medium text-gray-300 mb-1.5">Business Name</label>
-            <input type="text" id="business_name" name="business_name"
-                   class="w-full rounded-lg bg-white/5 px-4 py-2.5 text-sm text-white placeholder-gray-500 border border-white/10 focus:outline-none focus:border-accent/50 transition">
+            <label for="mobile_phone" class="block text-sm font-medium text-gray-300 mb-1.5">Mobile Phone <span class="text-accent">*</span></label>
+            <div class="flex">
+              <select id="mobile-phone-country" name="mobile_phone_country" aria-label="Mobile phone country code"
+                      class="rounded-l-lg border border-r-0 border-white/10 bg-white/5 px-4 py-2.5 pr-9 text-sm text-white focus:outline-none focus:border-accent/50 transition bg-no-repeat bg-[right_0.75rem_center] bg-[length:1em] cursor-pointer appearance-none"
+                      style="background-image: url('data:image/svg+xml;utf8,<svg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 20 20&quot; fill=&quot;%239ca3af&quot;><path fill-rule=&quot;evenodd&quot; d=&quot;M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z&quot; clip-rule=&quot;evenodd&quot;/></svg>');">
+                <option value="+1" selected class="bg-bgdeep text-white">US +1</option>
+              </select>
+              <input type="tel" id="mobile_phone" name="mobile_phone" inputmode="tel" autocomplete="tel-national" placeholder="(555) 123-4567" required
+                     pattern="^(?:\+?1[\s.-]?)?(?:\(?\d{3}\)?[\s.-]?)\d{3}[\s.-]?\d{4}$"
+                     title="Enter a valid 10-digit US mobile phone number."
+                     class="w-full rounded-r-lg bg-white/5 px-4 py-2.5 text-sm text-white placeholder-gray-500 border border-white/10 focus:outline-none focus:border-accent/50 transition">
+            </div>
+            <p class="mt-2 text-xs text-gray-500">United States only.</p>
           </div>
+        </div>
+
+        <div>
+          <label for="business_name" class="block text-sm font-medium text-gray-300 mb-1.5">Business Name</label>
+          <input type="text" id="business_name" name="business_name"
+                 class="w-full rounded-lg bg-white/5 px-4 py-2.5 text-sm text-white placeholder-gray-500 border border-white/10 focus:outline-none focus:border-accent/50 transition">
         </div>
 
         <div class="rounded-xl border border-white/10 bg-white/5 px-4 py-4">
@@ -299,20 +315,25 @@
       const nameValue = form.name.value.trim();
       const emailValue = form.email.value.trim();
       const smsConsent = form.sms_consent.checked;
-      const phoneValue = form.phone.value.trim();
-      const phoneDigits = phoneValue.replace(/\D/g, '');
-      const normalizedPhone = phoneDigits ? `+1${phoneDigits.replace(/^1/, '')}` : '';
-      const normalizedPhoneDigits = normalizedPhone.replace(/\D/g, '');
+      const officePhoneValue = form.office_phone.value.trim();
+      const officePhoneDigits = officePhoneValue.replace(/\D/g, '');
+      const normalizedOfficePhone = officePhoneDigits ? `+1${officePhoneDigits.replace(/^1/, '')}` : '';
+      const normalizedOfficePhoneDigits = normalizedOfficePhone.replace(/\D/g, '');
+      const mobilePhoneValue = form.mobile_phone.value.trim();
+      const mobilePhoneDigits = mobilePhoneValue.replace(/\D/g, '');
+      const normalizedMobilePhone = mobilePhoneDigits ? `+1${mobilePhoneDigits.replace(/^1/, '')}` : '';
+      const normalizedMobilePhoneDigits = normalizedMobilePhone.replace(/\D/g, '');
       const nameIsValid = /^[A-Za-z]+(?:[ '-][A-Za-z]+)*$/.test(nameValue);
       const emailIsValid = form.email.checkValidity();
-      const phoneIsValid = normalizedPhoneDigits.length === 11 && normalizedPhoneDigits.startsWith('1');
+      const officePhoneIsValid = normalizedOfficePhoneDigits.length === 11 && normalizedOfficePhoneDigits.startsWith('1');
+      const mobilePhoneIsValid = normalizedMobilePhoneDigits.length === 11 && normalizedMobilePhoneDigits.startsWith('1');
 
       btn.disabled = true;
       btn.innerHTML = 'Sending&hellip;';
       status.className = 'hidden';
 
-      if (!nameValue || !emailValue || !phoneValue) {
-        status.textContent = 'Please add your name, email, and phone number before submitting.';
+      if (!nameValue || !emailValue || !officePhoneValue || !mobilePhoneValue) {
+        status.textContent = 'Please add your name, email, office phone, and mobile phone before submitting.';
         status.className = 'rounded-lg px-4 py-3 text-sm bg-yellow-500/10 border border-yellow-500/20 text-yellow-400';
         btn.disabled = false;
         btn.innerHTML = 'Request Booking <span>&rarr;</span>';
@@ -337,10 +358,19 @@
         return;
       }
 
-      if (!phoneIsValid) {
-        status.textContent = 'Please enter a valid 10-digit US phone number.';
+      if (!officePhoneIsValid) {
+        status.textContent = 'Please enter a valid 10-digit US office phone number.';
         status.className = 'rounded-lg px-4 py-3 text-sm bg-yellow-500/10 border border-yellow-500/20 text-yellow-400';
-        form.phone.focus();
+        form.office_phone.focus();
+        btn.disabled = false;
+        btn.innerHTML = 'Request Booking <span>&rarr;</span>';
+        return;
+      }
+
+      if (!mobilePhoneIsValid) {
+        status.textContent = 'Please enter a valid 10-digit US mobile phone number.';
+        status.className = 'rounded-lg px-4 py-3 text-sm bg-yellow-500/10 border border-yellow-500/20 text-yellow-400';
+        form.mobile_phone.focus();
         btn.disabled = false;
         btn.innerHTML = 'Request Booking <span>&rarr;</span>';
         return;
@@ -349,7 +379,8 @@
       const payload = {
         name: nameValue,
         email: emailValue,
-        phone: normalizedPhone || undefined,
+        office_phone: normalizedOfficePhone || undefined,
+        mobile_phone: normalizedMobilePhone || undefined,
         business_name: form.business_name.value.trim() || undefined,
         city: form.city.value.trim() || undefined,
         state: form.state.value.trim() || undefined,
