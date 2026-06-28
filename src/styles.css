@@ -10,6 +10,39 @@
   --ring: rgba(204, 214, 26, 0.15);
 }
 
+/* ===== Homepage "new look" animations + selection ===== */
+::selection { background: rgba(231, 177, 76, 0.28); }
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .35; transform: scale(.78); }
+}
+@keyframes leadIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes ring {
+  0% { box-shadow: 0 0 0 0 rgba(231, 177, 76, .45); }
+  70% { box-shadow: 0 0 0 12px rgba(231, 177, 76, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(231, 177, 76, 0); }
+}
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.anim-pulse-dot { animation: pulseDot 1.6s infinite; }
+.anim-lead-in { animation: leadIn .45s ease; }
+.anim-ring { animation: ring 2.4s infinite; }
+.anim-floaty { animation: floaty 7s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-pulse-dot,
+  .anim-lead-in,
+  .anim-ring,
+  .anim-floaty { animation: none !important; }
+}
+
 /* Subtle grid background */
 .bg-grid {
   background-image:

@@ -82,7 +82,7 @@ Then visit `http://localhost:8080`.
 0.42    updated linkedin
 0.43    update contact form for email validation
 0.44    Added mobile phone
-0.45
+0.45    Redesigned index.html (new look + dual positioning: done-for-you + SaaS platform)
 0.46
 0.47
 0.48
